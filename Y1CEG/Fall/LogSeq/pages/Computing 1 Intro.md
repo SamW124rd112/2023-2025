@@ -1,0 +1,37 @@
+- Start of [[ITI1120]]
+- Office: SITE 5007
+- Addtional Text:
+	- Practical Programming (3rd ED): An Introduction to Computer Science using Python 3.6 by Paul Gries
+- #Midterm for course
+	- Sunday November 5th
+	- 9AM-10:20AM
+	- Closed-book Midterm Exam
+- [[Grade Breakdown]]
+  id:: 64f8cd5d-cb54-45b0-aef6-11e82650c72f
+	- Labs (11 total, Lab 1 = 0%, Lab 2-11 = 0.5%ea) => 5%
+	- Assignments => 21%
+		- Assignment 1&2 => 2.5%
+		- Assignments 3-6 => 4%
+	- Exams => 74%
+		- Quiz => 5%
+		- #Midterm => 24%
+		- #[[Final Exam]] => 45%
+	- [[Important Dates]]
+		- A1 (Due 8 AM)
+			- Available Sep 15
+			- ^^Due Sep 25^^
+		- A2 (Due 8 AM)
+			- Available Sep 25
+			- ^^Due Oct 2^^
+		- A3 (Due 8 AM)
+			- Available Oct 2
+			- ^^Due Oct 16^^
+		- A4 (Due 8 AM)
+			- Available Oct 16
+			- ^^Due Oct 30^^
+		- A5 (Due 8 AM)
+			- Available Oct 30
+			- ^^Due Nov 6 ^^
+		- A6 (Due 8 AM)
+			- Available Nov 30
+			- ^^Due Dec 4 ^^

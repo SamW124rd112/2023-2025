@@ -1,0 +1,20 @@
+- Start of [[GNG1105]]
+- Objectives
+	- Students will be able to calculate forces on objects and in simple structures
+	- Draw FBD of a structure or part of a structure
+	- Calculate motion of a simple object under an applied force
+	- Understand how structures support loads
+	- Develop an organized approach to problem-solving
+- Course will include the following components:
+	- Assigned readings ^^before^^ the lecture
+	- Lecture(s)
+		- First slide is assigned readings
+	- Practice Problems and video solutions
+	- Tutorials
+	- Assignments
+		- Assignment can be submitted ^^3 times^^
+	- Online quiz
+		- 1 Question: 30 minutes
+			- Submit solutions for part marks
+			-
+	-
