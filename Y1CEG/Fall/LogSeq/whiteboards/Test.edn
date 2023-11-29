@@ -144,7 +144,16 @@
 :parentId "64fb365e-8267-4196-adcf-8f83e7333c67"
 :nonce 1694185119370
 :isComplete true}}
-:block/updated-at 1694185135077})
+:block/updated-at 1694185135077} 
+{:block/content "![[Chapter 14: Matrices]]"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64fb365e-8267-4196-adcf-8f83e7333c67"}
+:block/parent 
+{:block/uuid #uuid "64fb365e-8267-4196-adcf-8f83e7333c67"}
+:block/properties 
+{}
+:block/uuid #uuid "655d1c8a-f030-4ecb-aa13-0b5d10d41a7c"})
 :pages (
 {:block/uuid #uuid "64fb365e-8267-4196-adcf-8f83e7333c67"
 :block/properties 
@@ -158,8 +167,8 @@
 :assets []
 :shapes-index ("0e1cc880-4e58-11ee-b970-758c856c6f52" "0e94b7a0-4e58-11ee-b970-758c856c6f52" "0f3f7690-4e58-11ee-b970-758c856c6f52" "10f6c380-4e58-11ee-b970-758c856c6f52" "14ab4000-4e58-11ee-b970-758c856c6f52" "307b2750-4e58-11ee-b970-758c856c6f52" "31bbbda0-4e58-11ee-b970-758c856c6f52")}}
 :block/journal? false
-:block/updated-at 1694185136847
+:block/updated-at 1700601007105
 :block/created-at 1694185054637
 :block/type "whiteboard"
 :block/name "test"
-:block/original-name "Test"})}
+:block/original-name "test"})}
