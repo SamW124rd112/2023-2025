@@ -13,10 +13,12 @@
 - Integration by Parts, Trigonometric integrals
 - Trigonometric substitution
 - Integrating rational functions, partial fractions, integration strategy
-- Approximate integration
-- Max/Min Values
-- Mean Value Theorem
-- Shapes of Graphs, Indeterminate forms, L'Hopital Rule
-- Curve sketching
-- Optimization
-- Newton's method
+- **Approximate integration**
+- **Max/Min Values**
+- **Mean Value Theorem**
+- **Shapes of Graphs, Indeterminate forms, L'Hopital Rule**
+- **Curve sketching**
+- **Optimization**
+- **Newton's method**
+- {{embed ((6552fed0-2adb-4912-b0f3-2d1d7e858c53))}}
+-

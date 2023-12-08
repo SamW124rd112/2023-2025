@@ -1,0 +1,42 @@
+- Finding Concentration of $H_2O_2$ Trials
+	- Assuming a solution of 6 $mol/L$
+		- 4mL:
+			- $$C_{H_2O_2} = 6 mol/L \cdot 0.004L = 0.024M$$
+		- 3mL
+			- $$C_{H_2O_2} = 6 mol/L \cdot 0.003L = 0.018M$$
+			- $$C_{Tot} = \frac{v_1}{v_2} \cdot C_{H_2O_2}$$
+			- $$C_{Tot} = \frac{0.003L}{0.004L} \cdot 0.018M$$
+		- 2mL
+			- $$C_{H_2O_2} = 6 mol/L \cdot 0.002L = 0.012M$$
+			- $$C_{Tot} = \frac{v_1}{v_2} \cdot C_{H_2O_2}$$
+			- $$C_{Tot} = \frac{0.002L}{0.004L} \cdot 0.006$$
+			-
+- Finding Partial Order of $H_2O_2$
+	- Average Rate of Trial 1: 0.20566 $kpa/s$
+	- Average Rate of Trial 2: 0.12675 $kpa/s$
+	- To calculate Partial Order we use:
+		- $$\frac{\text{Rate T2}}{\text{Rate T1}} =  \frac{k[H_2O_2]_2^x[catalase]_2^y}{k[H_2O_2]_1^x[catalase]_1^y}$$
+		- $$= \frac{\text{Rate T2}}{\text{Rate T1}} =  \frac{[H_2O_2]_2^x}{[H_2O_2]_1^x}$$
+		- $$= \frac{\text{Rate T2}}{\text{Rate T1}} =  \begin{pmatrix}\frac{[H_2O_2]_2}{[H_2O_2]_1} \end{pmatrix}^x$$
+		- $$ x = \log_{\begin{pmatrix}\frac{[H_2O_2]_2}{[H_2O_2]_1} \end{pmatrix}} \frac{\text{Rate T2}}{\text{Rate T1}} $$
+		- $$x = log_{(\frac{0.0135}{0.024})} \begin{pmatrix} \frac{0.12675}{0.20566}\end{pmatrix}$$
+		- $$x =  0.84$$
+- Finding Activation Energy of Catalase Reactions
+	- $$\ln(\frac{k_2}{k_1}) = - \frac{E_a}{R}(\frac{1}{T_2} - \frac{1}{T_1})$$
+	- K is directly proportional to initial rate, therefore it can be replaced by the actual initial rate and can be shown as a ratio:
+		- $$\frac{k_2}{K_1} = \frac{\text{Rate T2}}{\text{Rate T1}} $$
+		- Average Rate of Trial 2.1: 0.07977 $kpa/s$ at 299.15 $\degree C$
+		- Average Rate of Trial 2.2: 0.40119 $kpa/s$ at 304.15 $\degree C$
+		- $$ln(\frac{0.40119}{0.07977}) = - \frac{E_a}{R} (\frac{1}{304.15} - \frac{1}{299.15})$$
+		- $$1.61528 = -\frac{E_a}{R}(-5.4953 \times 10^{-5})$$
+		- $$29393.84R = E_a$$
+		- $$E_a = 244.262 kJ/mol$$
+- Finding Activation Energy of $KI$ Reactions
+	- $$\ln(\frac{k_2}{k_1}) = - \frac{E_a}{R}(\frac{1}{T_2} - \frac{1}{T_1})$$
+		- Average Rate of Trial 3.1: 0.02682 $kpa/s$ at 303.15 $\degree C$
+		- Average Rate of Trial 2.2: 0.07084 $kpa/s$ at 308.15 $\degree C$
+		- $$ln(\frac{0.07084}{0.02682}) = - \frac{E_a}{R} (\frac{1}{308.15} - \frac{1}{303.15})$$
+		- $$0.97128 = -\frac{E_a}{R}(-5.35242 \times 10^{-5})$$
+		- $$18146.55R = E_a$$
+		- $$E_a = 150.797 kJ/mol$$
+		-
