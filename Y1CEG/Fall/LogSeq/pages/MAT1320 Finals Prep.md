@@ -13,12 +13,19 @@
 - Integration by Parts, Trigonometric integrals
 - Trigonometric substitution
 - Integrating rational functions, partial fractions, integration strategy
-- **Approximate integration**
+- Approximate integration
 - **Max/Min Values**
 - **Mean Value Theorem**
-- **Shapes of Graphs, Indeterminate forms, L'Hopital Rule**
+- Shapes of Graphs, Indeterminate forms, L'Hopital Rule
 - **Curve sketching**
 - **Optimization**
-- **Newton's method**
 - {{embed ((6552fed0-2adb-4912-b0f3-2d1d7e858c53))}}
--
+- $$$$
+- Suppose $|f''(x)| \le K_2$ for $a \le x \le b$ and we estimate $\int_a^b f(x) \ dx$
+	- Then,
+		- $$\text{|error using Tn|} \le \frac{K_2(b-a)^3}{12n^2} \text{ and |error using Mn|} \le \frac{K_2(b-a)^3}{24n^2}$$
+		- $$\text{|error using Sn|} \le \frac{K_2(b-a)^5}{180n^4}$$
+- ### Riemann Sum:
+	- ![image.png](../assets/image_1702005885512_0.png)
+	- ![image.png](../assets/image_1702006093132_0.png)
+	-
