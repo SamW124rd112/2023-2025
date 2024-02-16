@@ -1,5 +1,4 @@
-## #[[MAT 1322]] Formula Sheet
-	-
+## [[Formula Sheet]] #[[MAT 1322]]
 	- ## #MAT1320 Important Formulas/Notation
 		- ### **Linearization**
 			- $$L(x) = f(a) + f'(a)(x-a)$$

@@ -1,0 +1,83 @@
+- Combinational Logic
+	- Combinational Circuits
+	- Analysis Procedure
+	- Design Procedure
+	- Binary Adder Subractor
+	- Magnitude Comparator
+	- Decoders
+	- Encoders
+	- Multiplexers
+- ## Combinational Logic #[[ITI 1100]]
+	- ### Combinational Logic Circuits
+		- Outputs logical functions of inputs
+		- New outputs appear shortly after changed inputs (propagation delay)
+		- No feedback loops
+		- No clock
+	- ### Decoder
+		- A decoder is a combinational circuit that converts binary information $n$ input lines to maximum of $2^n$ unique output lines $\rightarrow n$-to-$2^n$ decoder
+		- If the $n-$bit coded information has unused combinations $\rightarrow$ less than $2^n$ outputs
+		- Example:
+		  background-color:: blue
+			- $n-$to$-m$ decoder, $m \le 2^n$
+			- BCD-to-7-segment decoder, where $n = 4$ and $m=7$
+				- ![Screenshot from 2024-02-15 18-42-16.png](../assets/Screenshot_from_2024-02-15_18-42-16_1708040568820_0.png)
+		- #### 2-to-4 Decoder
+			- A 2-to-4 decoder operates according to the following logic:
+				- 2-bit input is called $S1$ and $S0$, and the four outputs are $Q0-Q3$
+				- If input is binary number $i$, then output $Q_i$ is uniquely true
+					- ![Screenshot from 2024-02-15 18-52-03.png](../assets/Screenshot_from_2024-02-15_18-52-03_1708041222793_0.png)
+	- ### Enable Inputs
+		- Many devices have ^^enable input^^, which is used to "activate" or "deactivate" the device
+			- For a decoder
+				- EN=1 activating the decoder, therefore exactly one of the outputs will be 1
+				- EN=0 "deactivates" the decoder, so all outputs will be zero
+			- ![Screenshot from 2024-02-15 18-58-29.png](../assets/Screenshot_from_2024-02-15_18-58-29_1708041525068_0.png)
+	- ### Minterm Generator
+		- Decoders are sometimes called ^^minterm generators^^
+			- For each input combination, exactly one output is true
+			- Each output equation holds all input variables
+	- ### Implementing Boolean Functions Using Decoders
+		- Any combinational circuit can be constructed using **decoders and OR gates**
+		- Take a full adder circuit with a decoder and two OR gates
+		- Let $X,Y$ and $Z$ be the inputs
+			- $S(X,Y,Z) = \sum (1,2,4,7)$
+			- $C(X,Y,Z) = \sum (3,5,6,7)$
+		- Since 3 inputs, and total of 8 minterms, we require a 3-to-8 decoder
+			- ![Screenshot from 2024-02-15 19-21-25.png](../assets/Screenshot_from_2024-02-15_19-21-25_1708042903431_0.png)
+	- ### Encoder
+		- An encoder has a number of input lines, only one of which is activated at a given time, opposite of the decoding process
+			- ![Screenshot from 2024-02-15 19-30-00.png](../assets/Screenshot_from_2024-02-15_19-30-00_1708043420921_0.png)
+	- ### Multiplexer
+		- A multiplexer selects one of several input signals and passes it on to the output
+		- Routing of selected data input to the output is controlled by SELECT inputs
+			- ![Screenshot from 2024-02-15 19-32-22.png](../assets/Screenshot_from_2024-02-15_19-32-22_1708043655840_0.png)
+		- A Combinational circuit with $2^n$ *data inputs*, $1$ data output and a number of bit *control input* that select one of the data
+			- ![Screenshot from 2024-02-15 19-36-56.png](../assets/Screenshot_from_2024-02-15_19-36-56_1708043865016_0.png) ![image.png](../assets/image_1708043931543_0.png)
+			- ### 2-to-1 Multiplexer
+				- ![image.png](../assets/image_1708044103798_0.png)
+			- ### 4-to-1 Multiplexer
+				- ![image.png](../assets/image_1708044248740_0.png)
+	- ### Implementing Functions with Multiplexers
+		- Multiplexers can be used to implement arbitrary functions
+		- One way to implement a function of $n$ variables is to use an $n$-to-1 multiplexer
+			- For each minterm $m_i$ of the function, connect 1 data input $D_i$
+			- Connect the function's input variables to select inputs, which indicate a particular in-put combination
+	- ### Parallel Adder
+		- Recall that to add two $n$-bit numbers, $n$ full-adders should be cascaded
+		- Each full adder represents a column in the long addition
+		- The carry signals "ripple" through the adder from left to right
+			- ![Screenshot from 2024-02-15 20-07-54.png](../assets/Screenshot_from_2024-02-15_20-07-54_1708045698278_0.png)
+	- ### Propogation Delay
+		- All logic gates take a non-zero time delay to respond to a change in input
+		- This is the *propagation delay* of the gate, typically measured in tens of nanoseconds
+			- ![Screenshot from 2024-02-15 20-18-29.png](../assets/Screenshot_from_2024-02-15_20-18-29_1708046404255_0.png)
+	- ### Carry Ripple
+		- $A$ and $B$ inputs change, corresponding changes to $C_{IN}$ inputs "ripple" through the circuit
+			- ![Screenshot from 2024-02-15 20-38-25.png](../assets/Screenshot_from_2024-02-15_20-38-25_1708047524226_0.png)
+	- ### Carry-Look-Ahead
+		- The accumulated delay in large parallel adders can be very large
+			- 16 bits using 30 ns full adders
+				- $16 \times 30ns = 480 ns$
+				- ![Screenshot from 2024-02-15 20-44-31.png](../assets/Screenshot_from_2024-02-15_20-44-31_1708047895190_0.png)
+	- ### Binary Multiplier Circuit
+		- ![Screenshot from 2024-02-15 20-45-49.png](../assets/Screenshot_from_2024-02-15_20-45-49_1708048033436_0.png)
