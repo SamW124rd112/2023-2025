@@ -1,0 +1,38 @@
+### Lecture 10-17
+- ## [[Momentum, Impulse and Collisions]]
+	- Centre of Mass
+	- Motion of System of Particles
+	- Rocket Propulsion
+- ## [[Rotation of Rigid Bodies]]
+	- Rigid Bodies
+	- Angular Position and Displacement
+	- Angluar Speed and Acceleration
+	- Rotational Kinematics
+	- Angular and Linear Quantities
+	- Rotational Kinetic Energy
+	- Moment of Inertia
+	- Parallel-Axis Theorem
+- ## [[Dynamics of Rotational Motion]]
+	- Torque
+	- Torque and Angular Acceleration
+	- Work and Power in Rotational Motion
+	- Rolling Motion
+	- Angluar Momentum
+	- Conservation Law
+	- Motion of a Top
+	- Gyroscope
+- ## [[Periodic Motion]]
+	- Periodic Motion
+	- Motion of a Spring Mass System
+	- Acceleration
+	- Simple Harmonic Motion
+	- Energy of Simple Harmonic Motion
+	- Simple Pendulum
+	- Physical Pendulum
+	- Torsional Pendulum
+	- Damped Oscillations
+	- Types of Damping
+	- Forced Ocillations
+	- Resonance
+	-
+- ## [[Electric Charge and Electric Fields]]

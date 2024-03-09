@@ -32,6 +32,7 @@
 					- Prove for all $x \in U,$ $(S \subseteq T)$ and $(T \subseteq S)$
 					- ![Screenshot from 2024-03-06 04-20-48.png](../assets/Screenshot_from_2024-03-06_04-20-48_1709716867709_0.png)
 	- ### [[Relations]]
+	  collapsed:: true
 		- A **binary relation** from $A$ to $B$ is a relation between $A$ and $B$
 		- A **binary relation** of a **set** $A$ is a relation from $A$ to itself
 		- ![Screenshot from 2024-03-06 04-26-52.png](../assets/Screenshot_from_2024-03-06_04-26-52_1709717240311_0.png)
@@ -63,6 +64,7 @@
 			- $P_i \cap P_j = \emptyset$ if $i \ne j$ (no identical values inbetween subsets)
 			- ![Screenshot from 2024-03-06 04-31-17.png](../assets/Screenshot_from_2024-03-06_04-31-17_1709717495360_0.png)
 	- ### [[Functions]]
+	  collapsed:: true
 		- A **function** is a an assignment of uniquely assigned element of $A$ to an element of $B$
 			- $f:A \rightarrow B$ where
 				- $A$ is domain and $B$ is codomain
