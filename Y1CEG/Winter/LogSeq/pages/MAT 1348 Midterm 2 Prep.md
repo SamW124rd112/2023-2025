@@ -7,10 +7,10 @@
 		- $U$ is the universal set, which is what all elements fall under
 		- $A$ is considered a **subset** of $B$, written ($A \subseteq B$) if every element of $A$ is also element of $B$
 			- ![Screenshot from 2024-03-06 03-36-42.png](../assets/Screenshot_from_2024-03-06_03-36-42_1709714729539_0.png){:height 304, :width 668}
-		- $A$ as a  **proper subset** of  $B$ ($A \subset B$) is if $A \subseteq B$ and $A \ne B$
+		- $A$ as a **proper subset** of  $B$ ($A \subset B$) is if $A \subseteq B$ and $A \ne B$
 		- **Cardinality** of a set is its size
 		- The **power set** of $A$, $P(A)$ is the set of all subsets of $A$
-		- The **Cartesian product**, $A \times B$ is the set of all ordered pairs $(a,b)$ where $a \in A$ and $b \in B
+		- The **Cartesian product**, $A \times B$ is the set of all ordered pairs $(a,b)$ where $a \in A$ and $b \in B$
 			- ![Screenshot from 2024-03-06 04-00-12.png](../assets/Screenshot_from_2024-03-06_04-00-12_1709715627763_0.png)
 			- ![Screenshot from 2024-03-06 04-00-56.png](../assets/Screenshot_from_2024-03-06_04-00-56_1709715680112_0.png)
 		- The **union** of sets $A$ and $B$, denoted $A\cup B$ is the set $A \cup B = \{x:(x \in A) \vee (x \in B)\}$
@@ -19,7 +19,7 @@
 			- ![Screenshot from 2024-03-06 04-13-45.png](../assets/Screenshot_from_2024-03-06_04-13-45_1709716523958_0.png)
 		- The **complement** of set $A$, denoted $\overline{A}$ is the set $\overline{A} = \{x: (x \in U) \wedge (x \notin A)\}$
 			- ![Screenshot from 2024-03-06 04-12-33.png](../assets/Screenshot_from_2024-03-06_04-12-33_1709716528992_0.png)
-		- The **difference** of sets $A$ and $B$, denoted $A-B$, is the set $A-B = \{x: (x\ in A) \wedge (x \notin B)\}$
+		- The **difference** of sets $A$ and $B$, denoted $A-B$, is the set $A-B = \{x: (x\in A) \wedge (x \notin B)\}$
 			- ![Screenshot from 2024-03-06 04-12-39.png](../assets/Screenshot_from_2024-03-06_04-12-39_1709716533606_0.png)
 		- The **symmetric difference** of sets $A$ and $B$, denoted $A \oplus B$ is the set $A \oplus B = \{x: (x \in A) \oplus (x \in B)\}$
 			- ![Screenshot from 2024-03-06 04-12-49.png](../assets/Screenshot_from_2024-03-06_04-12-49_1709716538915_0.png)
@@ -30,9 +30,8 @@
 				- Verify set identity using **membership table**
 				- Verify using **rigorous proof** (proof of equivalence of set equality)
 					- Prove for all $x \in U,$ $(S \subseteq T)$ and $(T \subseteq S)$
-					- ![Screenshot from 2024-03-06 04-20-48.png](../assets/Screenshot_from_2024-03-06_04-20-48_1709716867709_0.png)
+					- ![Screenshot from 2024-03-06 04-20-48.png](../assets/Screenshot_from_2024-03-06_04-20-48_1709716867709_0.png){:height 573, :width 626}
 	- ### [[Relations]]
-	  collapsed:: true
 		- A **binary relation** from $A$ to $B$ is a relation between $A$ and $B$
 		- A **binary relation** of a **set** $A$ is a relation from $A$ to itself
 		- ![Screenshot from 2024-03-06 04-26-52.png](../assets/Screenshot_from_2024-03-06_04-26-52_1709717240311_0.png)
@@ -51,10 +50,16 @@
 		- A relation is **antisymmetric** if for the implication $x,y \in A$, $((x,y) \in R \text{ and } (y,x) \in R) \rightarrow (x=y)$ is true
 			- ^^The relation is not symmetrically related^^
 			- The implication $(x\ne y) \rightarrow ((x,y) \notin R) \text{ and } ((y,x) \notin R)$
-		- A relation is **transitive** if for all $x,y,z \in A$, the implication $((x,y) \in R \text{ and } (y,z) \in R) \rightarrow  ((x,z,) \in R)$
+		- A relation is **transitive** if for all $x,y,z \in A$, the implication $((x,y) \in R \text{ and } (y,z) \in R) \rightarrow  ((x,z) \in R)$
+		- We can determine the properties of $R$ based on **visual representation**
+			- $R$ is **reflexive** if there is a loop at each vertex
+			- $R$ is **symmetric** if and only if whenever there is an arrow from one vertex to another, there is an arrow in the opposite direction
+			- $R$ is antisymmetric if there is no arrow in the opposite direction
+			- $R$ is **transitive** if and only if any two-step path can be done in one step
 		- ![Screenshot from 2024-03-06 04-27-59.png](../assets/Screenshot_from_2024-03-06_04-27-59_1709717303068_0.png)
 		- **Equivalence Relation:** Prove a relation is ^^reflexive^^, ^^symmetric^^ and ^^transitive^^
 		- ![Screenshot from 2024-03-06 04-29-33.png](../assets/Screenshot_from_2024-03-06_04-29-33_1709717392181_0.png)
+		- **Equivalence Class:** The set of all elements of $A$ that are in relation with $a$ ($[a]_R = \{x \in A| aRx\}$)
 		- **Modulo**, $m$ is the multiplier to a function that has identical remainders, based on the function, $a = km + b$
 			- Simplified to $a \equiv b$ (mod $m$)
 			- ![Screenshot from 2024-03-06 04-30-22.png](../assets/Screenshot_from_2024-03-06_04-30-22_1709717440247_0.png)
@@ -64,7 +69,6 @@
 			- $P_i \cap P_j = \emptyset$ if $i \ne j$ (no identical values inbetween subsets)
 			- ![Screenshot from 2024-03-06 04-31-17.png](../assets/Screenshot_from_2024-03-06_04-31-17_1709717495360_0.png)
 	- ### [[Functions]]
-	  collapsed:: true
 		- A **function** is a an assignment of uniquely assigned element of $A$ to an element of $B$
 			- $f:A \rightarrow B$ where
 				- $A$ is domain and $B$ is codomain

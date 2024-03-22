@@ -9,20 +9,17 @@
 - ### [[Power Series]]
 - ## Topics Covered:
 	- ### Euler Method's
-	  collapsed:: true
 		- **Euler's method** is a method of solving differential equations with the general formula
 			- $$x_{n+1} = x_n  + \Delta x$$
 			- $$y_{n+1} = y_n  + f(x_n,y_n) \Delta x$$
 			- ![image.png](../assets/image_1709779635455_0.png)
 	- ### Applications of DEs
-	  collapsed:: true
 		- Newton's Laws of Heating and Cooling
 			- $$T(t) = T_s + (T_o - T_s)e^{-kt}$$
 				- $T_s$ surrounding temperature
 				- $T(t)$ target temperature
 				- $T_o$ initial temperature
 	- ### Sequences
-	  collapsed:: true
 		- A **sequence** is an ordered list of numbers
 			- ![image.png](../assets/image_1709785535482_0.png)
 		- A sequence is considered **convergent** of its $\lim_{n \rightarrow \infin}$ is a unique real number
@@ -36,7 +33,6 @@
 		- #### Squeeze Theorem
 			- $$\lim_{n \rightarrow \infin} a_n = L \le \lim_{n \rightarrow \infin} b_n \le L = \lim_{n \rightarrow \infin} c_n \\ \therefore \lim_{n \rightarrow \infin} b_n =L$$
 	- ### Series
-	  collapsed:: true
 		- #### Infinite Series
 			- A sum is:
 				- $$\sum_{n = 1}^\infin a_n = a_1 + a_2 + a_3 + ... + a_i = ?$$
@@ -53,7 +49,7 @@
 			- If $|r| < 1$, then the geometric series $\sum_{n=1}^\infin ar^{n-1}$ is convergent and it converges to $\frac{a}{1-r}$, else if $|r| > 1$. the geometric series is divergent
 	- ### Integral and Comparision Tests
 		- #### Integral Test
-			- $\sum_{n=1}^\infin a_n$ is convergent if and only if f$\sum_1^\infin f(x)$ is convergent
+			- $\sum_{n=1}^\infin a_n$ is convergent if and only if $\sum_1^\infin f(x)$ is convergent
 			- In $p$ series, $\sum_{n=1}^\infin \frac{1}{n^p} \ dx$,
 				- Convergent if $p > 1$
 				- Divergent if $p \le 1$
@@ -88,8 +84,7 @@
 			- ![image.png](../assets/image_1709846847114_0.png)
 		- An alternative series is **absolutely convergent** if the series $\sum |a_n|$ converges
 		- An alternating series is **conditonally convergent** if $\sum|a_n|$ is divergent but $\sum a_n$ is convergent
-	- ### Ratio and root tests
-	  collapsed:: true
+	- ### Ratio and Root tests
 		- #### The Ratio Test
 			- If $\lim_{n \rightarrow \infin} | \frac{a_{n+1}}{a_n}| = L$ and $L < 1$, then $\sum_{n=1}^\infin a_n$ is ^^absolutely convergent^^
 			- If $\lim_{n \rightarrow \infin} | \frac{a_{n+1}}{a_n}| = L$ and $L > 1$, then $\sum_{n=1}^\infin a_n$ is ^^divergent^^
@@ -112,7 +107,6 @@
 			- ![Screenshot from 2024-03-06 12-41-12.png](../assets/Screenshot_from_2024-03-06_12-41-12_1709746894973_0.png)
 		-
 	- ### Power series
-	  collapsed:: true
 		- A **power series centred** at $x = n$
 			- $$\sum_{n=0}^\infin c_n (x-a)^n = c_0 + c_1(x-a) + c_2(x-a)^2 + c_3(x-a)^3 +....$$
 		- If the series is centred then, $x= a$
@@ -132,4 +126,4 @@
 				  logseq.order-list-type:: number
 				- The series diverges if $|x-a| > R$
 				  logseq.order-list-type:: number
-			- ![image.png](../assets/image_1709849260867_0.png)
+			- ![image.png](../assets/image_1709849260867_0.png){:height 495, :width 688}
