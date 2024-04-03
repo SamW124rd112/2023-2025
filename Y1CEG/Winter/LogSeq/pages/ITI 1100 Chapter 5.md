@@ -1,0 +1,166 @@
+- Synchronous Sequential Logic
+	- Sequential Circuits
+	- Latches
+	- Flip Flops
+	- Analysis of Clocked Sequential Circuits
+	- Design Procedure
+- ## Synchronous Sequential Logic #[[ITI 1100]]
+	- ### Binary Storage and Register (Recap)
+		- A digital system is composed of:
+			- Registers
+			- Data Processing usints
+		- Binary information is transferred from one set of registers into another
+		  id:: 6605a054-273a-4244-970b-1e20d07b5a97
+	- ### Registers
+		- A register is a group of ^^Binary cells^^
+		- A register with $n$ cells can $n$ bits
+		- Example:
+		  background-color:: blue
+			- Register with 8 cells can store 8 bits and can be in one of $2^8$ possible states
+				- ![Screenshot from 2024-03-28 12-56-40.png](../assets/Screenshot_from_2024-03-28_12-56-40_1711645112605_0.png){:height 127, :width 565}
+			- The content is function of the interpretation given to the inforation stored into it, displayed as +3 above
+		- ![Screenshot from 2024-03-28 12-59-33.png](../assets/Screenshot_from_2024-03-28_12-59-33_1711645570094_0.png) ![Screenshot from 2024-03-28 13-17-39.png](../assets/Screenshot_from_2024-03-28_13-17-39_1711646310250_0.png)
+	- ### Sequential Circuits
+		- Outputs logical functions of inputs and ^^previous history of circuit (memory)^^
+		- After changed inputs, new outputs appear in the next clock cycle
+		- Feedback loop
+		- ![Screenshot from 2024-03-28 13-19-51.png](../assets/Screenshot_from_2024-03-28_13-19-51_1711646406207_0.png)
+		- #### Elevator Control
+			- The buttons are the input variables of the system
+			- The position is also an input variable which represents the current state of the elevator
+			- In the figure and command control 'C' depends on the button selection AND position of the elevator (the previous state of the system)
+			- ![Screenshot from 2024-03-28 13-28-03.png](../assets/Screenshot_from_2024-03-28_13-28-03_1711646911239_0.png)
+				- This example represents a ^^Sequential Logic System^^, as the output C depends on combination of
+					- The input variables
+					- AND the previous states (internal states)
+		- ### Time and Memory
+			- In contrast to **combinations circuits**, two new parameters are to be considered
+			- ^^**Time**^^
+				- One must consider the propagation delay of the circuits
+			- ^^**Memory Element**^^
+				- One must consider the previous results and impose a predetermined order
+					- The function performed by memory elemnt is to store information in binary form
+		- ### Flip-Flop
+			- The memory cell that stores one "bit" of information is termed flip-flop
+			- A set of flip-flop can be used to store several bits in a **REGISTER**
+			- Two different modes:
+				- Asynchronous
+					- Output reacts "immeadiately to the changes of input variables
+						- Propogation delay oof the gates are to be considered: $t_p$
+					- ![Screenshot from 2024-03-28 13-53-29.png](../assets/Screenshot_from_2024-03-28_13-53-29_1711648434769_0.png){:height 136, :width 435}
+				- Synchronous
+					- In this mode of operation, changes of the input variables will become **EFFECTIVE** when the clock input is active
+					- ![Screenshot from 2024-03-28 13-54-43.png](../assets/Screenshot_from_2024-03-28_13-54-43_1711648506008_0.png){:height 277, :width 441}
+			- ![Screenshot from 2024-03-28 13-55-22.png](../assets/Screenshot_from_2024-03-28_13-55-22_1711649072063_0.png)
+	- ### Clock Signal
+		- Clock is used in synchronous logic circuits to trigger the circuit (Flip-flop) allowing it to switch its state
+		- Clock signal can trigger a flip-flop in three ways:
+			- ![Screenshot from 2024-03-28 14-43-55.png](../assets/Screenshot_from_2024-03-28_14-43-55_1711651489081_0.png){:height 574, :width 688}
+			- During Positive level
+				- The flip flop is triggered while the clock pulse is at logic '1'
+				- The logic '0' is therefore inactive state where changes to the flip-flop (state) are not allowed
+				- ![Screenshot from 2024-03-28 23-21-40.png](../assets/Screenshot_from_2024-03-28_23-21-40_1711682760876_0.png){:height 130, :width 470}
+			- During Positive transition (or positive edge)
+				- The flip flop is triggered only during the signal transition from 0 to 1 , this transition is defined as a *positive edge*
+				- ![Screenshot from 2024-03-28 23-21-45.png](../assets/Screenshot_from_2024-03-28_23-21-45_1711682733153_0.png){:height 269, :width 480}
+			- During Negative transition (or negative edge)
+				- The flip flop is triggered only during the signal transition from 1 to 0, this transition is defined as *negative edge*
+				- ![Screenshot from 2024-03-28 23-21-50.png](../assets/Screenshot_from_2024-03-28_23-21-50_1711682727003_0.png){:height 181, :width 453}
+	- ### Memory Element (Latch)
+		- A ^^flip-flop^^ can maintain a binary state indefinitely until directed by an input signal to switch states
+		- The most basic types of flip-flops operate with signal levels and referred to as **latches**
+		- **Latches** are basic circuits from which all flip flops are constructed
+		- ^^**Flip-flop**^^ (Latch) $SR$ has two input variables. $S$ and $R$
+			- $S$ for SET
+			- $R$ for RESET
+			- It also has two outputs $Q$ (*normal state*) and $Q'$ (*complement state*)
+			- ![Screenshot from 2024-03-28 23-35-34.png](../assets/Screenshot_from_2024-03-28_23-35-34_1711683407766_0.png)
+			- **NOR** Implementation
+				- ![Screenshot from 2024-03-28 23-36-03.png](../assets/Screenshot_from_2024-03-28_23-36-03_1711683412964_0.png){:height 306, :width 485}
+				- Function Table
+					- ![Screenshot from 2024-03-28 23-36-09.png](../assets/Screenshot_from_2024-03-28_23-36-09_1711683418186_0.png){:height 236, :width 596}
+			- **NAND** Implementation
+				- ![Screenshot from 2024-03-28 23-37-40.png](../assets/Screenshot_from_2024-03-28_23-37-40_1711683554306_0.png){:height 325, :width 520}
+				- Function Table
+					- ![Screenshot from 2024-03-28 23-37-46.png](../assets/Screenshot_from_2024-03-28_23-37-46_1711683559155_0.png){:height 210, :width 494}
+		- If we add to the memory element a **synchronization signal** (clock impulse or control input) we would obtain a synchronous $SR$ latch (a flip-flop)
+	- ### SR Latch with Control Input
+		- The time when a latch is allowed to change state is regulated
+		- Change of state is regulated by a control signal called enable
+		- Circuit is a NAND latch controlled by steering gates
+		- Used in two principle ways
+			- as an ON/OFF signal or synchronizing signal
+		- ![Screenshot from 2024-03-28 23-44-19.png](../assets/Screenshot_from_2024-03-28_23-44-19_1711683890547_0.png)
+		- Sometimes useful to avoid latch changes
+			- When $C = 0 \rightarrow$ disables all latch state changes
+		- Control signal *enables* state change when $C =1$
+		- Right side of circuit same as ordinary $SR$ latch with NAND
+	- ### D Latch with Control Input
+		- $D$ for data, which is transferred to the latch
+			- ![Screenshot from 2024-03-28 23-49-55.png](../assets/Screenshot_from_2024-03-28_23-49-55_1711684264256_0.png)
+		- When $C$ is high, $D$ passes from input to output ($Q$)
+			- ![Screenshot from 2024-03-28 23-50-00.png](../assets/Screenshot_from_2024-03-28_23-50-00_1711684268312_0.png)
+	- ### Edge Sensitive Flip-Flop
+		- Latches respond to trigger levels on control inputs
+			- Ex. If $C = 1$, input is reflected at output
+		- Flip flops store data on a positive or negative edge
+			- Ex. Control input transitions from 0 to 1, data input available at output
+		- Data remains stable in the flip flop until next positive/negative edge
+		- Different types of flip-flops are used for specific functions
+		- ^^Latch with a clock input^^
+		- The sequential circuit output changes when its CLOCK input detects an edge
+			- Edge-sensitive instead of level-sensitive
+		- Symbol is a triangle on the CLK input of the flip-flop
+		- Flip-lfop can be triggered on *positive* or *negative* side
+		- Bubble from CLK input indicates negative edge trigger
+		- ![Screenshot from 2024-03-28 23-49-48.png](../assets/Screenshot_from_2024-03-28_23-49-48_1711684236419_0.png)
+		- **Edge Sensitive SR**
+			- ![Screenshot from 2024-03-28 23-51-37.png](../assets/Screenshot_from_2024-03-28_23-51-37_1711684308804_0.png)
+		- **JK Flip Flop**
+			- ![Screenshot from 2024-03-28 23-52-21.png](../assets/Screenshot_from_2024-03-28_23-52-21_1711684359503_0.png) ![Screenshot from 2024-03-28 23-53-21.png](../assets/Screenshot_from_2024-03-28_23-53-21_1711684415493_0.png)
+		- **D Flip Flop**
+			- ![Screenshot from 2024-03-28 23-54-01.png](../assets/Screenshot_from_2024-03-28_23-54-01_1711684500501_0.png) ![Screenshot from 2024-03-28 23-54-07.png](../assets/Screenshot_from_2024-03-28_23-54-07_1711684503138_0.png)
+		- **T Flip Flop**
+			- ![Screenshot from 2024-03-28 23-54-24.png](../assets/Screenshot_from_2024-03-28_23-54-24_1711684514620_0.png)
+	- ### Asynchronous Outputs
+		- **Flip flops have asynchronous inputs**
+			- They operate independently of the synchronous inputs and clock
+				- used to Set the flip flop to 1 or 0 state at *any time*
+				- ![Screenshot from 2024-03-28 23-56-47.png](../assets/Screenshot_from_2024-03-28_23-56-47_1711684665811_0.png) ![Screenshot from 2024-03-28 23-56-59.png](../assets/Screenshot_from_2024-03-28_23-56-59_1711684668309_0.png) ![Screenshot from 2024-03-28 23-57-10.png](../assets/Screenshot_from_2024-03-28_23-57-10_1711684671316_0.png)
+		- Analysis describes what a given circuit will do under certain conditions
+		- Behaviour of synchronous sequential circuit can be determined from
+			- Its inputs, outputs and flip flop state
+	- ### Flip Flop State
+		- Behaviour of synchronous sequential circuit can be determined from inputs, outputs, and Flip Flop state
+			- ![Screenshot from 2024-03-29 00-01-24.png](../assets/Screenshot_from_2024-03-29_00-01-24_1711684916188_0.png) ![Screenshot from 2024-03-29 00-02-07.png](../assets/Screenshot_from_2024-03-29_00-02-07_1711684943463_0.png)
+	- ### State Table
+		- Sequence of outputs, inputs and flip flop states are listed in a table called a state table
+			- **Present state** indicates current value of flip flops
+			- **Next state** indicates state after next clock edge
+			- **Output** is output value on ^^current clock edge^^
+		- All possible input and state combinations are listed
+		- ![Screenshot from 2024-03-29 00-04-09.png](../assets/Screenshot_from_2024-03-29_00-04-09_1711685062102_0.png)
+	- ### State Diagram
+		- Circles indicate current state
+		- Arrows point to **next state**
+		- ![Screenshot from 2024-03-29 00-05-07.png](../assets/Screenshot_from_2024-03-29_00-05-07_1711685132030_0.png)
+	- ### Flip Flop
+		- ![Screenshot from 2024-03-29 00-11-51.png](../assets/Screenshot_from_2024-03-29_00-11-51_1711685547674_0.png) ![Screenshot from 2024-03-29 00-12-01.png](../assets/Screenshot_from_2024-03-29_00-12-01_1711685549819_0.png)
+	- ### Mealy and Moore Models
+		- A general Sequential Circuit has *inputs, outputs and interal states*
+		- There are two "standard models"
+			- **Mealy Model**, aka Mealy Finite State Machine
+				- Output based on state and present input
+					- ![Screenshot from 2024-03-29 00-09-19.png](../assets/Screenshot_from_2024-03-29_00-09-19_1711685480989_0.png)
+				- Example:
+				  background-color:: blue
+					- ![Screenshot from 2024-03-29 00-09-39.png](../assets/Screenshot_from_2024-03-29_00-09-39_1711685483845_0.png)
+			- **Moore Model**, aka Moore Finite State Machine
+				- Output based on state only
+					- ![Screenshot from 2024-03-29 00-10-07.png](../assets/Screenshot_from_2024-03-29_00-10-07_1711685487182_0.png)
+				- Example:
+				  background-color:: blue
+					- ![Screenshot from 2024-03-29 00-10-16.png](../assets/Screenshot_from_2024-03-29_00-10-16_1711685489756_0.png)
+	- ### State Reduction
+		- Consider a sequential circuit with the following diagram
+			- ![Screenshot from 2024-03-29 00-06-46.png](../assets/Screenshot_from_2024-03-29_00-06-46_1711685264168_0.png) ![Screenshot from 2024-03-29 00-06-55.png](../assets/Screenshot_from_2024-03-29_00-06-55_1711685266469_0.png) ![Screenshot from 2024-03-29 00-07-09.png](../assets/Screenshot_from_2024-03-29_00-07-09_1711685268739_0.png)

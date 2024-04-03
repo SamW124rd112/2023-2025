@@ -1,5 +1,6 @@
-### Lecture 10-17
+### Lecture 10-17 #[[PHY 1124]]
 - ## [[Momentum, Impulse and Collisions]]
+  collapsed:: true
 	- Centre of Mass
 		- Special point in a system or object, that moves as if all the mass of the system is concentrated at that point
 		- System will move as if an external force were applied to a single particle of mass $M$ located at the centre of mass
@@ -58,6 +59,7 @@
 			- $$M dv = - v_e dM$$
 			- $$M \frac{dv}{d} = |v_e \frac{dM}{dt}|$$
 - ## [[Rotation of Rigid Bodies]]
+  collapsed:: true
 	- Rigid Bodies
 		- A rigid object is a nondeformable object
 		- The relative location of all the particles are constant
