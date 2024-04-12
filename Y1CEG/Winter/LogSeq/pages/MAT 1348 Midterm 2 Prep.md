@@ -1,5 +1,6 @@
 ## #[[MAT 1348]] Midterm 2 Topics:
 	- ### [[Set Theory]]
+	  collapsed:: true
 		- A **set** is a well-defined unordered collection of objects called **elements**
 			- Two sets are **equal** if they contain the same elements (regardless of order or multiplicity)
 		- ![Screenshot from 2024-03-06 03-33-48.png](../assets/Screenshot_from_2024-03-06_03-33-48_1709714067368_0.png)
@@ -32,6 +33,7 @@
 					- Prove for all $x \in U,$ $(S \subseteq T)$ and $(T \subseteq S)$
 					- ![Screenshot from 2024-03-06 04-20-48.png](../assets/Screenshot_from_2024-03-06_04-20-48_1709716867709_0.png){:height 573, :width 626}
 	- ### [[Relations]]
+	  collapsed:: true
 		- A **binary relation** from $A$ to $B$ is a relation between $A$ and $B$
 		- A **binary relation** of a **set** $A$ is a relation from $A$ to itself
 		- ![Screenshot from 2024-03-06 04-26-52.png](../assets/Screenshot_from_2024-03-06_04-26-52_1709717240311_0.png)
@@ -73,7 +75,7 @@
 			- $f:A \rightarrow B$ where
 				- $A$ is domain and $B$ is codomain
 			- **Image** of a domain is the "range" $\Rightarrow f(a) = \{f(a): a \in A\}$
-		- ![Screenshot from 2024-03-06 04-21-57.png](../assets/Screenshot_from_2024-03-06_04-21-57_1709716944638_0.png){:height 32, :width 0}
+		- ![Screenshot from 2024-03-06 04-21-57.png](../assets/Screenshot_from_2024-03-06_04-21-57_1709716944638_0.png)
 		- A function is **injective** for all $x,y \in A$ if the implication $(f(x) = f(y)) \rightarrow (x = y)$ is true
 			- Each distinct element of $A$ is assigned to its own distinct unique element of $B$
 			- ![Screenshot from 2024-03-06 04-22-50.png](../assets/Screenshot_from_2024-03-06_04-22-50_1709717052527_0.png)

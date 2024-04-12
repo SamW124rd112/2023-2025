@@ -1,0 +1,29 @@
+# #[[ITI 1121]]
+	- ### Important Topics Covered
+		- Fundamentals
+			- Java arrays
+			- Polymorphism
+			- Java class hierarchy and the Object class
+			- Generics
+		- Stacks
+		- Memory-diagram representations, particularly of linked structures
+		- Exceptions, including percolation of exceptions and try/catch/finally blocks
+		- Queues and Queue algorithms, including circular queues
+		- Singly / doubly linked lists, including the concepts of dummy node and circular lists
+		- Manipulation of linked structures
+		- Iterators
+		- Recursion, including familiarity with the head-tail strategy for recursive processing of lists
+		- Binary Search Trees (BSTs)
+- # Primitive and Reference Data Types
+- # Intro to OOP
+- # Inheritence
+- # Interfaces
+- # Polymorphism
+- # Exceptions
+- # ADT Stacks
+- # ADT Queues
+- # ADT Lists
+- # Iterators
+- # Recursions
+- # Binary Search Trees
+	-

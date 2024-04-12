@@ -1,0 +1,1543 @@
+<html>
+<head>
+<title>Mathedemo</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<ul>
+    <h1>Kinematics and Dynamics of a Particle</h1>
+    <ul>
+        <li>Physics and Measurement</li>
+        <li>Motion in 1-D</li>
+        <li>Motion in 2-D</li>
+        <li>Laws of Motion</li>
+        <li>Applications of Newton's Laws</li>
+    </ul>
+    <li>Work-Energy Principle</li>
+    <ul>
+        <li>Work and Kinetic Energy</li>
+        <ul>
+            <li>Mechanical Work</li>
+            <ul>
+                <li><b>Mechanical work</b> is defined as the dot product of displacement vector and force vector</li>
+                <ul>
+                    <li><mark>For a constant force</mark> applied over the object in <span>$\Delta \vec{r}$</span>
+                        distance, the work done by the force is:</li>
+                    <ul>
+                        <li><span>$$W = \vec{F} \cdot \Delta \vec{r} = F \Delta r \cos \theta$$</span></li>
+                        <li><a href="../assets/Screenshot_from_2024-04-03_23-21-12_1712200891188_0.png">Screenshot from
+                                2024-04-03 23-21-12.png</a></li>
+                    </ul>
+                </ul>
+                <li><mark>For a varying force</mark>, work is defined as:</li>
+                <ul>
+                    <li><span>$$W = \int_{r_1}^{r_2} \vec{F} \cdot d\vec{r}$$</span></li>
+                    <ul>
+                        <li>If the curve of force as a function of <span>$x$</span> is given for a force along the
+                            motion, the area under the curve is the work done by the force</li>
+                    </ul>
+                </ul>
+                <li>The SI unit of work is the <b>joule</b> <span>$1 J = 1 \text{ N} \cdot \text{m}$$$</span></li>
+                <li><b>Mechanical Work Sign</b></li>
+                <ul>
+                    <li>Work is a scalar quantity and can be either positive, negative or zero</li>
+                    <ul>
+                        <li>If the applied force <span>$F$</span> (and the displacement <span>$d$</span> are in the
+                            <mark>same direction</mark>, work is <mark>positive</mark>)</li>
+                        <li>If <span>$F$</span> and <span>$d$</span> are in the <mark>opposite direction</mark>, work
+                            done is <mark>negative</mark></li>
+                        <li>Work is <mark>zero</mark> if either <mark>displacement is zero</mark> or <span>$\theta =
+                                90^\circ$$$</span></li>
+                    </ul>
+                    <li><img  style="background-color:gray"  class="graphic"  src="../assets/Screenshot_from_2024-04-03_23-29-00_1712201359001_0.png"></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>Which one the four forces does the most negative work on a particle that undergoes a
+                        displacement of <span>$\Delta \vec{r}$$$</span></li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-03_23-30-45_1712201465523_0.png">Screenshot from
+                                2024-04-03 23-30-45.png</a></li>
+                    </ul>
+                    <li>A <span>$20 \text{kg}$</span> wagon rests on an inclined plane with angle
+                        <span>$30^\circ$</span>. The wagon is pulled up the inclined plane by a <span>$200
+                            \text{N}$</span> tension force along the plane and is displaced by <span>$2 \text{m}$</span>
+                        . The coefficient of kinetic friction between the surfaces is <span>$0.3$</span>. What is the
+                        net work done on this box? (Hint: You can find the net work by finding the work done on it by
+                        all the forces acting on it)</li>
+                </ul>
+            </ul>
+            <li>Work-Energy Theorem</li>
+            <ul>
+                <li>An object moves with velocity <span>$v$</span> has <b>kinetic energy</b> calculated by</li>
+                <ul>
+                    <li><span>$$K = \frac{1}{2}mv^2$$</span></li>
+                    <li>Kinetic energy is a scalar quantity and measured in joules</li>
+                </ul>
+                <li><b>Work-Energy Theorem</b></li>
+                <ul>
+                    <li>The <mark>work done by all forces</mark> acting on a body is equal to the <b>change in the
+                            body's kinetic energy</b></li>
+                    <ul>
+                        <li><span>$$W_{net} = \Delta K = \frac{1}{2} mv^2_f - \frac{1}{2}mv_i^2$$</span></li>
+                    </ul>
+                    <li>If <span>$W > 0$</span> net force speeds up the object, while <span>$W < 0$</span> slows down
+                                the object</li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A 200-kg load is lifted 20.0 m vertically with an acceleration a = 0.160g by a single cable.
+                        Determine</li>
+                    <ul>
+                        <li>(a) the tension in the cable,</li>
+                        <li>(b) the net work done on the load,</li>
+                        <li>(c) the work done by the cable on the load,</li>
+                        <li>(d) the work done by gravity on the load, and</li>
+                        <li>(e) the final speed of the load assuming it started from rest</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Conservative vs. Non-Conservative Forces</li>
+            <ul>
+                <li>Two types of work coming from different forces</li>
+                <ul>
+                    <li><b>Conservative forces</b> perform work that <mark>do not depend on the path</mark> taken
+                        (gravity, spring force)</li>
+                    <ul>
+                        <li>The energy is converted into potential energy</li>
+                        <li><mark>Path independent</mark></li>
+                    </ul>
+                    <li><b>Nonconservative forces</b> perform work that <mark>depends on the path</mark>(friction)</li>
+                    <ul>
+                        <li>The energy is dissipated by heat or sound</li>
+                        <li>Any non-zero nonconservative work <b>will change the mechanical energy</b></li>
+                        <li><mark>Path dependent</mark></li>
+                    </ul>
+                </ul>
+                <li><b>Conservative Forces and Potential Energy</b></li>
+                <ul>
+                    <li>Work done by any <mark>conservative forces</mark> is proportional to the <b>change in the
+                            potential energy</b> associated with that force:</li>
+                    <ul>
+                        <li><span>$$W_c = - \Delta U$$</span></li>
+                    </ul>
+                    <li><b>Potential energy</b> is a type of energy which is stored inside the ojbect and can be
+                        converted into other energies such as kinetic energy</li>
+                    <ul>
+                        <li>Potential energy is usually shows by <span>$U, PE$</span> or <span>$U_p$$$</span></li>
+                        <ul>
+                            <li>Gravitational Potential Energy (Earth): <span>$\Delta U_g = mg\Delta y$$$</span></li>
+                            <li>Gravitational Potential Energy (Any Planet): <span>$\Delta U_g = -G \frac{m_1
+                                    m_2}{r^2}$$$</span></li>
+                            <li>Spring Potential Energy: <span>$U_s = \frac{1}{2}kx^2$$$</span></li>
+                        </ul>
+                        <li>A conservative force is always toward the points with lower potential energies</li>
+                        <li>If work is done by only conservative forces, then the mechanical energy of the system is
+                            conserved</li>
+                    </ul>
+                    <li><b>Potential energy</b> can also be described as the</li>
+                    <ul>
+                        <li><span>$$\Delta U = - \int_{r_1}^{r^2} \vec{F}_c \cdot \vec{d}r</span>
+                            <p> and as a differential equation<br /></p>
+                        </li>
+                        <ul>
+                            <li><span>$$\vec{F}_c = -\frac{dU_p}{\vec{dr}}$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Power</li>
+            <ul>
+                <li><b>Power</b> is defined as the rate of energy generation or consumption or the rate of whcih work is
+                    done</li>
+                <ul>
+                    <li>The SI Unit for power is Watts, <span>$1 \text{ W} = 1 \text{ J/s}$$$</span></li>
+                    <li><span>$$P = \frac{\Delta E}{\Delta t} \text{ or } P = \frac{\text{Work}}{\text{Time}}$$</span></li>
+                    <li>Or also written as <span>$P = \vec{F} \cdot \vec{v} = Fv \cos \theta$$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A bin of wood slabs is raised upwards through a vertical height of <span>$12.0 \text{m}$</span>
+                        at a constant velocity in <span>$4.2$</span> minutes by a crane with a power input of
+                        <span>$30\text{W}$</span>. What is the mass of the wood?</li>
+                    <li>A tow car is towing a <span>$900\text{kg}$</span> car up on a <span>$10^\circ$</span> hill with
+                        constant speed of <span>$36 \text{km/h}$</span>. The hill is sandy and exerts constant friction
+                        force of <span>$300 \text{N}$</span> on the car. How much power does the tow car supply to tow
+                        the car? Select the closest answer.</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Conservation of Energy</li>
+        <ul>
+            <li>The total <b>mechanical energy</b> of a system is the sum of kinetic and potential energies at a given
+                time</li>
+            <ul>
+                <li><span>$$$W_{net} = \Delta K$</span> using Work-Energy Theoren</li>
+                <ul>
+                    <li>Also for conservative force, <span>$W_c = - \Delta U$</span>, therefore:</li>
+                    <li><span>$$\Delta K = W_{net} = W_c + W_{nc} = - \Delta U + W_{nc}$$</span></li>
+                </ul>
+                <li>Solving for <span>$W_{nc}$</span>,</li>
+                <ul>
+                    <li><span>$$W_{nc} = \Delta K + \Delta U = \Delta E</span>
+                        <p> where<br /></p>
+                    </li>
+                    <li><span>$$$W_{nc}$</span> is total work done by non-conservative forces and <span>$\Delta E$</span>
+                        is the total change in mechanical energy</li>
+                    <ul>
+                        <li>If positive, mechanical energy is increased (ex. pulling force)</li>
+                        <li>If negative, mechanical energy is decreased (ex. friction)</li>
+                        <li>If zero, energy is conserved</li>
+                    </ul>
+                    <li><span>$$W_{added} + K_i + U_i = K_f + U_f + W_{lost}$$</span></li>
+                </ul>
+            </ul>
+            <li>Energy Conservation</li>
+            <ul>
+                <li>If there <b>no non-conservative work</b> and there is <mark>no dissipated energy</mark>, there is
+                    <mark>no change in energy</mark></li>
+                <ul>
+                    <li><span>$$\Delta E = 0 \rightarrow \Delta K + \Delta U = 0$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A car parked on a <span>$32^\circ$</span> steep hill loses its traction and starts to slide
+                        down. It travels <span>$160 \text{m}$</span> down the hill until it reaches speed of <span>$72
+                            \text{km/h}$</span>. What is the kinetic coefficient of friction between the car and the
+                        surface?</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-03_23-16-19_1712200645293_0.png">Screenshot from
+                                2024-04-03 23-16-19.png</a></li>
+                    </ul>
+                    <li>A <span>$2 \text{kg}$</span> block is pushed against a spring with negligible mass and force
+                        constant <span>$k= 400 \text{N/m}$</span>, compressing it <span>$0.220 \text{m}$</span>. When
+                        the block is released , it moves along a friction-less , horizontal surface and then up a
+                        friction-less incline with slope <span>$37^\circ$$$</span></li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-03_23-15-19_1712200566520_0.png">Screenshot from
+                                2024-04-03 23-15-19.png</a></li>
+                        <li>(a) What is the speed of the block as it slides along the horizontal surface after having
+                            lost the contact with the spring?</li>
+                        <li>(b) How far does the block travel up the incline before starting to slide back down?</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li></li>
+        </ul>
+    </ul>
+    <li>Collisions</li>
+    <ul>
+        <li>Goober hours</li>
+        <ul>
+            <li>Momentum and Impulse</li>
+            <ul>
+                <li>Momentum is the mass in motion</li>
+                <ul>
+                    <li>Vid</li>
+                    <ul>
+                        <li><code>{{video(https://www.youtube.com/watch?v=NIVNfI0RN2k)}}</code></li>
+                    </ul>
+                    <li><span>$$$p = mv$$$</span></li>
+                </ul>
+                <li>Impulse is the change of momentum of the particle</li>
+                <ul>
+                    <li>Magnitude of impluse is equal to the area under the Force-Time curve <span>$F \Delta t$</span>
+                    </li>
+                </ul>
+                <li>Elastic Collisions</li>
+                <ul>
+                    <li>Momentum and Kinetic Energy are conserved</li>
+                    <ul>
+                        <li><span>$$m_1v_{1i} + m_2v_{2i} = m_1v_{1f}+ m_2 v_{2f}$$</span></li>
+                        <li><span>$$\frac{1}{2}m_1v_{1i}^2 +\frac{1}{2} m_2v_{2i}^2 = \frac{1}{2}m_1v_{1f}^2+
+                                \frac{1}{2}m_2 v_{2f}^2$$</span></li>
+                        <li><span>$$v_{1f} = \Big( \frac{m_1 - m_2}{m_1 + m_2} \Big)v_{1i} + \Big (\frac{2m_2}{m_1+m_2}
+                                \Big)v_{2i}$$</span></li>
+                        <li><span>$$v_{2f} = \Big( \frac{2m_1}{m_1 + m_2} \Big)v_{1i} + \Big (\frac{m_2 - m_1}{m_1+m_2}
+                                \Big)v_{2i}$$</span></li>
+                    </ul>
+                    <li>Inelastic Collsion</li>
+                    <ul>
+                        <li>Kinetic energy is not conserved although momentum is still conserved, where the objects
+                            stick together</li>
+                        <li><span>$$m_1 v_{1i} = m_2v_{2i} = (m_1 + m_2)v_f$$</span></li>
+                    </ul>
+                </ul>
+                <li>Vido</li>
+                <ul>
+                    <li><code>{{video(https://www.youtube.com/watch?v=9YRgHikdcqs)}}</code></li>
+                </ul>
+            </ul>
+            <li>Centre of Mass</li>
+            <ul>
+                <li>The <b>centre of mass</b> is the point that moves if all of the mass of the system is concentrated
+                    at that point</li>
+                <ul>
+                    <li><code>{{video(https://www.youtube.com/watch?v=2uszSnvzBEU)}}</code></li>
+                </ul>
+                <li><span>$$P_{cm} \frac{\sum m_i x_i}{\sum m_i}$$</span></li>
+            </ul>
+        </ul>
+        <li>Linear Momentum and Impulse</li>
+        <ul>
+            <li><b>Linear momentum</b> is defined as the <mark>product of mass and velocity of an object</mark></li>
+            <ul>
+                <li>Momentum is a vector measured in <span>$\text{kg} \cdot \text{m/s}$$$</span></li>
+                <ul>
+                    <li><span>$$\vec{P} = m \vec{v}$$</span></li>
+                </ul>
+                <li>If a force is applied to an object, Newton's Second Law</li>
+                <ul>
+                    <li><span>$$\vec{F} = \frac{\Delta \vec{P}}{\Delta t}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Impulse</b> is defined as the <mark>change in momentum</mark> of the object if a
+                <mark>constant</mark> external force of F is applied to the object</li>
+            <ul>
+                <li><span>$$\vec{J} = \Delta \vec{P} = \vec{F} \Delta t$$</span></li>
+                <li>For a <b>net external force which is changing with time</b>, impulse is defined as:</li>
+                <ul>
+                    <li><span>$$\vec{J} = \Delta \vec{P} = \int_{t_i}^{t_f} \vec{F}(t) \ dt$$</span></li>
+                </ul>
+            </ul>
+            <li><mark><b>Note:</b></mark></li>
+            <ul>
+                <li>If a Force vs Time plot is provided, <b>Impulse</b> is the area under the curve</li>
+                <li>When <b>net external force</b> is <mark>zero</mark>, momentum remains <mark>conservered</mark></li>
+            </ul>
+            <li>Example:</li>
+            <ul>
+                <li>A soccer player applied an average force of 180 N during a kick. The kick accelerates a 0.45 kg
+                    soccer ball from rest to a speed of 18m/s. What is the impulse measured on the ball</li>
+                <ul>
+                    <li><a href="../assets/ImpulseQ1_1712030746620_0.png">ImpulseQ1.png</a></li>
+                </ul>
+                <li>A 2.5 kg Dodge ball hits the back wall of a school gym at 15 m/s at an angle of 50º to the wall. The
+                    ball is in contact with the wall for 0.15s before bouncing back at 12 m/s at an angle of 60º to the
+                    wall. What average force was exerted by the ball on the wall? <a
+                        href="../assets/Screenshot_from_2024-04-02_12-18-01_1712075295478_0.png">Screenshot from
+                        2024-04-02 12-18-01.png</a></li>
+                <ul>
+                    <li><a href="../assets/ImpulseQ2_1712076261024_0.png">ImpulseQ2.png</a></li>
+                </ul>
+            </ul>
+            <li>A force <span>$F = (2t^2 -5)N$</span> is acting on a moving object with mass of 2<i>kg</i> in the
+                direction of its motion for 5 seconds. If the initial speed of the particle is 5<i>m/s.</i></li>
+            <ul>
+                <li><a href="../assets/ImpulseQ3_1712076610999_0.png">ImpulseQ3.png</a></li>
+            </ul>
+        </ul>
+        <li>Conservation of Momentum</li>
+        <ul>
+            <li><b>Conservation of momentum</b> means that the change in momentum (<mark>impulse</mark>) is zero</li>
+            <ul>
+                <li><span>$$\Delta \vec{p} = 0 \qquad \rightarrow \qquad \vec{p}_f = \vec{p}_i$$</span></li>
+            </ul>
+            <li>If the <b>net external force on a system of objects is zero</b>, the impulse of the system will be zero
+                and the total <b>momentum of the system remains constant</b></li>
+            <li>Note that <mark>sum of all internal forces</mark> between elemetns of a system should be
+                <mark>zero</mark> because of Newton's third law</li>
+        </ul>
+        <li>Collisions</li>
+        <ul>
+            <li><b>Elastic Collision</b></li>
+            <ul>
+                <li>In a <b>perfectly elastic collision</b>, two objects completely bounce off each other</li>
+                <ul>
+                    <li>Assume there is <mark>no loss of energy</mark> in this collision because there is <b>no
+                            deformation</b></li>
+                </ul>
+                <li><mark><b>Note:</b></mark></li>
+                <ul>
+                    <li>During this collision, <b>total momentum</b> and <b>total kinetic energy</b> of the two objects
+                        are <b>conserved</b>, from before and after the collision</li>
+                </ul>
+                <li><b>Conservation of Kinetic Energy:</b></li>
+                <ul>
+                    <li><span>$$\frac{1}{2}m_Av^2_{A1} + \frac{1}{2}m_Bv^2_{B1} = \frac{1}{2}m_Av^2_{A2} +
+                            \frac{1}{2}m_Bv^2_{B2}$$</span></li>
+                </ul>
+                <li><b>Conservation of Total Momentum</b></li>
+                <ul>
+                    <li><span>$$m_A\vec{v}_{A1} + m_B\vec{v}_{B1} = m_A\vec{v}_{A2} + m_B\vec{v}_{B2}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Elastic Collision with One Object Intitially at Rest</b></li>
+            <ul>
+                <li>It is very commom to have <b>one of the objects initially at rest</b></li>
+                <ul>
+                    <li>Since we still have elastic collision, both kinetic energy and total momentum are conserved</li>
+                </ul>
+                <li><b>Equation for One Moving Object</b></li>
+                <ul>
+                    <li><span>$$v_{A2} = \frac{m_A - m_B}{m_A + m_B} v_{A1}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Perfectly Inelastic Collision</b></li>
+            <ul>
+                <li>In a <b>perfectly inelastic collision</b>, the two objects <mark>stick together</mark> after
+                    collision</li>
+                <ul>
+                    <li>The <b>kinetic energy</b> is not <mark>conserved</mark> because part of the energy is lost due
+                        to <b>deformation</b></li>
+                    <li><b>Total momentum</b> is <mark>conserved</mark></li>
+                </ul>
+                <li><b>Kinetic Energy</b></li>
+                <ul>
+                    <li><span>$$\frac{1}{2}m_Av^2_{A1} + \frac{1}{2}m_Bv^2_{B1} > \frac{1}{2}m_Av^2_{A2} +
+                            \frac{1}{2}m_Bv^2_{B2}$$</span></li>
+                </ul>
+                <li><b>Conservation of Total Momentum</b></li>
+                <ul>
+                    <li><span>$$m_A\vec{v}_{A1} + m_B\vec{v}_{B1} = (m_A + m_B)\vec{v}_{2}$$</span></li>
+                </ul>
+            </ul>
+            <li>Example:</li>
+            <ul>
+                <li>A 3000 kg truck traveling at 50 km/hr strikes a stationary 1000 kg car, locking the two vehicles
+                    together. (a) What is the final velocity of the two vehicles? (b) How much of the initial kinetic
+                    energy is lost to the collision?</li>
+                <li>Two carts on a friction less surface collide and stick to each other. What is the velocity of the
+                    two carts after collision?</li>
+                <ul>
+                    <li><a href="../assets/Screenshot_from_2024-04-02_13-56-44_1712080625125_0.png">Screenshot from
+                            2024-04-02 13-56-44.png</a></li>
+                </ul>
+                <li>A cart with mass 340 g moving on a frictionless linear air track at an initial speed of 1.2 m/s
+                    undergoes an elastic collision with an initially stationary cart of unknown mass. After the
+                    collision, the first cart continues in its original direction at 0.66 m/s.</li>
+                <li>A firework explodes and forms three fragments of equal mass. One fragment travels directly upward at
+                    14 m/s and the second fragment moves at 25 m/s at 25° below the horizontal to the right. Determine
+                    the velocity of the third fragment immediately after the explosion.</li>
+                <li>Two objects slide over a frictionless horizontal surface. The first object, m1=5m1​=5 kg, is
+                    propelled with a speed of <span>$v_{1i}=4.5 \text{m/s}$</span> toward the second object,
+                    <span>$m_2=2.5\text{kg}$</span> which is initially at rest. After the collision, both objects have
+                    velocities which are directed at <span>$θ=30°$</span> on either side of the original line of motion
+                    of the first object. What are the final speeds of the two objects? Is the collision elastic or
+                    inelastic?</li>
+            </ul>
+            <li>Shell Explosion</li>
+            <ul>
+                <li><b>Momentum Conservation in the Centre of Mass Frame</b></li>
+                <ul>
+                    <li>The centre of mass behaves as if it were a <b>single particle of combined mass</b>
+                        <span>$M$</span> located at an imaginary point, where that net external foce would be applied
+                    </li>
+                    <li>Location of centre of mass is where the mass of the entire system would be concentrated</li>
+                    <li>The motion of the center of mass depends only on the <b>net external force</b> acting on the
+                        entire system</li>
+                    <li>If there is <b>no external force</b>, momentum is conserved</li>
+                    <li>If there is <b>external force</b>, there will be <mark>impulse</mark> on the centre of mass</li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <li>Rotational Kinematics and Dynamics</li>
+    <ul>
+        <li>Dynamics of Rotational Motion</li>
+        <ul>
+            <li>Torque</li>
+            <ul>
+                <li><b>Torque</b> is simply tendency of rotation</li>
+                <li>It is a rotational equivalent of force defined as</li>
+                <ul>
+                    <li><span>$$\tau = |\vec{r} \times \vec{F}| = rF \sin \theta</span>
+                        <p> where<br /></p>
+                    </li>
+                    <ul>
+                        <li><span>$$$r$</span> is the magnitude of vector <span>$\vec{r}$</span> which is deifned from
+                            <b>centre of rotation</b> (<mark>ref. point</mark>) to <b>point of exertion of force</b>
+                            (<mark>point of action</mark>)</li>
+                        <li><span>$$$\theta$</span> is the angle</li>
+                    </ul>
+                </ul>
+                <li>Forces that cause NO torque are</li>
+                <ul>
+                    <li>Parallel to axis of rotation <span>$(\sin \theta = 0)$$$</span></li>
+                    <li>Acting at centre of rotation <span>$(r=0)$$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>You and your friend are trying to push open a gate that has a single hinge on one side. The gate
+                        starts opening if you apply a force of 60N perpendicular to the gate, at a point that is 60cm
+                        horizontally away from the hinge, parallel to the ground. If your friend is only able to push
+                        the gate with a force of 40N perpendicular to the door, where should they apply the force in
+                        order to open the gate?</li>
+                    <li>Seven forces are applied to a beam supported at the center as shown. Rank the torques produced
+                        by each force about the hinge from greatest to least, labeling the forces from 1-7 starting left
+                        to right (2F forces make an angle of 45 °45 °respect to the beam)</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-02_14-10-39_1712081522298_0.png">Screenshot from
+                                2024-04-02 14-10-39.png</a></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Rotational Kinematics</li>
+            <ul>
+                <li>The parameters describing the translational motion have an analogue in rotational mtion</li>
+                <ul>
+                    <li><b>Kinematic Equations for Rotational Motion</b></li>
+                    <ul>
+                        <li><span>$$\theta_f = \frac{1}{2}\alpha t^2 + \omega_i t + \theta_i$$</span></li>
+                        <li><span>$$\omega_f = \alpha t + \omega_i$$</span></li>
+                        <li><span>$$\omega_f^2 - \omega_i^2 = 2 \alpha \Delta \theta$$</span></li>
+                        <li><span>$$\frac{1}{2} (\omega_f + \omega_i)t = \Delta \theta$$</span></li>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> For <b>uniform circular motion</b>, <span>$\alpha - 0$$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A flywheel turns through 60 revolutions as it slows from an angular speed of 2 rad/s to a stop.
+                    </li>
+                    <ul>
+                        <li>Assuming a constant angular acceleration, find the time for it to come to rest.</li>
+                        <li>What is its angular acceleration?</li>
+                        <li>How much time is required for it to complete the first 20 of the 60 revolutions</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Moment of Inertia</li>
+            <ul>
+                <li>Moment of Inertia of Discrete partices</li>
+                <ul>
+                    <li>The <b>moment of inertia</b> of an object is a measure of the <mark>resistance</mark> of the
+                        object to <mark>changes</mark> in <b>rotational motion</b></li>
+                    <ul>
+                        <li>The quanity shows how the mass of an object is distributeed about its <i>axis of
+                                rotation</i></li>
+                    </ul>
+                    <li>For point masses <span>$m_i$</span> at distances <span>$r_i$</span> from axis of rotation, the
+                        moment of inertia is</li>
+                    <ul>
+                        <li><span>$$I = \sum m_i \cdot r_i^2$$</span></li>
+                        <ul>
+                            <li>with units <span>$\text{kg} \cdot \text{m}^2$$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> The value of <span>$I$</span> changes if the axis of rotation changes
+                    </li>
+                </ul>
+                <li>Moment of Inertia of Objects with a Continuous Mass</li>
+                <ul>
+                    <li>When there is an extended object with a <b>continuous mass distribution</b>, the the moment of
+                        inertia can be found with:</li>
+                    <ul>
+                        <li><span>$$I = \int r^2 \ dm$$</span></li>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>Calculate the moment of inertia of a rotating disk with radius of R and mass M about an axis
+                        which is passing through its center and it is perpendicular to the disc.</li>
+                </ul>
+            </ul>
+            <li>Parallel Axis Theorem</li>
+            <ul>
+                <li>If the object is rotating about an unknown axis, <b>Parallel Axis Theorem</b> to calculate the
+                    moment of inertia about this new axis</li>
+                <li>If we know that the moment of inertia about an axis that extends through the body's <b>centre of
+                        mass</b> <span>$(I_{COM})$</span>, the moment of inertia about an axis that is
+                    <mark>parallel</mark> to this axis is</li>
+                <ul>
+                    <li><span>$$I = I_{COM} + M \cdot h^2$$</span></li>
+                    <li>where <span>$h$</span> is the <b>distance between the axes</b> and the <span>$M$</span> is the
+                        total mass of the object</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-02_14-31-52_1712082732282_0.png">Screenshot from
+                                2024-04-02 14-31-52.png</a></li>
+                    </ul>
+                </ul>
+                <li>Moment of Inertia in Composite Shapes</li>
+                <ul>
+                    <li>For <b>composite shapes</b>, you can use the moment of inertia of their sub-components to the
+                        moment of inertia, as long as you are <b>careful with the axis of rotation</b> for each
+                        <mark>sub-component</mark></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>Tom and Jerry decide to build a snowmen at the edge of a cliff.  The snowman consists of three
+                        spheres with radii 90 cm, 60 cm and 30 cm, and the density of snow is
+                        <span>$300\text{kg/m}^3$</span>.  They fight and Tom pushes the snowman over the cliff.  The
+                        snowman begins to rotate around its center of mass as it falls.  What is the moment of inertia
+                        of the snowman as it’s falling?</li>
+                    <ul>
+                        <li>For a solid sphere, <span>$I_{cm} = \frac{2}{5} MR^2$</span> and <span>$V = \frac{4}{3}\pi
+                                R^3$$$</span></li>
+                        <ul>
+                            <li><a href="../assets/Screenshot_from_2024-04-02_14-47-53_1712083691984_0.png">Screenshot
+                                    from 2024-04-02 14-47-53.png</a></li>
+                        </ul>
+                    </ul>
+                    <li>Two thin Hoops each of mass M and radius of R are joined together as shown in the figure. What
+                        is the moment of inertia for rotations in the plane of the page about pint <i>O</i>?</li>
+                    <li>(The moment of inertia of a hoop with mass M and Radius R about an axis perpendicular to it and
+                        passing through its center is equal to <span>$MR^2$</span>)\</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-02_14-48-41_1712083743778_0.png">Screenshot from
+                                2024-04-02 14-48-41.png</a></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Rotational Analog of Newton's Second Law</li>
+            <ul>
+                <li>Torque is the rotational analog for force</li>
+                <li>When torque is applied, the angular acceleration changes</li>
+                <ul>
+                    <li>This change is given by <b>Newton's Second Law for rotations</b>:</li>
+                    <ul>
+                        <li><span>$$\sum \tau = I \cdot \alpha$$</span></li>
+                        <li>where <span>$\alpha$</span> is in <span>$\text{rad/s}^2$$$</span></li>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A thin uniform rod (length=1m, mass = 5kg) is pivoted about a horizontal, frictionless pin
+                        through one end of the rod. The rod is released when it makes an angle of 60° above the
+                        horizontal. What is the angular acceleration of the rod at the instant it is released? (The
+                        moment of inertia of a rod with length of L and mass of m about one of its ends is <span>$I =
+                            \frac{1}{3} mL^2$</span>)</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-02_14-51-41_1712083959771_0.png">Screenshot from
+                                2024-04-02 14-51-41.png</a></li>
+                    </ul>
+                    <li>A 10 kg mass is hanging from a rope wrapped around a cylindrical pulley. The falling mass causes
+                        the pulley to rotate. The mass of the pulley is 3 kg. (The moment of inertia of a solid cylinder
+                        with radius R and mass of M about its axis of symmetry is <span>$I = \frac{1}{2}MR^2$</span>
+                    </li>
+                </ul>
+            </ul>
+            <li>Rotational Kinetic Energy</li>
+            <ul>
+                <li>When an object is rotating, we have <b>rotational kinetic energy</b> from all the mass elements
+                    rotating</li>
+                <ul>
+                    <li><span>$$K = \frac{1}{2} I \cdot \omega^2$$</span></li>
+                    <li>The kinetic energy of a rigid body with <b>both translation and rotation</b></li>
+                    <ul>
+                        <li><span>$$K = \frac{1}{2}I \omega^2 + \frac{1}{2}Mv^2_{cm}$$</span></li>
+                    </ul>
+                </ul>
+                <li>Conservation of Energy</li>
+                <ul>
+                    <li>Similar to translational motion, if there is no friction or other non-conservative forces, total
+                        mechanical energy is conserved</li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A stone with a mass of 9.5kg is hung vertically from the end of a rope that is wound around a
+                        pulley on a boat. The moment of inertia of the pulley is 0.47kg <span>$\text{m}^2$</span> and
+                        the radius is 0.25m. The stone is released from rest and falls toward the water, causing the
+                        pulley to rotate. After the stone has fallen 2.5 m, what is the angular velocity of the pulley?
+                        (Mass of the rope is negligible)</li>
+                    <li>A thin rod with mass of M and length of L is hinged to the wall at one end. The rod is held
+                        horizontally and then released. What is the speed of the tip of the rod as it hits the wall?
+                        Assume the hinge is frictionless. The moment of inertia for a thin rod about one of its ends is
+                        <span>$\frac{1}{3}ML^2$$$</span></li>
+                </ul>
+            </ul>
+            <li>Rotational Work and Torque</li>
+            <ul>
+                <li>When torque is applied to an object, work is beign performed</li>
+                <ul>
+                    <li>Work done by a torque caused by a force which is along the angular displacement is:</li>
+                    <ul>
+                        <li><span>$$W = \tau (\theta_f - \theta_i)$$</span></li>
+                    </ul>
+                    <li>or integral</li>
+                    <ul>
+                        <li><span>$$W = \int \vec{\tau} \cdot d\vec{\theta}$$</span></li>
+                    </ul>
+                    <li>If the force is opposite the direction of angular displacement, then the torque is doing
+                        negative work; if in the same direction, then positive work</li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A wheel whose rotational inertia is 10 <span>$\text{kg} \cdot \text{m}^2$</span> starts from
+                        rest and accelerates under a constant torque of 3.0 <span>$\text{N} \cdot \text{m}$</span> for
+                        8.0 seconds. What is the wheel's rotational kinetic energy at the end of the 8 seconds?</li>
+                </ul>
+            </ul>
+            <li>Rolling Motion</li>
+            <ul>
+                <li>Roling without slipping is a combination of two mtions</li>
+                <ul>
+                    <li>A <mark>translational motion</mark> of the centre of the mass with the velocity:</li>
+                    <ul>
+                        <li><span>$$v_{cm} = R \cdot \omega$$</span></li>
+                    </ul>
+                    <li>A <mark>rotational motion</mark> of all points on the object</li>
+                </ul>
+                <li>In rolling without slipping, the <b>point of contact</b> is instananeously at rest</li>
+                <ul>
+                    <li>All points of the rolling object are rotating about this point of contact</li>
+                    <li><a href="../assets/Screenshot_from_2024-04-02_15-12-19_1712085155531_0.png">Screenshot from
+                            2024-04-02 15-12-19.png</a></li>
+                </ul>
+                <li>The rolling without slipping motion is usually caused by the static friction between the point of
+                    contact and surface</li>
+                <li>For rolling without slipping:</li>
+                <ul>
+                    <li><span>$$$v_{cm} = R \omega$$$</span></li>
+                    <li><span>$$$a_{cm} = R \alpha$$$</span></li>
+                    <li><span>$$$d_{cm} = R \theta$$$</span></li>
+                    <li>Since a rolling object has <b>both translational and rotational motion</b>, the total kinetic
+                        energy for an object rolling without slipping is:</li>
+                    <ul>
+                        <li><span>$$K = \frac{1}{2}mv^2 + \frac{1}{2}I_{cm} \omega^2 $$</span></li>
+                        <li>First term is translational kinetic energy of centre of mass, and second is rotational
+                            kinetic energy of the object</li>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>Show that the friction for a round object of radius R rolling (without slipping) down an incline
+                        of angle <span>$\theta$</span> has magnitude given by</li>
+                    <ul>
+                        <li><span>$$f = \frac{mg \sin \theta}{1+ \frac{mR^2}{I}}</span>
+                            <p><a href="../assets/Screenshot_from_2024-04-02_15-17-03_1712085441850_0.png">Screenshot
+                                    from 2024-04-02 15-17-03.png</a> <span>$\\$</span> Let clockwise rotation be
+                                positive, and let the x and y directions be along the slope and perpendicular to the
+                                slope. Positive is up for y, and downward along the slope for x.<br /></p>
+                        </li>
+                    </ul>
+                    <li>A marble starts from rest and rolls without slipping on the loop-the-loop track in the figure.
+                        Find the minimum starting height h from which the ball will remain on the track throughout the
+                        loop. Assume the marble's radius is small compared with R. The moment of inertia for a solid
+                        sphere is <span>$\frac{2}{5}Mr^2$</span> Enter your answer by using R = 70 cm (radius of the
+                        loop) and r = 1.0 cm (radius of the marble). Your answer should be in meters with three
+                        significant figures</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-02_15-19-24_1712085580095_0.png">Screenshot from
+                                2024-04-02 15-19-24.png</a></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Angular Momentum</li>
+            <ul>
+                <li><b>Angular momentum</b> is a vector the cross product of position vector and momentum vector</li>
+                <ul>
+                    <li><span>$$\vec{L} = \vec{r} \times \vec{P}$$</span></li>
+                </ul>
+                <li><b>Magnitude</b> of this vector is equivalent to <span>$|\vec{L}| = |\vec{r}||\vec{p}| \sin
+                        \theta$$$</span></li>
+                <li>For rigid bodies rotating around an axis with angular frequency <span>$\omega$</span>, the magnitude
+                    of angular momentum in analogy to linear momentum can be represented by</li>
+                <ul>
+                    <li><span>$$L = I \omega$$</span></li>
+                </ul>
+                <li>Angular Momentum and Torque</li>
+                <ul>
+                    <li><span>$$\vec{\tau} = \vec{r} \times \vec{F} = \vec{r} \times \frac{\vec{dP}}{dt} =
+                            \frac{\vec{dL}}{dt}$$</span></li>
+                    <li>If the <b>net externl torque</b> about an axis acting on a rotating body is <b>zero</b>, the
+                        <b>angular momentum about the same axis remains constant</b></li>
+                    <ul>
+                        <li><span>$$L_f = L_i$$</span></li>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>An object of mass <span>$m$</span> and speed <span>$v_0$</span> strikes a bob pendulum with mass
+                        <span>$M$</span> and length of <span>$l$</span> which is hanging from the ceiling and sticks to
+                        it and they both move (oscillate) to the right. Find the size and direction of the angular
+                        momentum with respect to where the rope is attached to the ceiling .</li>
+                    <li>In an isolated system, the moment of inertia of a rotating object is halved. What happens to the
+                        angular velocity of the object?</li>
+                    <li>You're sitting on a rotating stool, initially rotating at 3.0 radians per second. You're holding
+                        a 5.0 kg dumbbell very close to you, 0.05 meters away from your center of rotation. You then
+                        extend your arms 1.0 meters away from you with the dumbbell. The moment of inertia of you and
+                        the stool is 4.0 <span>$\text{kg} \cdot \text{m}^2$</span>. Neglect the mass of your arms and
+                        any rotational friction in the seat. What is your new angular velocity?</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Periodic Motion</li>
+        <ul>
+            <li>Basic Concepts of Oscillation</li>
+            <ul>
+                <li><b>Simple Harmonic Motion</b> (SHM) is a type of periodic motion in which</li>
+                <ul>
+                    <li>The restoring force is <mark>proportional to the displacement from the equilibrium
+                            position</mark></li>
+                    <li>The force direction is <mark>opposite to that of displacement</mark></li>
+                    <ul>
+                        <li><span>$$F = - kx$$</span></li>
+                    </ul>
+                    <li>Any physical system with the above type of the force undergoes a Simple Harmonic Motion</li>
+                </ul>
+                <li>The <b>mathematical description</b> of SHM is a sinusoidal function of time:</li>
+                <ul>
+                    <li><span>$$x(t) = A \cos (\omega t + \varphi )$$</span></li>
+                </ul>
+                <li>These are the parameters we use to describe a simple harmonic motion</li>
+                <ul>
+                    <li><b>Amplitude (A)</b></li>
+                    <ul>
+                        <li>The maximum displacement of the object from the equilibrium</li>
+                    </ul>
+                    <li><b>Period(T)</b></li>
+                    <ul>
+                        <li>The time it takes for one complete oscillation (Period is measured in seconds)</li>
+                        <ul>
+                            <li><span>$$T = \frac{\text{Total time}}{\text{Number of cycles}}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Frequency (f)</b></li>
+                    <ul>
+                        <li>The number of oscillations per unit of time (Frequency is measured in Hertz
+                            (1<span>$\text{Hz}$</span> = <span>$\frac{1}{s}$</span>)</li>
+                        <ul>
+                            <li><span>$$f = \frac{1}{T}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Angular Frequency (</b><span>$\omega$</span><b>)</b></li>
+                    <ul>
+                        <li>The rate at which argument of sinusoidal function describing oscillation changes in time
+                            (Angular frequency is measured in <span>$\text{rad/s}$</span>)</li>
+                        <ul>
+                            <li><span>$$\omega = 2 \pi f = \frac{2 \pi}{T}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Phase Constant (</b><span>$\varphi$</span><b>)</b></li>
+                    <ul>
+                        <li>A term which determines the initial condition of oscillation (phase constant is measured in
+                            <span>$\text{rad}$</span>)</li>
+                        <li>Phase constant causes a shift in the oscillating function which changes the starting point
+                            of oscillation:</li>
+                        <ul>
+                            <li><a href="../assets/Screenshot_from_2024-04-04_16-31-32_1712262723018_0.png">Screenshot
+                                    from 2024-04-04 16-31-32.png</a></li>
+                        </ul>
+                        <li>To calculate the <b>phase constant</b> <span>$\varphi$</span>, we need to solve this
+                            equation</li>
+                        <ul>
+                            <li><span>$$x(t=0) = A \cos (\varphi) \rightarrow \varphi = \cos^{-1} \Big(
+                                    \frac{x(0)}{A}\Big)$$</span></li>
+                            <li>Solving the equation for the phase constant will give two answers between
+                                <span>$0$</span> and <span>$2\pi$</span>:</li>
+                            <ul>
+                                <li><span>$$$\varphi = 0$</span> or <span>$2 \pi - \theta$</span>, <span>$0 \le \theta <
+                                            \pi$</span>
+                                </li>
+                            </ul>
+                        </ul>
+                        <li>Use the inormation at <b>time equal to zero</b> to find two possible soltuions for the phase
+                            constant by using the above equations</li>
+                        <li>Use the <b>slope of tangent line</b> to the curve at the same moment to pick the right angle
+                        </li>
+                        <ul>
+                            <li>Example:</li>
+                            <ul>
+                                <li>The velocity <span>$\text{cm/s}$</span> vs. time <span>$s$</span> of a mass-spring
+                                    on a SHM is shown in the graph</li>
+                                <ul>
+                                    <li>Find the equation representing position against time, and draw that graph</li>
+                                    <li><a href="../assets/Screenshot_from_2024-04-04_18-22-54_1712269389494_0.png">Screenshot
+                                            from 2024-04-04 18-22-54.png</a></li>
+                                </ul>
+                                <li>The displacement graph of a simple harmonic motion over time is shown below</li>
+                                <ul>
+                                    <li>Write the equation for displacement as a function of time</li>
+                                    <ul>
+                                        <li><a href="../assets/Screenshot_from_2024-04-04_18-23-51_1712269450376_0.png">Screenshot
+                                                from 2024-04-04 18-23-51.png</a></li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A girl on a swing is pushed such that she oscillates with a frequency of <span>$2.3 \text{
+                            Hz}$</span> and an amplitude of <span>$1.7 \text{ m}$</span>. (Mass of the girl is
+                        <span>$60\text{ kg}$</span>)</li>
+                    <ul>
+                        <li>Write an equation (position as a function of time) to describe the motion of the girl on the
+                            swing assuming that she starts at amplitude</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Velocity and Acceleration</li>
+            <ul>
+                <li>Displacement of an oscillator with respect to the equilibrium position is found by <span>$x(t) = A
+                        \cos (\omega t + \varphi )$$$</span></li>
+                <ul>
+                    <li><a href="../assets/Screenshot_from_2024-04-04_17-13-43_1712265322312_0.png">Screenshot from
+                            2024-04-04 17-13-43.png</a></li>
+                </ul>
+                <li><b>Velocity</b></li>
+                <ul>
+                    <li>The <b>velocity of an oscillator</b> can be found by taking the derivative of displacement with
+                        respect to time</li>
+                    <ul>
+                        <li><span>$$v(t) = \frac{dx}{dt} = -A \omega \sin (\omega t + \varphi)$$</span></li>
+                        <ul>
+                            <li><a href="../assets/Screenshot_from_2024-04-04_17-15-29_1712265472985_0.png">Screenshot
+                                    from 2024-04-04 17-15-29.png</a></li>
+                        </ul>
+                        <li>Velocity of an oscillator is an oscillating function with the <b>same period</b> as
+                            <span>$x(t)$$$</span></li>
+                        <li>Velocity is changing in <span>$-A \omega \le v(t) \le + A\omega$$$</span></li>
+                    </ul>
+                </ul>
+                <li><b>Acceleration</b></li>
+                <ul>
+                    <li>The <b>acceleration of an oscillator</b> can be found by taking the derivative of velocity with
+                        respect to time</li>
+                    <ul>
+                        <li><span>$$a(t) = \frac{dv}{dt} = - A \omega^2 \cos (\omega t + \varphi)$$</span></li>
+                        <li><a href="../assets/Screenshot_from_2024-04-04_17-18-06_1712265505054_0.png">Screenshot from
+                                2024-04-04 17-18-06.png</a></li>
+                    </ul>
+                    <li>Accleration of an oscillator is an oscillating function with <b>same period</b> as
+                        <span>$x(t)$</span> and <span>$v(t)$$$</span></li>
+                    <li>Acceleration is changing in <span>$-A \omega^2 \le a(t) \le +A \omega^2$</span>$</li>
+                </ul>
+                <li>Using <span>$a(t) = - \omega^2 x(t)$</span> one can find the relation between displacement and
+                    acceleration</li>
+                <li>Relation Between <span>$\omega$</span> and <span>$k$$$</span></li>
+                <ul>
+                    <li>A force in the form of <span>$F = - ksx$</span> undergoes simple harmonic motion, where
+                        <span>$k$</span> is a constant dependent on the physical properties of the system</li>
+                    <li>By looking at Newton's Second Law, one can find the relation between the constant
+                        <span>$k$</span> and angular frequency of oscillation <span>$\omega$$$</span></li>
+                    <ul>
+                        <li><span>$$\omega = \sqrt{\frac{k}{m}}$$</span></li>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A harmonic oscillator's motion is described by the following graph</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-04_17-37-58_1712266702471_0.png">Screenshot from
+                                2024-04-04 17-37-58.png</a></li>
+                        <li>Which of the following statement is correct about the acceleration (NOT the magnitude) of
+                            the oscillator?</li>
+                    </ul>
+                    <li>The position of an oscillating mass in a simple pendulum is given as: <span>$x(t)=3.56\
+                            cos(12t+\pi)$$$</span></li>
+                    <ul>
+                        <li>What is the maximum velocity of the mass</li>
+                        <li>What is the velocity of the mass at <span>$t=0\text{s}$$$</span></li>
+                        <li>What is the acceleration at <span>$t = 2 \text{s}$$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>SHM as the Projection of Uniform Circular Motion</li>
+            <ul>
+                <li>The moition of an oscillator undergoing as simple harmonic motion could be mapped to a <b>uniform
+                        circular motion</b></li>
+                <ul>
+                    <li><a href="../assets/Screenshot_from_2024-04-04_17-41-22_1712266899997_0.png">Screenshot from
+                            2024-04-04 17-41-22.png</a></li>
+                    <ul>
+                        <li>Angle <span>$\theta$</span> is to be equal to <span>$\omega t$</span> where
+                            <span>$\omega$</span> is the angular frequency of SHM</li>
+                        <li>When time passes, <span>$\omega t$</span> gets larger, so the point on the circle
+                            corresponds to the angle rotating in a counter-clockwise direction</li>
+                    </ul>
+                    <li>Trignometric realtions for the triangle at any moment can by shown by:</li>
+                    <ul>
+                        <li><span>$$x(t) = \cos \theta = \cos(\omega t)$$</span></li>
+                        <li><span>$$y(t) = \sin(\omega t)$$</span></li>
+                    </ul>
+                    <li>Since both SHM and uniform circular motion over the above circle are described by the same
+                        equation, we can describe SHM as a projection of circular motion over <span>$x$</span> or
+                        <span>$y$</span> axis</li>
+                    <li>Example:</li>
+                    <ul>
+                        <li>The image below shows the coordinates of a particle moving around a circle at
+                            <span>$t=0$</span>, as well as the direction of motion. Find the equation of its position
+                            <span>$x$</span> as a <span>$\cos$</span> function. Then find the velocity and acceleration
+                            equations as well.</li>
+                        <ul>
+                            <li><a href="../assets/Screenshot_from_2024-04-04_18-10-54_1712268671315_0.png">Screenshot
+                                    from 2024-04-04 18-10-54.png</a></li>
+                        </ul>
+                        <li>The image below shows the coordinates of a particle moving around a circle at
+                            <span>$t=0$</span>, as well as the direction of motion. Find the equation of its position
+                            <span>$y$</span> as a <span>$\sin$</span> function. Then find the velocity and acceleration
+                            equations as well.</li>
+                        <ul>
+                            <li><a href="../assets/Screenshot_from_2024-04-04_18-19-54_1712269213479_0.png">Screenshot
+                                    from 2024-04-04 18-19-54.png</a></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Energy of an Oscillator</li>
+            <ul>
+                <li>There are two different types of energies related to an oscillation:</li>
+                <ul>
+                    <li>The <b>kinetic energy</b> is the energy of a moving object</li>
+                    <ul>
+                        <li><span>$$$K = \frac{1}{2}mv^2$$$</span></li>
+                    </ul>
+                    <li>The <b>potential energy</b> is the energy stored in the oscillation</li>
+                    <ul>
+                        <li>For mass and spring oscillation, it is a potential energy stored inside of the spring due to
+                            stretch or compression in the length of the spring</li>
+                        <ul>
+                            <li><span>$$U = \frac{1}{2}kx^2$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>The <b>total energy</b> of the system at any time during SHM is the sum of kinetic energy and
+                    potential energy and is <mark>constant</mark> because of the <mark>conservation of energy</mark>
+                </li>
+                <ul>
+                    <li><span>$$E = K + U = \text{constant}$$</span></li>
+                </ul>
+                <li><b>How to Find Total Energy of an Oscillator</b></li>
+                <ul>
+                    <li>The total energy of the oscillator can be found using</li>
+                    <ul>
+                        <li>The definition, if the <b>position and velocity of the oscillator is known at any moment</b>
+                        </li>
+                        <ul>
+                            <li><span>$$E = \frac{1}{2}m(v(t))^2 + \frac{1}{2}k(x(t))^2$$</span></li>
+                        </ul>
+                        <li>Looking at <b>equilibrium point</b></li>
+                        <ul>
+                            <li>At equilibrium, <span>$x = 0, v = v_{max}$$$</span></li>
+                            <ul>
+                                <li><span>$$E = K + U = \frac{1}{2}mv_{max}^2+0$$</span></li>
+                                <li><span>$$E = \frac{1}{2}mA^2\omega^2$$</span></li>
+                            </ul>
+                        </ul>
+                        <li>Looking at <b>turning points</b></li>
+                        <ul>
+                            <li>At turning points, <span>$x = \pm A, v = 0$$$</span></li>
+                            <ul>
+                                <li><span>$$E = K + U = 0 + \frac{1}{2}kA^2$$</span></li>
+                                <li><span>$$E = \frac{1}{2}kA^2$$</span></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li><span>$$\frac{1}{2} kA^2 = \frac{1}{2}kx^2 + \frac{1}{2}mv^2$$</span></li>
+                    <li>Example:</li>
+                    <ul>
+                        <li>A block of unknown mass <span>$m$</span> is attached to a horizontal spring which has a
+                            spring constant <span>$k=4.8 \text{Nm}$</span>. It is then set oscillating on a frictionless
+                            surface with an amplitude of <span>$A= 12 \text{cm}$</span>. It takes <span>$0.5s$</span>
+                            for the block to complete one full cycle of oscillation. Calculate</li>
+                        <ul>
+                            <li>The mass <span>$m$$$</span></li>
+                            <li>The maximum acceleration <span>$a_{max}$$$</span></li>
+                            <li>The total energy of the system</li>
+                            <li>At which point(s) the kinetic energy of the mass is <span>$\frac{1}{3}$</span> of the
+                                total energy of the system</li>
+                        </ul>
+                        <li>A simple mass <span>$m$</span> on a spring with spring constant <span>$k$</span> oscillates
+                            about its equilibrium with amplitude <span>$A$</span>. If the energy of the system suddenly
+                            decreases to half of the initial value, what will be the mass' new maximum speed?</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Vertical Springs</li>
+            <ul>
+                <li>The main difference between a horizontal spring and a <b>vertical spring</b> is that force of
+                    gravity is along the oscillation and can affect it</li>
+                <li>If a mass <span>$M$</span> is attached to a vertical spring and then slowly lowered to stop in a
+                    lower position, the string is stretched by</li>
+                <ul>
+                    <li><span>$$\Delta x = \frac{Mg}{k}$$</span></li>
+                    <li>Changing the mass attached to a vertical spring (adding or removing a mass) shifts the position
+                        of equilibrium</li>
+                    <li><b>Any oscillation (SHM) now would be around the new equilibrium position</b></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A spring with <span>$k=50 \frac{\text{N}}{\text{m}}$</span> ​and length of
+                        <span>$10 \text{cm}$</span> is hanging from the ceiling (the spring is massless). If we attach a
+                        <span>$50 \text{g}$</span>  mass to the spring and then let it fall down:</li>
+                    <ul>
+                        <li>a) What is the amplitude of oscillation?</li>
+                        <li>b) What is the lowest position of the mass from the ceiling?</li>
+                        <li>c) What is the phase constant of this oscillation?</li>
+                        <li>d) What is the period of oscillation?</li>
+                    </ul>
+                    <li>The springs <span>$A$</span>, <span>$B$</span> and <span>$C$</span> have the same initial
+                        length. If <span>$k_A=k_C=0.5k_B$</span> ​.Different masses are added to them and they have
+                        extended to their new equilibrium position</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-04_19-16-35_1712272632235_0.png">Screenshot from
+                                2024-04-04 19-16-35.png</a></li>
+                        <li>Find the values of <span>$m_B, m_C$</span> respectively (Use <span>$g = 10
+                                \text{m/s}^2$</span>)</li>
+                        <li>Rank period of oscillation</li>
+                    </ul>
+                    <li>A mass of <span>$200\text{g}$</span> is attached to a free vertical spring with <span>$k=5
+                            \text{N/m}$</span> and natural length of <span>$20\text{cm}$</span> and is set to oscillate
+                        with an initial downward velocity of <span>$2\text{m/s}$</span> at the moment of attachment.
+                        Find the amplitude of this oscillation.</li>
+                </ul>
+            </ul>
+            <li>Simple Pendulums</li>
+            <ul>
+                <li><b>Simple pendulums</b> are pendulums for which the mass attached to the string is considered a
+                    point</li>
+                <ul>
+                    <li>The motion of these pendulums could be described as simple harmonic moiton</li>
+                </ul>
+                <li>The driving force acting on the mass is <span>$mg \sin \theta$</span> and since it is
+                    <b>restoring</b> (always pushes the mass toward equilibrium which is the lowest point), we have</li>
+                <ul>
+                    <li><span>$$F_{\theta} = - mg \sin \theta$$</span></li>
+                    <ul>
+                        <li>For small <span>$\theta, F_{\theta} = - mg\theta$$$</span></li>
+                    </ul>
+                    <li>The distance travelled by the mass is the arc length corresponding to the angle
+                        <span>$\theta$</span>, and <span>$l$</span>, the length of the pendulum</li>
+                    <ul>
+                        <li><span>$$x = l \theta$$</span></li>
+                        <li><span>$$F_{\theta} = - \frac{mg}{l}x$$</span></li>
+                    </ul>
+                </ul>
+                <li>By comparing with the general form of SHM forces the <b>effective spring constant</b> for a simple
+                    pendulum is:</li>
+                <ul>
+                    <li><span>$$\omega = \sqrt{\frac{g}{l}}$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A simple pendulum is set to oscillate with an amplitude of <span>$21 \text{cm}$</span>. If it
+                        oscillates with a frequency of <span>$0.50 \text{Hz}$</span>, determine the length of the
+                        pendulum and its average speed.</li>
+                    <li>You pull a simple pendulum to the side and release the mass at an angle of <span>$2.23°$</span>
+                    </li>
+                    <ul>
+                        <li>If the length of the pendulum is <span>$25 \text{cm}$</span>, how much time does it take the
+                            mass to reach its highest speed?</li>
+                        <li>What is the maximum height of the mass attached to the pendulum respect to its lowest
+                            position?</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Physical Pendulums</li>
+            <ul>
+                <li>If the mass is not concentrated at the lower part of the object, it can oscillate around its
+                    <b>pivot point</b></li>
+                <ul>
+                    <li>This oscillation for small angles can be described by simple harmonic motion, where for this
+                        oscillation:</li>
+                    <ul>
+                        <li><span>$$\theta (t) = \theta_{max} \cos (\omega t + \phi_0)$$</span></li>
+                        <li>where</li>
+                        <ul>
+                            <li><span>$$\omega = \sqrt{\frac{Mgl}{I}}$$</span></li>
+                            <li><span>$$$I$</span> is the moment of inertia around the pivot point, and <span>$l$</span>
+                                is the distance between pivot and centre of mass of object</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A rod with length of <span>$20 \text{cm}$</span> and the mass of <span>$0.5\text{kg}$</span> is
+                        hanging from one end of it and it is set oscillating. The mass distribution along the rod is
+                        uniform and the moment of inertia for a uniform rod of length d respect to one end of it is
+                        <span>$\frac{1}{3}Md^2$</span>. Find the time it takes for this physical pendulum to go from
+                        maximum displacement to minimum displacement.</li>
+                </ul>
+            </ul>
+            <li>Underdamped Oscillations</li>
+            <ul>
+                <li><b>Damped Oscillation Theory</b></li>
+                <ul>
+                    <li>In real systems, there are always <b>resistive forces</b> that oppose oscillation</li>
+                    <ul>
+                        <li>These resistive forces cause the <mark>total energy of the system to decay</mark></li>
+                    </ul>
+                    <li>A type of these resistive forces is proportional to the speed of the oscillator and is shown by
+                    </li>
+                    <ul>
+                        <li><span>$$F_{resistive} = - bv$$</span></li>
+                        <li>Net force acting on the oscillator is equal to <span>$F = -kx - bv = ma$</span> the solution
+                            for dependent on the magnitude of the damping constant</li>
+                    </ul>
+                    <li>Only will observe oscillations <b>only</b> for relatively small damping constants</li>
+                    <ul>
+                        <li>This condition is known as <b>underdamped condition</b> and the oscillation in this case is
+                            known as <b>damped oscillation</b></li>
+                    </ul>
+                </ul>
+                <li><b>Energy in a Damped Oscillation</b></li>
+                <ul>
+                    <li>Energy is no longer conserved in a damped oscillation</li>
+                    <ul>
+                        <li>The <mark>total energy of the system</mark> could still be obtained by</li>
+                        <ul>
+                            <li><span>$$E(t) = \frac{1}{2}kA^2(t) = \frac{1}{2}kA^2_o e^{-\frac{bt}{m}}$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>A <span>$0.3 \text{kg}$</span> mass undergoes a damped oscillation with the damping constant
+                        <span>$5 \frac{\text{kg}}{\text{s}}$</span>​. How long does it take for the amplitude and total
+                        energy of the oscillation to be <span>$\frac{1}{4}$</span> ​of their initial values?</li>
+                    <li>A <span>$50 \text{kg}$</span> person taking a bungee jump</li>
+                    <ul>
+                        <li>If the initial length of the bungee cord is 20 <span>$m$</span> and at the lowest point the
+                            length of the cord is <span>$25 \text{m}$</span>, what is the spring constant of the cord
+                        </li>
+                        <li>After the jump, the person is experiencing a damping oscillation. What is the damping
+                            constant if the amplitude of its oscillation reduces to <span>$\frac{1}{5}$</span> of its
+                            original amplitude after <span>$20 \text{s}$</span>?</li>
+                        <li>How many full oscillations does the person experience in this <span>$20 \text{s}$</span>?
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Critical Damping and Over-Damping Conditions</li>
+            <ul>
+                <li><b>Critically Damping Condition</b></li>
+                <ul>
+                    <li>In underdamped condtions, the oscillation decays faster at <span>$b$$$</span></li>
+                    <ul>
+                        <li>At a very special point <span>$\omega_o = \frac{b}{2m}$</span>, there would be no
+                            oscillation anymore</li>
+                        <li>This is called <b>critical damping condition</b></li>
+                        <ul>
+                            <li>In this condition, <span>$\omega' = 0$</span>, so <span>$x(t) = A^2_o e^{-\frac{bt}{m}}
+                                    \cos \varphi$$$</span></li>
+                            <li>There is no oscillation and the displacement decays to zero exponentially</li>
+                            <li><a href="../assets/Screenshot_from_2024-04-04_20-08-56_1712275755033_0.png">Screenshot
+                                    from 2024-04-04 20-08-56.png</a></li>
+                        </ul>
+                        <li>The system has critical damping condition if <span>$b = 2m\omega_o = 2 \sqrt{km}$</span>
+                        </li>
+                    </ul>
+                </ul>
+                <li><b>Overdamping Condition</b></li>
+                <ul>
+                    <li>The system would be in <b>overdamping condition</b> when</li>
+                    <ul>
+                        <li><span>$$\frac{b}{2m} > \omega_o$$</span></li>
+                    </ul>
+                    <li>There is again no oscillation in overdamped condition</li>
+                    <li><span>$$$x(t)$</span> decays to zero at a <b>slower rate</b> compared to a critically damped
+                        condition</li>
+                    <li>The bigger the value of the damping constant, the slower <span>$x(t)$</span> goes to zero</li>
+                </ul>
+            </ul>
+            <li>Forced Oscillation and Resonance</li>
+            <ul>
+                <li>The decaying energy of a damped oscillation could be restored by applying a <b>driving force</b>
+                </li>
+                <li>This type of oscillation is know as <mark>forced or driven osciilation</mark></li>
+                <li>Force is periodic in the form,</li>
+                <ul>
+                    <li><span>$$F_d = F_o \cos(\omega_d t)$$</span></li>
+                    <ul>
+                        <li>where <span>$\omega_d$</span> is the <b>driven angular frequency</b>, at which the force is
+                            exterted</li>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> In driven or forced oscillation, the system oscillates with the driven
+                        angular frequency</li>
+                </ul>
+                <li>The amplitude of a driven oscillation is found to be proportional to:</li>
+                <ul>
+                    <li><span>$$A \propto \frac{1}{\sqrt{(\omega_o^2 - \omega_d^2)^2 + (\frac{b\omega_d}{m})^2}}</span>
+                    </li>
+                    <li>If <span>$\omega_d$</span> is close to <span>$\omega_o = \sqrt{\frac{k}{m}}$</span> the
+                        amplitude becomes very large</li>
+                </ul>
+                <li>The condition in which <span>$\omega_O = \omega_d$</span> is called <b>resonance</b> and it is where
+                    the amplitude gets its maximum value</li>
+                <li>Example:</li>
+                <ul>
+                    <li>A simple pendulum with the length of <span>$20 \text{cm}$</span> undergoes a damped oscillation
+                        with <span>$b = 2 \frac{\text{kg}}{\text{s}}$</span> How many times per second you need to tap
+                        the pendulum at its left most position in order to get the maximum amplitude of the oscillation?
+                        (Hint: The natural frequency of a pendulum is equal to <span>$ω_0=\sqrt{g/l}$</span> where
+                        <span>$l$</span> is the length of the pendulum.)</li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <li>Electrostatics</li>
+    <ul>
+        <li>Goober Hours (does have videos)</li>
+        <ul>
+            <li>Electric Charge</li>
+            <ul>
+                <li>Carried by certain subatomic particles (protons, newtons)</li>
+                <li>The fundamental charge is <span>$\pm1.602 \times 10^-{19} \text{C}$</span> (all charges are
+                    multiples of this)</li>
+            </ul>
+            <li>Coulombs Law</li>
+            <ul>
+                <li>Opposite charges attract because of the <b>electric force</b></li>
+                <li><b>Point charge</b> refers to a particle of zero size thtat carries an electric charge</li>
+                <li>Coulombs Law</li>
+                <ul>
+                    <li><span>$$F = k \frac{q_1 q_2}{r^2}$$</span></li>
+                    <ul>
+                        <li>where <span>$k = 8.99 \times 10^9 \text{N m}^2 / \text{C}^2$$$</span></li>
+                    </ul>
+                    <li>The magnitude of electric force between two objects is equal to the constant times the charge on
+                        the objects divided by the distance between (squared)</li>
+                    <li>Electric force increases as charge increases</li>
+                </ul>
+            </ul>
+            <li>Electric Fields</li>
+            <ul>
+                <li>The electric force arises from an electric field</li>
+                <li>Region of space around a charged object</li>
+                <li>When another charged object enters the electric field, an electric force acts on it</li>
+                <li>Electric Field</li>
+                <ul>
+                    <li><span>$$E = K_c \frac{q}{r^2}$$</span></li>
+                    <ul>
+                        <li>Constant times charge divided by distance from some object generating field to other object
+                        </li>
+                    </ul>
+                </ul>
+                <li><b>Electric dipole</b> on two charges equal in magnitude, but opposite in sign</li>
+                <li><code>{{video(https://www.youtube.com/watch?v=PSlnlXjaHA4)}}</code></li>
+                <ul>
+                    <li><span>$$E = k_e \frac{2 qa}{(y^2 + a^2)^{3/2}}$$</span></li>
+                </ul>
+                <li><code>{{https://www.youtube.com/watch?v=Mt9Rn2Ek0SU&t=282s}}</code></li>
+            </ul>
+            <li>Electric Flux</li>
+            <ul>
+                <li>The rate of flow of the electric field through a given surface (vid)</li>
+                <ul>
+                    <li><code>{{video(https://www.youtube.com/watch?v=yOv4xxopQFQ&t=393s)}}</code></li>
+                </ul>
+                <li>The product of magnitude of the electric field adn the surface area <span>$A$</span>, perpendicular
+                    to the field</li>
+                <ul>
+                    <li>Electric Flux through open surface</li>
+                    <ul>
+                        <li><span>$$$\phi_E = EA\cos\theta$$$</span></li>
+                    </ul>
+                    <li>Electric Flux through closed surface</li>
+                    <ul>
+                        <li><span>$$$\phi = \int \vec{E} \cdot d\vec{A}$$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Gauss's Law</li>
+            <ul>
+                <li>The electric flux going through a closed surface, is the sum of all charges Q inside the closed
+                    surface divided by permitivity of free space <span>$E_0$$$</span></li>
+                <li><span>$$\phi_e = \frac{q}{\varepsilon_0}$$</span></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </ul>
+        <li>Electric Fields</li>
+        <ul>
+            <li>Charge, Conductors, Insulators</li>
+            <ul>
+                <li><b>Properties of Charge</b></li>
+                <ul>
+                    <li>There are two types of charges, <mark>positive (+)</mark> and <mark>negative (-)</mark></li>
+                    <li>Charges with the <b>same sign repel</b> each other, while <b>opposite charges attract</b></li>
+                    <li>Charges is measured in units of <b>Coulombs</b></li>
+                    <ul>
+                        <li>Often found in <span>$\mu C = 1 \times 10^{-6} C$</span> or <span>$n C = 1 \times 10^{-9}
+                                C$$$</span></li>
+                    </ul>
+                    <li>The total amount of charge in the Universe is constant; charge cannot be created or destroyed
+                    </li>
+                    <ul>
+                        <li>This is the fundamental law of nature called the <b>conservation of charge</b></li>
+                    </ul>
+                    <li>Charge is provided by <b>protons</b> and <b>electrons</b></li>
+                    <ul>
+                        <li>Protons and electrons possess the smallest amount of charge possible, called the
+                            <mark>fundamental charge</mark></li>
+                        <ul>
+                            <li><span>$$e = 1.6021892 x 10^{-19}$$</span></li>
+                        </ul>
+                        <li>Charge cannot be broken down any further than the amount of charge on a proton or an
+                            electron</li>
+                        <ul>
+                            <li>Because of this, charge is defined as <b>quantized</b></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li><b>Condutors</b></li>
+                <ul>
+                    <li><b>Conductors</b> are materials where electrons are not bound to any particular atomic nucleus
+                    </li>
+                    <ul>
+                        <li>They are free to move around</li>
+                    </ul>
+                    <li>If a positively charged body is brought close to a condurctor, electrons will flow
+                        <mark>towards</mark> the positive charge, and a negatively charged body will flow <mark>away
+                            from</mark> external negative charge</li>
+                    <li>If the charge inside a conductor moves around because of an external charge, there will be a
+                        change seperation in the conductor even if the conductor itself is neutral</li>
+                    <ul>
+                        <li>This is <b>induced charge</b></li>
+                        <li><a href="../assets/Screenshot_from_2024-04-05_12-45-29_1712335547399_0.png">Screenshot from
+                                2024-04-05 12-45-29.png</a></li>
+                    </ul>
+                </ul>
+                <li><b>Insulators</b></li>
+                <ul>
+                    <li><b>Insulators</b> are materials where electrons are bound to a specific atomic nucleus</li>
+                    <ul>
+                        <li>The electrons are only able to move small distances or not at all</li>
+                    </ul>
+                    <li>Net charge can be added to insulators by <mark>contact(friction)</mark></li>
+                    <ul>
+                        <li>When charging by contact, electrons are transferred frm one insulator to the other, leaving
+                            one object with a net positive charge and the other with a net negative charge</li>
+                    </ul>
+                </ul>
+                <li><b>Semiconductors</b></li>
+                <ul>
+                    <li><b>Semiconductors</b> can be either insulators or conductors, depending on the conditions of the
+                        material (heat, or if light is shining)</li>
+                </ul>
+            </ul>
+            <li>Electric Force and Coulombs Law</li>
+            <ul>
+                <li>Electric charges interact iwth each other by attraction and repulsion</li>
+                <ul>
+                    <li>These interactions are caused by <b>electric force</b></li>
+                </ul>
+                <li>The <mark>magnitude</mark> of force between two <mark>point charges</mark> is given by <b>Coulomb's
+                        Law</b>:</li>
+                <ul>
+                    <li><span>$$F = k \frac{q_1q_2}{r^2_{12}}$$</span></li>
+                    <ul>
+                        <li><span>$$$k$</span> is the <b>Coulomb/Electrostatic constant</b>, <span>$k = 8.99 \times 10^9
+                                \frac{\text{Nm}^2}{C^2}$$$</span></li>
+                    </ul>
+                </ul>
+                <li>The coulomb constant can also be defined in term of <b>vacuum permittivity</b>,
+                    <span>$\epsilon_0$$$</span></li>
+                <ul>
+                    <li><span>$$k = \frac{1}{4 \pi \epsilon_0}$$</span></li>
+                    <li><span>$$$\epsilon_0= 8.85 \times 10^{-12} \frac{C^2}{\text{Nm}^2}$$$</span></li>
+                </ul>
+                <li>Electrostatic forces between two point charges are <b>always</b> equal and opposite, even if the
+                    charges have different magnitude</li>
+                <li>Example:</li>
+                <ul>
+                    <li>Consider two point charges fixed in place, separated by a distance of <span>$10
+                            \text{cm}$</span>. Charge A is a positive charge with magnitude <span>$5 μC$</span>. Charge
+                        B is a negative charge of <span>$−10 μC$</span>.</li>
+                    <ul>
+                        <li>a) What is the magnitude of the electrostatic force between the two charges?</li>
+                        <li>b) Is the electrostatic force between the two charges attractive or repulsive?</li>
+                        <li>c) How does your answer to parts (a) and (b) change if Charge B is positive instead of
+                            negative?</li>
+                        <li>d) If you change the distance to 20 cm instead of 10 cm, by what factor does the magnitude
+                            of the force change?</li>
+                    </ul>
+                    <li>Consider two fixed point charges separated by a fixed distance, each charge exerting an
+                        electrostatic force on the other. You want to increase the electrostatic force between the two
+                        charges by 75%.</li>
+                    <ul>
+                        <li>a) Assume that you are not able to change the magnitude of the charges, but you are able to
+                            adjust the separation between them. By what factor does the distance between the charges
+                            need to change in order to increase the force by 75% compared to the original charge
+                            separation?</li>
+                        <li>b) Assume you are not able to change the separation between the charges, but you are able to
+                            adjust the magnitude of one of the charges. By what factor does the magnitude on one of the
+                            charges need to change in order to increase the force by 75% compared to the original value?
+                        </li>
+                    </ul>
+                    <li>Four charges are arranged in a square with sides of length <span>$2.5 \text{ cm}$</span>. Find
+                        the net force on <span>$q_1$</span> (+x is to the right, and +y is upward)</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-05_13-09-41_1712336998077_0.png">Screenshot from
+                                2024-04-05 13-09-41.png</a></li>
+                    </ul>
+                    <li>Two point charges are located on the x-axis as shown below.</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-05_13-11-45_1712337123207_0.png">Screenshot from
+                                2024-04-05 13-11-45.png</a></li>
+                        <li>a) Where should a third charge, <span>$q_3=+8.00 μC$</span>, be placed on the y-axis so that
+                            the net force on <span>$q_2$</span> makes an angle of <span>$+45°$</span> above the negative
+                            x-axis?</li>
+                        <li>b) What is the magnitude of the final net force?</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Principle of Superposition</li>
+            <ul>
+                <li><b>Electric Field Due to Point Charge</b></li>
+                <ul>
+                    <li>At a distance <span>$r$</span> from a point charge of <span>$Q$</span>, the <b>magnitude</b> of
+                        the electric field is:</li>
+                    <ul>
+                        <li><span>$$$|\vec{E}| = k \frac{Q}{r^2}$$$</span></li>
+                        <li>The <b>direction</b> of the electic friled is along the line connecting the source charge
+                            (<span>$Q$</span>) to the point of intereset</li>
+                        <li>Electric fields always point <mark>away from positive charges</mark> and <mark>towards
+                                negative charges</mark></li>
+                        <li><span>$$$F_E = q \vec{E}$$$</span></li>
+                    </ul>
+                </ul>
+                <li><b>Principle of Superposition</b></li>
+                <ul>
+                    <li>When there is more than a single point charge present, the net electric field at any point in
+                        space is the vector sum of each individual electric field present at that point</li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-05_13-34-50_1712338508992_0.png">Screenshot from
+                                2024-04-05 13-34-50.png</a></li>
+                    </ul>
+                    <li><span>$$\vec{E}_{tot} = \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + ... = \sum_i \vec{E}_i$$</span></li>
+                </ul>
+                <li>Example:</li>
+                <ul>
+                    <li>Two charges are located at the vertices of a triangle, as shown below. Find the net electric
+                        field at point A. Define the upward direction as positive y, and positive x points to the right.
+                    </li>
+                    <ul>
+                        <li><a href="../assets/Screenshot_from_2024-04-05_13-36-56_1712338634339_0.png">Screenshot from
+                                2024-04-05 13-36-56.png</a></li>
+                    </ul>
+                    <li><a href="../assets/Screenshot_from_2024-04-05_13-38-19_1712338728751_0.png">Screenshot from
+                            2024-04-05 13-38-19.png</a></li>
+                    <li>a) Find the magnitude of the electric field at point A due to the two point charges shown below.
+                    </li>
+                    <li>b) Repeat the problem, but replace q1q1​ with a positive charge of equal magnitude</li>
+                </ul>
+                <li>Consider four point charges at the corners of a square, as shown below. Each side of the square has
+                    length <span>$d$</span> and the charges are as shown in the figure</li>
+                <ul>
+                    <li><a href="../assets/Screenshot_from_2024-04-05_14-00-27_1712340045793_0.png">Screenshot from
+                            2024-04-05 14-00-27.png</a></li>
+                    <li>a) Find an expression for the electric field at some point that is a distance dd out of the
+                        page, from the center of the square. That is, the distance from each charge to this point is
+                        equal, and the distance in the z-direction is equal to one of the square side lengths</li>
+                    <li>b) If you placed a charge of <span>$+Q$</span> at this point, what must be the mass of the
+                        charge in order for it to be in equilibrium? Assume gravity points into the page. Set
+                        <span>$Q=1.0 μC, d=0.10 \text{ m}$$$</span></li>
+                </ul>
+            </ul>
+            <li>Motion of a Charged Particle in an Electric Field</li>
+            <ul>
+                <li>If a charged particle enters a region of space with an electric field, it will experience an
+                    electric force</li>
+                <ul>
+                    <li>This force will be in the <mark>same direction</mark> as the electric field if the charge is
+                        <mark>positive, or in the ^^opposite direction</mark> if charge is negative</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Gauss' Law</li>
+    </ul>
+    <li>Electromagnetism</li>
+    <ul>
+        <li>Magnetic Fields</li>
+        <li>Sources of Magnetic Fields</li>
+        <li>Special Theory of Relativity</li>
+    </ul>
+</ul>
+</html>
