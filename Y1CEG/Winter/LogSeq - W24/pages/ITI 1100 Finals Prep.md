@@ -1,0 +1,115 @@
+# #[[ITI 1100]] Topics
+	- ## Binary Systems
+		- Digital Systems
+		- Binary Numbers
+		- Number Base Conversions
+		- Octal and Hexadecimal Numbers
+		- Complements
+		- Signed Binary Numbers
+		- Binary Codes
+		- Binary Storage and Registers
+		- Binary arithmetic
+	- ## Boolean Algebra and Logic Gates
+		- Properties of Boolean Algebra
+		- Boolean Functions
+		- Canonical and Standard Forms
+		- Other Logic Operations
+		- Digital Logic Gate
+	- ## Gate Level Minimization
+		- The Map Method
+		- Four Variable Map
+		- Product of Sums Simplification
+		- Don’t Care Conditions
+		- NAND and NOR, Implementation
+		- Other Two Level Implementations
+		- Exclusive OR Function
+	- ## Combinational Logic
+		- Combinational Circuits
+		- Analysis Procedure
+		- Design Procedure
+		- Binary Adder Subtractor
+		- Magnitude Comparator
+		- Decoders
+		- Encoders
+		- Multiplexers
+	- ## Synchronous Sequential Logic
+		- Sequential Circuits
+		- Latches
+		- Flip Flops
+		- Analysis of Clocked Sequential Circuits
+		- Design Procedure
+	- ## Registers and Counters
+		- Registers
+		- Shift Registers
+		- Ripple Counters
+		- Synchronous Counters
+		- Other Counters
+- # Chapter 1: Binary Systems
+	- ## Base in Numbering Systems
+	- ## Positional Notation of Numbers
+	- ## Polynomial Representation of Numbers
+	- ## Number Systems
+		- ### Binary Number System
+		- ### Octal Number System
+		- ### Hexadecimal Number System
+	- ## Binary Arithmetics
+		- ### Binary Addition
+		- ### Binary Subtraction
+		- ### Binary Multiplication
+		- ### Binary Division
+	- ## Complments in Numbering Systems
+		- ### Radix Complement
+		- ### 1's Complement
+		- ### 2's Complement
+		- ### Signed Complement
+	- ## Signed Binary Numbers
+	- ## Signed Magnitude
+	- ## Overflow
+	- ## BCD/ASCII
+- # Chapter 2: Boolean Algebra and Logic Gates
+	- ## Boolean Logic
+	- ## Logic Gates
+	- ## Boolean Expressions
+	- ## Boolean Identities
+	- ## Standard Forms
+		- ### Sum of Products
+		- ### Product of Sums
+	- ## Half-Adders
+	- ## Full-Adders
+- # Chapter 3: Gate - Level Minimization
+	- ## Karnaugh Map
+	- ## Prime Implicants
+- # Chapter 4: Combinational Logic
+	- ## Combinational Logic Circuits
+	- ## Decoders
+	- ## Encoders
+	- ## Multiplexers
+	- ## Parallel Adder
+	- ## Propagation Delay
+	- ## Carry-Look Ahead
+- # Chapter 5: Synchronous Sequential Logic
+	- ## Sequential Logic Circuits
+		- ### Clock Signal
+		- ### Memory Element
+	- ## Synchronous Sequential Circuits
+		- ### SR Flip-Flops
+		- ### D and T Flip-Flops
+		- ### JK Flip-Flops
+		- ### Edge Sensitive Flip-Flops
+	- ## State Table
+	- ## State Diagram
+	- ## Mealy/Moore Machine
+	- ## State Reduction
+- # Chapter 6: Registers and Counters
+	- ## Registers
+	- ## Parallel vs. Serial
+	- ## Parallel Data Transfer
+	- ## Register with Parallel Load
+	- ## Shift Registers
+	- ## Serial Transfers
+	- ## Counters
+		- ### Asynchronous Counters
+		- ### Binary Ripple Counter
+	- ## Counter Sequences
+		- ### Full Sequence Count
+		- ### A Truncated Sequence Count

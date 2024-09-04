@@ -1,5 +1,0 @@
-- This is a new page
-- I can link it to other things i hope
-- Maybe this could be useful for [[MAT1320]] or [[ITI1120]]
-- This truly is #Information
--

@@ -1,0 +1,41 @@
+# Verilog HDL Overiew
+	- Hardware description language for visualizing digital circuits
+	- # Terminology
+	  collapsed:: true
+		- ## HDL (Hardware Description Language)
+			- A text based programming language used to model a piece of hordware
+		- ## Behaviour Modelling
+			- A component described by its input/output response
+			- Only describing the functionality of a circuit, not its structure
+			- Synthesis tool creates correct logic
+			- Input $\rightarrow$ logic $\rightarrow$ output
+			- ![Screenshot from 2024-07-23 12-51-33.png](../assets/Screenshot_from_2024-07-23_12-51-33_1721753539650_0.png)
+		- ## Structural Modelling
+			- A component is described by interconnecting lower-level components/primitives
+			- Both the functionality of a circuit and its structure are specified
+			- The specific hardware is called out
+			- ![Screenshot from 2024-07-23 12-50-29.png](../assets/Screenshot_from_2024-07-23_12-50-29_1721753460504_0.png)
+		- ## Register Transfer Level (RTL)
+			- The style of behavioral modelling that describes input/output relations in terms of data flow operations inside a hardware model
+			- RTL constructs are **synthesizable**
+		- ## Synthesis
+			- The translation and optimization of HDL code into a represented circuit (look up tables/flip flops)
+		- ## RTL Synthesis
+			- The translation of a RTL model of hardware into an optimized technology specific gate level implementation
+			- ![Screenshot from 2024-07-30 18-45-55.png](../assets/Screenshot_from_2024-07-30_18-45-55_1722444814589_0.png)
+				- The synthesis engine translates code into hardware using architecture of specified hardware
+				- Optimizes hardware design
+			- ![Screenshot from 2024-07-31 13-32-06.png](../assets/Screenshot_from_2024-07-31_13-32-06_1722447162798_0.png)
+- # Model Structure
+	- ## Basic Modelling Structure
+		- Begins with the keyword **module** and ends with an **endmodule**
+		- Case sensitive, and all keywords are lower case
+		- `;` is the statement terminator
+		- `//`:Single Line Comment
+		- `/* */`; Multi-line Comment
+		- ![Screenshot from 2024-07-31 14-01-06.png](../assets/Screenshot_from_2024-07-31_14-01-06_1722448896077_0.png)
+		-
+- # Module Components
+- # Tasks and Functions
+-
+-

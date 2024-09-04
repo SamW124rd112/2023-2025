@@ -1,0 +1,50 @@
+- Registers and Counters
+	- Registers
+	- Shift Registers
+	- Ripple Counters
+	- Synchronous Counters
+	- Other Counters.
+- ## Registers and Counters #[[ITI 1100]]
+	- ### Registers
+		- Multiple flip flops can be combined to form a ^^data register^^
+		- **Shift registers** allow data to be transported one bit at a time
+		- ^^Registers^^ also allow for parallel transfer
+			- Many bits transferred at the same time
+		- Basic component of most computers
+	- ### Parallel vs Serial
+		- **Serial communications**
+			- Transfers a binary number as a sequence of binary digits, one after another through one data line
+			- One circuit is necessary to represent any binary number
+			- ![Screenshot from 2024-03-29 14-52-56.png](../assets/Screenshot_from_2024-03-29_14-52-56_1711738398258_0.png)
+		- **Parallel Communication**
+			- Transfers a binary number through multiple data lines at the same time
+				- ![Screenshot from 2024-03-29 14-53-25.png](../assets/Screenshot_from_2024-03-29_14-53-25_1711738449460_0.png){:height 176, :width 318} ![Screenshot from 2024-03-29 14-53-29.png](../assets/Screenshot_from_2024-03-29_14-53-29_1711738438995_0.png){:height 237, :width 314}
+	- ### Parallel Data Transfer
+		- In this example, Flip Flops D store outputs from combinational logic that has 3 outputs (3 flip flops are required)
+		- Multiple flops can store a collection of binary data
+		- ![Screenshot from 2024-03-29 14-56-38.png](../assets/Screenshot_from_2024-03-29_14-56-38_1711738661721_0.png){:height 424, :width 502}
+	- ### Register with Parallel Load
+		- Register: Group of Flip-Flops
+		- Ex: D Flip-Flops
+			- Holds 4 bits of Data
+			- Loads in Parallel on Clock Transition
+			- Asynchronous Clear (Reset)
+		- ![Screenshot from 2024-03-29 14-56-48.png](../assets/Screenshot_from_2024-03-29_14-56-48_1711738679522_0.png){:height 496, :width 333} ![Screenshot from 2024-03-29 14-57-03.png](../assets/Screenshot_from_2024-03-29_14-57-03_1711738685321_0.png){:height 795, :width 333}
+		- **Data Transfer**
+			- All data is transferred on one positive edge
+			- Data stored into register Y
+			- ![Screenshot from 2024-03-29 14-59-31.png](../assets/Screenshot_from_2024-03-29_14-59-31_1711738845312_0.png)
+		- **Serial Transfer**
+			- ![Screenshot from 2024-03-29 14-59-38.png](../assets/Screenshot_from_2024-03-29_14-59-38_1711738865056_0.png){:height 466, :width 470}
+			- Data is transferrred one bit at a time
+			- Note the data loop back for Register A
+			- ![Screenshot from 2024-03-29 15-01-17.png](../assets/Screenshot_from_2024-03-29_15-01-17_1711738917500_0.png) ![Screenshot from 2024-03-29 15-01-22.png](../assets/Screenshot_from_2024-03-29_15-01-22_1711738923600_0.png)
+	- ### Shift Registers
+		- Cascade chain of flip flpos
+		- Bits travel on positive edges
+		- Serial in (SI) $\rightarrow$ Serial out (SO)
+		- ![Screenshot from 2024-03-29 15-22-49.png](../assets/Screenshot_from_2024-03-29_15-22-49_1711740184483_0.png)
+	- ### Serial Transfer of Data
+		- Transfer from Register X to Register Y
+			- ![Screenshot from 2024-03-29 15-24-00.png](../assets/Screenshot_from_2024-03-29_15-24-00_1711740305573_0.png) ![Screenshot from 2024-03-29 15-24-04.png](../assets/Screenshot_from_2024-03-29_15-24-04_1711740311078_0.png)
+		- **Serial Additon**

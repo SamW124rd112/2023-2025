@@ -1,5 +1,0 @@
-- [[Plane Trusses]]
-- [[Method of Joints]]
-- [[Method of Sections]]
-- [[Frames and Machines]]
--

@@ -1,0 +1,366 @@
+- Chemical Equations
+  id:: 65739563-6438-4f0b-a60a-b5ef28dac2cf
+	- Moles
+	- Atomic Measurements
+	- Percent Composition
+	- Chemical Formulae
+	- Chemical Equations
+	- Stoichiometry
+	- Chemical Solutions
+	- Chemical Dilutions
+	- Ionic Equations
+	- Precipitation Reactions
+	- Redox Reactions
+	- Kinetic Molecular Theory
+	- Root Mean Square Speed
+- Gases
+	- Measurement
+	- Boyle's Law
+	- Charles Law
+	- Avagadros Law
+	- Ideal Gas Law
+	- Dalton's Law of Partial Pressures
+	- Water Vapour Pressure
+	- Partial Pressure
+	- Molar Fractions
+	- Non-Ideal Gases
+- Energy
+	- Internal Energy
+	- Heat
+	- Work
+- Thermodynamics
+	- First Law of Thermodynamics
+	- Enthalpy
+	- Energy Diagrams
+	- Calorimetry
+	- Hess' Law
+- Equilbrium
+	- Chemical Equilibrium
+	- ICE Tables
+	- Le Chatelier's Principle
+- Acids and Bases
+	- Arrhenius
+	- Bronsted-Lowry
+	- Lewis
+	- Polyprotic Acids
+- Salt Hydrolysis
+	- Hydrolysis Rules
+	- Buffer Solutions
+- ## [[Acid Buffers]]
+	- Buffer Solutions:
+		- Acidic =  HA & A$^-$
+			- High [HA] and [A$^-$]
+			- [HA] $\approx$ [A$^-$]
+			- if no HA:
+				- ![Screenshot from 2023-12-09 23-17-07.png](../assets/Screenshot_from_2023-12-09_23-17-07_1702181848955_0.png){:height 430, :width 395}
+				-
+		- Basic = B & HB$^+$
+			- high [B] and [HB$^+$]
+			- [B] $\approx$ [HB$^+$]
+			- if no B:
+				- ![Screenshot from 2023-12-09 23-17-54.png](../assets/Screenshot_from_2023-12-09_23-17-54_1702181899732_0.png){:height 470, :width 400}
+		- How to maintain the pH?
+			- Neutralize external sources of acid or base
+			  logseq.order-list-type:: number
+			- Maintain a rougly constant ratio of [HA]/[A$^-$]
+			  logseq.order-list-type:: number
+		- **Ionization:**
+			- ![Screenshot from 2023-12-09 23-20-01.png](../assets/Screenshot_from_2023-12-09_23-20-01_1702182022763_0.png){:height 107, :width 460}
+		- **Hydrolysis:**
+			- ![Screenshot from 2023-12-09 23-20-28.png](../assets/Screenshot_from_2023-12-09_23-20-28_1702182047140_0.png){:height 94, :width 462}
+		- Water is always a reactant $\rightarrow$ Equilibria!
+		- Buffers protect against externally added H$_3$O$^+$ or OH$^-$ via **neutralization** reactions
+			- **Acidic Buffers:**
+				- ![Screenshot from 2023-12-09 23-22-56.png](../assets/Screenshot_from_2023-12-09_23-22-56_1702182196236_0.png)
+			- **Basic Buffer:**
+				- ![Screenshot from 2023-12-09 23-23-27.png](../assets/Screenshot_from_2023-12-09_23-23-27_1702182227631_0.png)
+			- Water is a product $\rightarrow$ Not Equilibria!
+		- **Neutralizations** have the general formula:
+			- acid + base $\rightarrow$ salt + water
+		- the "driving force" is the formation of water
+		- ![Screenshot from 2023-12-09 23-25-05.png](../assets/Screenshot_from_2023-12-09_23-25-05_1702182331319_0.png)
+		- ![Screenshot from 2023-12-09 23-25-15.png](../assets/Screenshot_from_2023-12-09_23-25-15_1702182348054_0.png)
+		- ![Screenshot from 2023-12-09 23-30-42.png](../assets/Screenshot_from_2023-12-09_23-30-42_1702182675146_0.png)
+		- ![Screenshot from 2023-12-09 23-31-46.png](../assets/Screenshot_from_2023-12-09_23-31-46_1702182720332_0.png)
+		- **Buffer capacity:**
+			- A good buffer system contains relatively large mole amounts of a weak acid and its conjugate base (or vice-versa) so that it can buffer large amounts of external acid/base added to the buffer system
+				- Ex. If H$_3$O$^+$ is added, it will react with the buffer base, if OH$^-$ is added, it will react with the buffer acid
+			- ![Screenshot from 2023-12-09 23-35-04.png](../assets/Screenshot_from_2023-12-09_23-35-04_1702182922642_0.png)
+		- **Buffer range:**
+			- The buffer target pH range is determined by the **ratio** of the concentrations of the acid and conjugate base
+				- ![Screenshot from 2023-12-09 23-36-21.png](../assets/Screenshot_from_2023-12-09_23-36-21_1702182996355_0.png)
+			- ![Screenshot from 2023-12-09 23-37-48.png](../assets/Screenshot_from_2023-12-09_23-37-48_1702183088630_0.png)
+			- ![Screenshot from 2023-12-09 23-38-17.png](../assets/Screenshot_from_2023-12-09_23-38-17_1702183116492_0.png)
+			- ![Screenshot from 2023-12-09 23-38-56.png](../assets/Screenshot_from_2023-12-09_23-38-56_1702183156633_0.png)
+			- There are two general criteria to ensure validity of the Henderson Hassleback Equation:
+				- $$0.1 < \frac{[\text{A}^-]}{[\text{HA}]} < 10$$
+					- Roughly equal ratio of acid and base
+				- $$[A] > 100 \times K_a \text{ and } [HA] \times K_a$$
+					- Large amounts of acid and base
+	- ![Screenshot from 2023-12-09 23-42-50.png](../assets/Screenshot_from_2023-12-09_23-42-50_1702183428040_0.png)
+	- ![Screenshot from 2023-12-09 23-42-59.png](../assets/Screenshot_from_2023-12-09_23-42-59_1702183445502_0.png)
+	- ![Screenshot from 2023-12-09 23-43-12.png](../assets/Screenshot_from_2023-12-09_23-43-12_1702183462650_0.png)
+	- ![Screenshot from 2023-12-09 23-43-24.png](../assets/Screenshot_from_2023-12-09_23-43-24_1702183474675_0.png)
+	- ![Screenshot from 2023-12-09 23-43-32.png](../assets/Screenshot_from_2023-12-09_23-43-32_1702183487578_0.png)
+	- ![Screenshot from 2023-12-09 23-45-02.png](../assets/Screenshot_from_2023-12-09_23-45-02_1702183617431_0.png)
+	- ![Screenshot from 2023-12-09 23-45-11.png](../assets/Screenshot_from_2023-12-09_23-45-11_1702183786992_0.png)
+	-
+	-
+	- ![Screenshot from 2023-12-09 23-45-22.png](../assets/Screenshot_from_2023-12-09_23-45-22_1702183641050_0.png)
+	- ![Screenshot from 2023-12-09 23-45-30.png](../assets/Screenshot_from_2023-12-09_23-45-30_1702183705230_0.png)
+	-
+	- ![Screenshot from 2023-12-09 23-49-57.png](../assets/Screenshot_from_2023-12-09_23-49-57_1702183820868_0.png)
+	-
+- ## Acid Base Titrations
+	- **Neutralizations** have the general formula:
+		- acid + base $\rightarrow$ salt + water
+	- the "driving force" is the formation of water
+	- **A titration:**
+		- A solution of known, precise concentration (the standard solution) is gradually added to a solution of unknown concentration
+	- **The equivalence point:**
+		- The point at which the reaction is completed; for an acid-base neutralization this occurs when moles of acid = moles of base
+	- **The indicator:** signals the **endpoint** (immediately after the equivalence point), usually by changing colour
+	- ? mol titrant added:
+		- $$C_{\text{titrant}} \times V_{\text{titrant added}}$$
+	- mol titrant added = mol sample
+		- $$?C_{\text{sample}} = \frac{\text{mol sample}}{V_\text{sample}}$$
+	- Example:
+	  background-color:: blue
+		- ![Screenshot from 2023-12-09 20-27-20.png](../assets/Screenshot_from_2023-12-09_20-27-20_1702171658454_0.png)
+		  collapsed:: true
+			-
+			-
+	- ![Screenshot from 2023-12-09 20-28-35.png](../assets/Screenshot_from_2023-12-09_20-28-35_1702171790734_0.png)
+		- ![Screenshot from 2023-12-09 20-28-43.png](../assets/Screenshot_from_2023-12-09_20-28-43_1702171839368_0.png)
+		- ![Screenshot from 2023-12-09 20-28-51.png](../assets/Screenshot_from_2023-12-09_20-28-51_1702171857938_0.png)
+		- ![Screenshot from 2023-12-09 20-29-01.png](../assets/Screenshot_from_2023-12-09_20-29-01_1702171877562_0.png)
+		- ![Screenshot from 2023-12-09 20-29-10.png](../assets/Screenshot_from_2023-12-09_20-29-10_1702172002375_0.png)
+		- ![image.png](../assets/image_1702172102425_0.png)
+	- Colour of these substances depends on the pH:
+		- ![Screenshot from 2023-12-09 20-35-54.png](../assets/Screenshot_from_2023-12-09_20-35-54_1702172179214_0.png)
+		- > 90% acid form = appears to be the **acid colour**
+		- > 90% base form = appears to be the **base colour**
+		- Intermediate colour is seen in between these two states
+		- Complete colour change occurs over $\approx$ 2 pH units
+		- ![Screenshot from 2023-12-09 20-38-28.png](../assets/Screenshot_from_2023-12-09_20-38-28_1702172494845_0.png)
+		-
+	- ![Screenshot from 2023-12-09 23-08-58.png](../assets/Screenshot_from_2023-12-09_23-08-58_1702181361592_0.png){:height 376, :width 749}
+- ## [[Solubility]]
+	- So far, we have only dealt with **soluble** ionic compounds
+	- **Slightly soluble** ionic compounds only dissolve *partially* in solution
+	- An equilibrium is established between the **solids** and the **ions**:
+		- ![Screenshot from 2023-12-09 19-43-57.png](../assets/Screenshot_from_2023-12-09_19-43-57_1702169054148_0.png)
+		- At equilibrium, no more AgCl dissolves and the solution is **saturated**
+	- **Solubility,** $s \rightarrow$ amount of solute that dissolves per litre of saturated solution
+	- Example:
+	  background-color:: blue
+		- ![Screenshot from 2023-12-09 19-47-28.png](../assets/Screenshot_from_2023-12-09_19-47-28_1702169272504_0.png)
+		- ![Screenshot from 2023-12-09 20-00-27.png](../assets/Screenshot_from_2023-12-09_20-00-27_1702170065433_0.png)
+	- $K_{sp}$ is *related* to the solubility, but sometimes we can't compare the solubilities of two different compounds based solely on $K_{sp}
+	- ![Screenshot from 2023-12-09 20-02-22.png](../assets/Screenshot_from_2023-12-09_20-02-22_1702170164233_0.png)
+	- Examples:
+	  background-color:: blue
+		- ![Screenshot from 2023-12-09 20-03-07.png](../assets/Screenshot_from_2023-12-09_20-03-07_1702170203875_0.png)
+		- ![Screenshot from 2023-12-09 20-03-39.png](../assets/Screenshot_from_2023-12-09_20-03-39_1702170236680_0.png)
+		- ![Screenshot from 2023-12-09 20-04-12.png](../assets/Screenshot_from_2023-12-09_20-04-12_1702170269212_0.png)
+	- **Precipitation Reaction** occurs when two aqueous salt solutions are mixed and a precipitate formed
+		- $$AB(aq) + XY(aq) \rightarrow AY(s) + XB(aq)$$
+		- not really an equilbrium
+	- How can we predict when a precipitate forms?
+		- By knowing the solubilities of inorganic compounds
+	- Two categories
+		- soluble
+		- sparingly (or slightly) soluble
+	- Q again has the same formula as $K_{sp}$, but the values used are the initial concentrations, not necessary those at equilibrium
+		- If $Q < K_{sp}$, the solution is **unsaturated**
+			- more solid can be dissolved until $Q = K_{sp}$
+		- If $Q = K_{sp}$, the solution is **saturated**
+			- the system is at equilibrium
+		- If $Q > K_{sp}$, the solution is **supersaturated**
+			- there will be precipitation of solid until $Q = K_{sp}$
+	- ![Screenshot from 2023-12-09 20-11-09.png](../assets/Screenshot_from_2023-12-09_20-11-09_1702170716896_0.png)
+	- ![Screenshot from 2023-12-09 20-11-09.png](../assets/Screenshot_from_2023-12-09_20-11-09_1702170739283_0.png)
+	- ![Screenshot from 2023-12-09 20-12-42.png](../assets/Screenshot_from_2023-12-09_20-12-42_1702170787324_0.png)
+	- pH can also affect the solubilities of some compounds
+	- Consider the following:
+		- ![Screenshot from 2023-12-09 20-13-48.png](../assets/Screenshot_from_2023-12-09_20-13-48_1702170842682_0.png)
+	- Determine the acid/base nature of the sparingly soluble salt:
+		- ![Screenshot from 2023-12-09 20-14-30.png](../assets/Screenshot_from_2023-12-09_20-14-30_1702170885275_0.png)
+	- ![Screenshot from 2023-12-09 20-15-11.png](../assets/Screenshot_from_2023-12-09_20-15-11_1702170956426_0.png)
+	- ![Screenshot from 2023-12-09 20-15-24.png](../assets/Screenshot_from_2023-12-09_20-15-24_1702170960713_0.png)
+	- ![Screenshot from 2023-12-09 20-16-17.png](../assets/Screenshot_from_2023-12-09_20-16-17_1702170991861_0.png)
+	-
+- ## Chemical Kinetics
+	- ![Screenshot from 2023-12-10 03-16-28.png](../assets/Screenshot_from_2023-12-10_03-16-28_1702196221482_0.png)
+	- ![image.png](../assets/image_1702196301394_0.png)
+	- We can use $\Delta H$ and $K$ to determine $\Delta G$ that tells us if a reaction is a product or reactant favoured (direction of reaction)
+	- ![Screenshot from 2023-12-10 03-19-16.png](../assets/Screenshot_from_2023-12-10_03-19-16_1702196375366_0.png)
+	- But $\Delta G$ gives us **no information on how** reaction goes from reactants to products (mechanism of reaction)
+	- ![Screenshot from 2023-12-10 03-20-33.png](../assets/Screenshot_from_2023-12-10_03-20-33_1702196448818_0.png)
+	- ![Screenshot from 2023-12-10 03-22-00.png](../assets/Screenshot_from_2023-12-10_03-22-00_1702196581488_0.png)
+	- **Kinetics:**
+		- The study of **reaction rates** and **mechanisms**
+		- The rate of reaction describes how the concentration of a reactant or product changes with time, in $m/s$
+		- ![Screenshot from 2023-12-10 03-24-15.png](../assets/Screenshot_from_2023-12-10_03-24-15_1702196674370_0.png)
+		- Rate $\infin$ collision frequency & energy
+			- Physical state of reactants
+			  logseq.order-list-type:: number
+			- Temperature of reactants
+			  logseq.order-list-type:: number
+			- Concentrations off reactants
+			  logseq.order-list-type:: number
+		- ![Screenshot from 2023-12-10 03-25-46.png](../assets/Screenshot_from_2023-12-10_03-25-46_1702196766398_0.png)
+	- ![Screenshot from 2023-12-10 03-26-26.png](../assets/Screenshot_from_2023-12-10_03-26-26_1702196817022_0.png)
+	- ![Screenshot from 2023-12-10 03-27-09.png](../assets/Screenshot_from_2023-12-10_03-27-09_1702196843465_0.png)
+	- ![Screenshot from 2023-12-10 03-27-40.png](../assets/Screenshot_from_2023-12-10_03-27-40_1702196910278_0.png)
+	- ![Screenshot from 2023-12-10 03-27-58.png](../assets/Screenshot_from_2023-12-10_03-27-58_1702196933447_0.png)
+	- ![Screenshot from 2023-12-10 03-28-09.png](../assets/Screenshot_from_2023-12-10_03-28-09_1702196961519_0.png)
+	- For the general reaction:
+		- aA + bB $\rightarrow$ cC + dD
+		- ![Screenshot from 2023-12-10 03-32-32.png](../assets/Screenshot_from_2023-12-10_03-32-32_1702197172670_0.png)
+		- $x$ and $y$ must be **determined experimentally**
+			- result of the mechanics (how the reactants into products)
+		- $x$ and $y$ can be positive, negative, or fractional values
+		- ![Screenshot from 2023-12-10 03-35-25.png](../assets/Screenshot_from_2023-12-10_03-35-25_1702197344787_0.png)
+			- the **reactant reaction order** is said to be
+				- "x order with respect to A" and "y order with respect to B"
+			- the **overall reaction order** is said to be
+				- "x + y" order overall
+	- the **value** of rate constant k, (not $K_{eq}$) depends on:
+		- The reaction
+		  logseq.order-list-type:: number
+		- The temperature
+		  logseq.order-list-type:: number
+	- ![Screenshot from 2023-12-10 03-37-39.png](../assets/Screenshot_from_2023-12-10_03-37-39_1702197498681_0.png)
+	- The **unit** of k depends on the overall order of the reaction
+	- ![Screenshot from 2023-12-10 03-39-24.png](../assets/Screenshot_from_2023-12-10_03-39-24_1702197602649_0.png)
+	- ![image.png](../assets/image_1702197635340_0.png)
+	- **Catalyst =** Molecule or species that is consumed in one step of the mechanism but reformed in another
+		- Catalysts do not appear in the overall reation
+	- **Role:** Speed up reactions by altering the mechanism to lower the $E_a$ barrier
+		- ![image.png](../assets/image_1702197863447_0.png)
+		-
+	- ![Screenshot from 2023-12-10 03-43-38.png](../assets/Screenshot_from_2023-12-10_03-43-38_1702197843614_0.png)
+	- The catalyst does not affect the difference in energy between the reactants and products
+		- No effect on $\Delta H$
+	- The catalyst also increases the rate of the reverse reaction
+		- No effect on $K_{eq}$ adding a catalyst only gets the reaction to the equilbrium point *faster*
+	- ![image.png](../assets/image_1702198054179_0.png)
+	-
+	- Effect of Activation E
+		- ![Screenshot from 2023-12-10 03-47-57.png](../assets/Screenshot_from_2023-12-10_03-47-57_1702198129840_0.png)
+	- Effect of Temperature
+		- ![Screenshot from 2023-12-10 03-49-32.png](../assets/Screenshot_from_2023-12-10_03-49-32_1702198194720_0.png)
+	- Arrhenius demonstrated that many rate constants vary with temperature and $E_a$ according to the **Arrehenius equation**
+		- ![Screenshot from 2023-12-10 03-52-23.png](../assets/Screenshot_from_2023-12-10_03-52-23_1702198358980_0.png)
+	- It is possible to determine the activation energy from two rate constant $k_1$ and $k_2$, measured at two temperatures, $T_1$ and $T_2$
+		- ![Screenshot from 2023-12-10 03-55-25.png](../assets/Screenshot_from_2023-12-10_03-55-25_1702198552736_0.png)
+	- Subtracting the first equation from the second gives the 2-point Arrhenius equation:
+		- ![image.png](../assets/image_1702198582854_0.png)
+	- ![Screenshot from 2023-12-10 03-56-43.png](../assets/Screenshot_from_2023-12-10_03-56-43_1702198629886_0.png)
+	- Method of Initial Rates 
+	  logseq.order-list-type:: number
+		- Good for slow reactions
+		  logseq.order-list-type:: number
+		- **Method of Initial Rates**
+			- Multiple experiment trials are conducted varying only one reactant concentration
+			- The initial rate of each trial is measured
+			- The reaction order of each reactant is determined algebraically by comparing reactant concentration change to reaction rate change
+		- ![Screenshot from 2023-12-10 04-02-37.png](../assets/Screenshot_from_2023-12-10_04-02-37_1702198980761_0.png)
+		- ![Screenshot from 2023-12-10 04-09-17.png](../assets/Screenshot_from_2023-12-10_04-09-17_1702199375680_0.png)
+		- ![Screenshot from 2023-12-10 04-09-51.png](../assets/Screenshot_from_2023-12-10_04-09-51_1702199408743_0.png)
+		-
+	- Graphical method
+	  logseq.order-list-type:: number
+		- Good for fast reactions
+		  logseq.order-list-type:: number
+		- The concentration of a single reactant is tracked experimentally across multiple time points
+		- The reaction order of the only reactant (and k) is determined by the shape of the graph with the assistance of equation modelling software where useful\
+		- ![image.png](../assets/image_1702199885494_0.png)
+		- **Rate Law:**
+			- Allows us to determine the **rate** of the reaction at any point in the reaction
+		- **The Integrated Rate Law:**
+			- Linear equation that links the concentration of a reactant at any point in time ([A]$_t$) to the initial concentration ([A]$_o$)k and the time elapsed (t)
+		- ![Screenshot from 2023-12-10 04-20-16.png](../assets/Screenshot_from_2023-12-10_04-20-16_1702200083291_0.png)
+		- ![Screenshot from 2023-12-10 04-20-25.png](../assets/Screenshot_from_2023-12-10_04-20-25_1702200097875_0.png)
+		- ![Screenshot from 2023-12-10 04-20-37.png](../assets/Screenshot_from_2023-12-10_04-20-37_1702200119813_0.png)
+		- ![Screenshot from 2023-12-10 04-22-19.png](../assets/Screenshot_from_2023-12-10_04-22-19_1702200179825_0.png)
+		- ![Screenshot from 2023-12-10 04-22-29.png](../assets/Screenshot_from_2023-12-10_04-22-29_1702200192678_0.png)
+		- ![Screenshot from 2023-12-10 04-22-37.png](../assets/Screenshot_from_2023-12-10_04-22-37_1702200207915_0.png)
+		-
+	- Isolation Experiments
+	  logseq.order-list-type:: number
+		- Good for intermediate or complex reactions
+		  logseq.order-list-type:: number
+- ## [[Quantum Theory]]
+	- Quantum Numbers
+		- Each orbital is a function of 3 quantum numbers : $n, L, m_L$ and $m_s$
+			- $n \rightarrow$ principal quantum number
+				- $1,2,3,4...$
+				- Energy and size of the orbital
+			- $L \rightarrow$ angular momentum quantum number
+				- $0$ to $n-1$
+				- Shape of the orbital, number of nodes
+			- $m_L \rightarrow$ magnetic quantum number
+				- $-L$ to $+L$
+				- Number and orientation of the orbitals in the subshell
+			- $m_s \rightarrow$ spin quantum number
+				- $-\frac{1}{2}$ to $+\frac{1}{2}$
+				- "spin" of an electron
+		- When $n = 1$, then $L = 0$  and $m_L = 0$
+			- Therefore in $n =1$ there is 1 type of subshell that and that subshell has a single orbital $m_L$ has a single value $\rightarrow$ 1 orbital
+			- This subshell is labelled $s$
+			- Each shell has 1 orbtial labelled $s$ and it is **spherical** in shape
+			- ![Screenshot from 2023-12-09 18-39-20.png](../assets/Screenshot_from_2023-12-09_18-39-20_1702165211945_0.png)
+		- When $n = 2$, then $L = 0$ and $1$
+			-
+			- Therefore in $n =2$ there are 2 types of orbitals $\rightarrow$ 2 subshells
+			- For $L = 0$   $m_L = 0$
+				- This is a $s$ subshell
+			- For $L = 1$   $m_L = -1,0,+1$
+				- This is a $p$ subshell with **3 orbitals**
+			- ![Screenshot from 2023-12-09 18-45-05.png](../assets/Screenshot_from_2023-12-09_18-45-05_1702165541999_0.png)
+	- Quantum Theory
+		- **Frequency** $v$
+			- Number of waves passing a given point per second
+		- **Wavelength** $\lambda$
+			- Distance between two successive crests of troughs
+		- **Speed** $c = v \times \lambda$
+		- Planck Equation
+			- $\Delta E= hv  = \frac{hc}{\lambda}$
+			- $h = 6.626 \times 10^{-34} J \cdot s$
+			- Light with short $\lambda$ (long $v$) has a long $E$
+			- Light with long $\lambda$ (small $v$) has a small $E$
+		- Bohr Model
+			- When an atom absorbs energy, an electron jumps from the ground state to an excited state (ex. $n = 1 \rightarrow n = 2$)
+			- When the electron returns to the ground state, it emits the excess energy in the form of heat or light (ex. $n =2 \rightarrow n=1$)
+			- $$\Delta E = hv = R_H (1/n^2_i - 1/n^2_f)$$
+				- $R_H = 2.18 \times 10^{-18}$
+			- If $n_f > n_i$ $\Delta E$ is positive $\rightarrow$ **Absorption**
+			- If $n_f < n_i$ $\Delta E$ is negative $\rightarrow$ **Emission**
+		- ![Screenshot from 2023-12-09 18-58-35.png](../assets/Screenshot_from_2023-12-09_18-58-35_1702166340017_0.png)
+		- ![Screenshot from 2023-12-09 18-59-19.png](../assets/Screenshot_from_2023-12-09_18-59-19_1702166384863_0.png)
+	- **Aufbau Principle**
+		- Work from lowest energy orbitals to highest
+		- Assign electrons starting at the lowest energy level and move upwards
+		- ![Screenshot from 2023-12-09 19-03-24.png](../assets/Screenshot_from_2023-12-09_19-03-24_1702166628524_0.png)
+	- **Pauli Exclusion Principle**
+		- No two electrons may have all four quantum numbers alike (i.e. max 2 $e^-$ per orbital)
+		- ![Screenshot from 2023-12-09 19-05-16.png](../assets/Screenshot_from_2023-12-09_19-05-16_1702166745562_0.png)
+	- **Hund's Rule**
+		- Fill degenerate orbitals one electron at a time, with parallel spins
+		- ![Screenshot from 2023-12-09 19-06-03.png](../assets/Screenshot_from_2023-12-09_19-06-03_1702166847092_0.png)
+		-
+- ![image.png](../assets/image_1702166667986_0.png)
+- ![image.png](../assets/image_1702166688170_0.png)
+- ![image.png](../assets/image_1702166864476_0.png)
+- The orbital energy order becomes less reliable as atomic numbers increases sometimes, certain configurations are more stable than others
+- Two notable exceptions to remember
+	- ![Screenshot from 2023-12-09 19-09-43.png](../assets/Screenshot_from_2023-12-09_19-09-43_1702167007043_0.png)
+	- ![Screenshot from 2023-12-09 19-31-52.png](../assets/Screenshot_from_2023-12-09_19-31-52_1702168330941_0.png)
+	- ![Screenshot from 2023-12-09 19-33-51.png](../assets/Screenshot_from_2023-12-09_19-33-51_1702168446659_0.png)
+	- All electrons are paired = diamagnetic
+	- At least 1 **unpaired** electron is paramagnetic
+	- **Magnetic studies** can be used to determine $e^-$ configurations
+		- ![Screenshot from 2023-12-09 19-35-53.png](../assets/Screenshot_from_2023-12-09_19-35-53_1702168687665_0.png)
+	- Ti$^{2+}$ interacts with a magnetic field, so it can't be diamagnetic

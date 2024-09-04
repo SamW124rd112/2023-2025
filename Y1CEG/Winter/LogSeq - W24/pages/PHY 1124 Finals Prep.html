@@ -1,0 +1,1685 @@
+<html>
+<head>
+<title>Mathedemo</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<ul>
+    <!--
+    <li>Kinematics and Dynamics of a  Particle</li>
+    <ul>
+        <li>Physics and Measurement</li>
+        <li>Motion in 1-D</li>
+        <li>Motion in 2-D</li>
+        <li>Laws of Motion</li>
+        <li>Applications of Newton's Laws</li>
+    </ul>
+    <li>Work-Energy Principle</li>
+    <ul>
+        <li>Work and Kinetic Energy</li>
+        <ul>
+            <li>Mechanical Work</li>
+            <ul>
+                <li><b>Mechanical work</b> is defined as the dot product of displacement vector and force vector</li>
+                <ul>
+                    <li><mark>For a constant force</mark> applied over the object in <span>$\Delta \vec{r}$</span>
+                        distance, the work done by the force is:</li>
+                    <ul>
+                        <li><span>$$W = \vec{F} \cdot \Delta \vec{r} = F \Delta r \cos \theta$$</span></li>
+                    
+                    </ul>
+                </ul>
+                <li><mark>For a varying force</mark>, work is defined as:</li>
+                <ul>
+                    <li><span>$$W = \int_{r_1}^{r_2} \vec{F} \cdot d\vec{r}$$</span></li>
+                    <ul>
+                        <li>If the curve of force as a function of <span>$x$</span> is given for a force along the
+                            motion, the area under the curve is the work done by the force</li>
+                    </ul>
+                </ul>
+                <li>The SI unit of work is the <b>joule</b> <span>$1 J = 1 \text{ N} \cdot \text{m}$</span></li>
+                <li><b>Mechanical Work Sign</b></li>
+                <ul>
+                    <li>Work is a scalar quantity and can be either positive, negative or zero</li>
+                    <ul>
+                        <li>If the applied force <span>$F$</span> (and the displacement <span>$d$</span> are in the
+                            <mark>same direction</mark>, work is <mark>positive</mark>)</li>
+                        <li>If <span>$F$</span> and <span>$d$</span> are in the <mark>opposite direction</mark>, work
+                            done is <mark>negative</mark></li>
+                        <li>Work is <mark>zero</mark> if either <mark>displacement is zero</mark> or <span>$\theta =
+                                90^\circ$</span></li>
+                    </ul>
+                    </ul>
+            </ul>
+            <li>Work-Energy Theorem</li>
+            <ul>
+                <li>An object moves with velocity <span>$v$</span> has <b>kinetic energy</b> calculated by</li>
+                <ul>
+                    <li><span>$$K = \frac{1}{2}mv^2$$</span></li>
+                    <li>Kinetic energy is a scalar quantity and measured in joules</li>
+                </ul>
+                <li><b>Work-Energy Theorem</b></li>
+                <ul>
+                    <li>The <mark>work done by all forces</mark> acting on a body is equal to the <b>change in the
+                            body's kinetic energy</b></li>
+                    <ul>
+                        <li><span>$$W_{net} = \Delta K = \frac{1}{2} mv^2_f - \frac{1}{2}mv_i^2$$</span></li>
+                    </ul>
+                    <li>If <span>$W > 0$</span> net force speeds up the object, while <span>$W < 0$</span> slows down
+                                the object</li>
+                </ul>
+            </ul>
+            <li>Conservative vs. Non-Conservative Forces</li>
+            <ul>
+                <li>Two types of work coming from different forces</li>
+                <ul>
+                    <li><b>Conservative forces</b> perform work that <mark>do not depend on the path</mark> taken
+                        (gravity, spring force)</li>
+                    <ul>
+                        <li>The energy is converted into potential energy</li>
+                        <li><mark>Path independent</mark></li>
+                    </ul>
+                    <li><b>Nonconservative forces</b> perform work that <mark>depends on the path</mark>(friction)</li>
+                    <ul>
+                        <li>The energy is dissipated by heat or sound</li>
+                        <li>Any non-zero nonconservative work <b>will change the mechanical energy</b></li>
+                        <li><mark>Path dependent</mark></li>
+                    </ul>
+                </ul>
+                <li><b>Conservative Forces and Potential Energy</b></li>
+                <ul>
+                    <li>Work done by any <mark>conservative forces</mark> is proportional to the <b>change in the
+                            potential energy</b> associated with that force:</li>
+                    <ul>
+                        <li><span>$$W_c = - \Delta U$$</span></li>
+                    </ul>
+                    <li><b>Potential energy</b> is a type of energy which is stored inside the ojbect and can be
+                        converted into other energies such as kinetic energy</li>
+                    <ul>
+                        <li>Potential energy is usually shows by <span>$U, PE$</span> or <span>$U_p$</span></li>
+                        <ul>
+                            <li>Gravitational Potential Energy (Earth): <span>$\Delta U_g = mg\Delta y$</span></li>
+                            <li>Gravitational Potential Energy (Any Planet): <span>$\Delta U_g = -G \frac{m_1
+                                    m_2}{r^2}$</span></li>
+                            <li>Spring Potential Energy: <span>$U_s = \frac{1}{2}kx^2$</span></li>
+                        </ul>
+                        <li>A conservative force is always toward the points with lower potential energies</li>
+                        <li>If work is done by only conservative forces, then the mechanical energy of the system is
+                            conserved</li>
+                    </ul>
+                    <li><b>Potential energy</b> can also be described as the</li>
+                    <ul>
+                        <li><span>$$\Delta U = - \int_{r_1}^{r^2} \vec{F}_c \cdot \vec{d}r</span>
+                            <p> and as a differential equation<br /></p>
+                        </li>
+                        <ul>
+                            <li><span>$$\vec{F}_c = -\frac{dU_p}{\vec{dr}}$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Power</li>
+            <ul>
+                <li><b>Power</b> is defined as the rate of energy generation or consumption or the rate of whcih work is
+                    done</li>
+                <ul>
+                    <li>The SI Unit for power is Watts, <span>$1 \text{ W} = 1 \text{ J/s}$</span></li>
+                    <li><span>$$P = \frac{\Delta E}{\Delta t} \text{ or } P = \frac{\text{Work}}{\text{Time}}$$</span></li>
+                    <li>Or also written as <span>$P = \vec{F} \cdot \vec{v} = Fv \cos \theta$</span></li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Conservation of Energy</li>
+        <ul>
+            <li>The total <b>mechanical energy</b> of a system is the sum of kinetic and potential energies at a given
+                time</li>
+            <ul>
+                <li><span>$W_{net} = \Delta K$</span> using Work-Energy Theoren</li>
+                <ul>
+                    <li>Also for conservative force, <span>$W_c = - \Delta U$</span>, therefore:</li>
+                    <li><span>$$\Delta K = W_{net} = W_c + W_{nc} = - \Delta U + W_{nc}$$</span></li>
+                </ul>
+                <li>Solving for <span>$W_{nc}$</span>,</li>
+                <ul>
+                    <li><span>$$W_{nc} = \Delta K + \Delta U = \Delta E</span>
+                        <p> where<br /></p>
+                    </li>
+                    <li><span>$W_{nc}$</span> is total work done by non-conservative forces and <span>$\Delta E$</span>
+                        is the total change in mechanical energy</li>
+                    <ul>
+                        <li>If positive, mechanical energy is increased (ex. pulling force)</li>
+                        <li>If negative, mechanical energy is decreased (ex. friction)</li>
+                        <li>If zero, energy is conserved</li>
+                    </ul>
+                    <li><span>$$W_{added} + K_i + U_i = K_f + U_f + W_{lost}$$</span></li>
+                </ul>
+            </ul>
+            <li>Energy Conservation</li>
+            <ul>
+                <li>If there <b>no non-conservative work</b> and there is <mark>no dissipated energy</mark>, there is
+                    <mark>no change in energy</mark></li>
+                <ul>
+                    <li><span>$$\Delta E = 0 \rightarrow \Delta K + \Delta U = 0$$</span></li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <li>Collisions</li>
+    <ul>
+        <li>Linear Momentum and Impulse</li>
+        <ul>
+            <li><b>Linear momentum</b> is defined as the <mark>product of mass and velocity of an object</mark></li>
+            <ul>
+                <li>Momentum is a vector measured in <span>$\text{kg} \cdot \text{m/s}$</span></li>
+                <ul>
+                    <li><span>$$\vec{P} = m \vec{v}$$</span></li>
+                </ul>
+                <li>If a force is applied to an object, Newton's Second Law</li>
+                <ul>
+                    <li><span>$$\vec{F} = \frac{\Delta \vec{P}}{\Delta t}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Impulse</b> is defined as the <mark>change in momentum</mark> of the object if a
+                <mark>constant</mark> external force of F is applied to the object</li>
+            <ul>
+                <li><span>$$\vec{J} = \Delta \vec{P} = \vec{F} \Delta t$$</span></li>
+                <li>For a <b>net external force which is changing with time</b>, impulse is defined as:</li>
+                <ul>
+                    <li><span>$$\vec{J} = \Delta \vec{P} = \int_{t_i}^{t_f} \vec{F}(t) \ dt$$</span></li>
+                </ul>
+            </ul>
+            <li><mark><b>Note:</b></mark></li>
+            <ul>
+                <li>If a Force vs Time plot is provided, <b>Impulse</b> is the area under the curve</li>
+                <li>When <b>net external force</b> is <mark>zero</mark>, momentum remains <mark>conservered</mark></li>
+            </ul>
+        </ul>
+        <li>Conservation of Momentum</li>
+        <ul>
+            <li><b>Conservation of momentum</b> means that the change in momentum (<mark>impulse</mark>) is zero</li>
+            <ul>
+                <li><span>$$\Delta \vec{p} = 0 \qquad \rightarrow \qquad \vec{p}_f = \vec{p}_i$$</span></li>
+            </ul>
+            <li>If the <b>net external force on a system of objects is zero</b>, the impulse of the system will be zero
+                and the total <b>momentum of the system remains constant</b></li>
+            <li>Note that <mark>sum of all internal forces</mark> between elemetns of a system should be
+                <mark>zero</mark> because of Newton's third law</li>
+        </ul>
+        <li>Collisions</li>
+        <ul>
+            <li><b>Elastic Collision</b></li>
+            <ul>
+                <li>In a <b>perfectly elastic collision</b>, two objects completely bounce off each other</li>
+                <ul>
+                    <li>Assume there is <mark>no loss of energy</mark> in this collision because there is <b>no
+                            deformation</b></li>
+                </ul>
+                <li><mark><b>Note:</b></mark></li>
+                <ul>
+                    <li>During this collision, <b>total momentum</b> and <b>total kinetic energy</b> of the two objects
+                        are <b>conserved</b>, from before and after the collision</li>
+                </ul>
+                <li><b>Conservation of Kinetic Energy:</b></li>
+                <ul>
+                    <li><span>$$\frac{1}{2}m_Av^2_{A1} + \frac{1}{2}m_Bv^2_{B1} = \frac{1}{2}m_Av^2_{A2} +
+                            \frac{1}{2}m_Bv^2_{B2}$$</span></li>
+                </ul>
+                <li><b>Conservation of Total Momentum</b></li>
+                <ul>
+                    <li><span>$$m_A\vec{v}_{A1} + m_B\vec{v}_{B1} = m_A\vec{v}_{A2} + m_B\vec{v}_{B2}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Elastic Collision with One Object Intitially at Rest</b></li>
+            <ul>
+                <li>It is very commom to have <b>one of the objects initially at rest</b></li>
+                <ul>
+                    <li>Since we still have elastic collision, both kinetic energy and total momentum are conserved</li>
+                </ul>
+                <li><b>Equation for One Moving Object</b></li>
+                <ul>
+                    <li><span>$$v_{A2} = \frac{m_A - m_B}{m_A + m_B} v_{A1}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Perfectly Inelastic Collision</b></li>
+            <ul>
+                <li>In a <b>perfectly inelastic collision</b>, the two objects <mark>stick together</mark> after
+                    collision</li>
+                <ul>
+                    <li>The <b>kinetic energy</b> is not <mark>conserved</mark> because part of the energy is lost due
+                        to <b>deformation</b></li>
+                    <li><b>Total momentum</b> is <mark>conserved</mark></li>
+                </ul>
+                <li><b>Kinetic Energy</b></li>
+                <ul>
+                    <li><span>$$\frac{1}{2}m_Av^2_{A1} + \frac{1}{2}m_Bv^2_{B1} > \frac{1}{2}m_Av^2_{A2} +
+                            \frac{1}{2}m_Bv^2_{B2}$$</span></li>
+                </ul>
+                <li><b>Conservation of Total Momentum</b></li>
+                <ul>
+                    <li><span>$$m_A\vec{v}_{A1} + m_B\vec{v}_{B1} = (m_A + m_B)\vec{v}_{2}$$</span></li>
+                </ul>
+            </ul>
+            <li>Shell Explosion</li>
+            <ul>
+                <li><b>Momentum Conservation in the Centre of Mass Frame</b></li>
+                <ul>
+                    <li>The centre of mass behaves as if it were a <b>single particle of combined mass</b>
+                        <span>$M$</span> located at an imaginary point, where that net external foce would be applied
+                    </li>
+                    <li>Location of centre of mass is where the mass of the entire system would be concentrated</li>
+                    <li>The motion of the center of mass depends only on the <b>net external force</b> acting on the
+                        entire system</li>
+                    <li>If there is <b>no external force</b>, momentum is conserved</li>
+                    <li>If there is <b>external force</b>, there will be <mark>impulse</mark> on the centre of mass</li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <li>Rotational Kinematics and Dynamics</li>
+    <ul>
+        <li>Dynamics of Rotational Motion</li>
+        <ul>
+            <li>Torque</li>
+            <ul>
+                <li><b>Torque</b> is simply tendency of rotation</li>
+                <li>It is a rotational equivalent of force defined as</li>
+                <ul>
+                    <li><span>$$\tau = |\vec{r} \times \vec{F}| = rF \sin \theta</span>
+                        <p> where<br /></p>
+                    </li>
+                    <ul>
+                        <li><span>$r$</span> is the magnitude of vector <span>$\vec{r}$</span> which is deifned from
+                            <b>centre of rotation</b> (<mark>ref. point</mark>) to <b>point of exertion of force</b>
+                            (<mark>point of action</mark>)</li>
+                        <li><span>$\theta$</span> is the angle</li>
+                    </ul>
+                </ul>
+                <li>Forces that cause NO torque are</li>
+                <ul>
+                    <li>Parallel to axis of rotation <span>$(\sin \theta = 0)$</span></li>
+                    <li>Acting at centre of rotation <span>$(r=0)$</span></li>
+                </ul>
+            </ul>
+            <li>Rotational Kinematics</li>
+            <ul>
+                <li>The parameters describing the translational motion have an analogue in rotational mtion</li>
+                <ul>
+                    <li><b>Kinematic Equations for Rotational Motion</b></li>
+                    <ul>
+                        <li><span>$$\theta_f = \frac{1}{2}\alpha t^2 + \omega_i t + \theta_i$$</span></li>
+                        <li><span>$$\omega_f = \alpha t + \omega_i$$</span></li>
+                        <li><span>$$\omega_f^2 - \omega_i^2 = 2 \alpha \Delta \theta$$</span></li>
+                        <li><span>$$\frac{1}{2} (\omega_f + \omega_i)t = \Delta \theta$$</span></li>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> For <b>uniform circular motion</b>, <span>$\alpha - 0$</span></li>
+                </ul>
+            </ul>
+            <li>Moment of Inertia</li>
+            <ul>
+                <li>Moment of Inertia of Discrete partices</li>
+                <ul>
+                    <li>The <b>moment of inertia</b> of an object is a measure of the <mark>resistance</mark> of the
+                        object to <mark>changes</mark> in <b>rotational motion</b></li>
+                    <ul>
+                        <li>The quanity shows how the mass of an object is distributeed about its <i>axis of
+                                rotation</i></li>
+                    </ul>
+                    <li>For point masses <span>$m_i$</span> at distances <span>$r_i$</span> from axis of rotation, the
+                        moment of inertia is</li>
+                    <ul>
+                        <li><span>$$I = \sum m_i \cdot r_i^2$$</span></li>
+                        <ul>
+                            <li>with units <span>$\text{kg} \cdot \text{m}^2$</span></li>
+                        </ul>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> The value of <span>$I$</span> changes if the axis of rotation changes
+                    </li>
+                </ul>
+                <li>Moment of Inertia of Objects with a Continuous Mass</li>
+                <ul>
+                    <li>When there is an extended object with a <b>continuous mass distribution</b>, the the moment of
+                        inertia can be found with:</li>
+                    <ul>
+                        <li><span>$$I = \int r^2 \ dm$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Parallel Axis Theorem</li>
+            <ul>
+                <li>If the object is rotating about an unknown axis, <b>Parallel Axis Theorem</b> to calculate the
+                    moment of inertia about this new axis</li>
+                <li>If we know that the moment of inertia about an axis that extends through the body's <b>centre of
+                        mass</b> <span>$(I_{COM})$</span>, the moment of inertia about an axis that is
+                    <mark>parallel</mark> to this axis is</li>
+                <ul>
+                    <li><span>$$I = I_{COM} + M \cdot h^2$$</span></li>
+                    <li>where <span>$h$</span> is the <b>distance between the axes</b> and the <span>$M$</span> is the
+                        total mass of the object</li>
+                    <ul>
+                    </ul>
+                </ul>
+                <li>Moment of Inertia in Composite Shapes</li>
+                <ul>
+                    <li>For <b>composite shapes</b>, you can use the moment of inertia of their sub-components to the
+                        moment of inertia, as long as you are <b>careful with the axis of rotation</b> for each
+                        <mark>sub-component</mark></li>
+                </ul>
+            </ul>
+            <li>Rotational Analog of Newton's Second Law</li>
+            <ul>
+                <li>Torque is the rotational analog for force</li>
+                <li>When torque is applied, the angular acceleration changes</li>
+                <ul>
+                    <li>This change is given by <b>Newton's Second Law for rotations</b>:</li>
+                    <ul>
+                        <li><span>$$\sum \tau = I \cdot \alpha$$</span></li>
+                        <li>where <span>$\alpha$</span> is in <span>$\text{rad/s}^2$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Rotational Kinetic Energy</li>
+            <ul>
+                <li>When an object is rotating, we have <b>rotational kinetic energy</b> from all the mass elements
+                    rotating</li>
+                <ul>
+                    <li><span>$$K = \frac{1}{2} I \cdot \omega^2$$</span></li>
+                    <li>The kinetic energy of a rigid body with <b>both translation and rotation</b></li>
+                    <ul>
+                        <li><span>$$K = \frac{1}{2}I \omega^2 + \frac{1}{2}Mv^2_{cm}$$</span></li>
+                    </ul>
+                </ul>
+                <li>Conservation of Energy</li>
+                <ul>
+                    <li>Similar to translational motion, if there is no friction or other non-conservative forces, total
+                        mechanical energy is conserved</li>
+                </ul>
+            </ul>
+            <li>Rotational Work and Torque</li>
+            <ul>
+                <li>When torque is applied to an object, work is beign performed</li>
+                <ul>
+                    <li>Work done by a torque caused by a force which is along the angular displacement is:</li>
+                    <ul>
+                        <li><span>$$W = \tau (\theta_f - \theta_i)$$</span></li>
+                    </ul>
+                    <li>or integral</li>
+                    <ul>
+                        <li><span>$$W = \int \vec{\tau} \cdot d\vec{\theta}$$</span></li>
+                    </ul>
+                    <li>If the force is opposite the direction of angular displacement, then the torque is doing
+                        negative work; if in the same direction, then positive work</li>
+                </ul>
+            </ul>
+            <li>Rolling Motion</li>
+            <ul>
+                <li>Roling without slipping is a combination of two mtions</li>
+                <ul>
+                    <li>A <mark>translational motion</mark> of the centre of the mass with the velocity:</li>
+                    <ul>
+                        <li><span>$$v_{cm} = R \cdot \omega$$</span></li>
+                    </ul>
+                    <li>A <mark>rotational motion</mark> of all points on the object</li>
+                </ul>
+                <li>In rolling without slipping, the <b>point of contact</b> is instananeously at rest</li>
+                <ul>
+                    <li>All points of the rolling object are rotating about this point of contact</li>
+                </ul>
+                <li>The rolling without slipping motion is usually caused by the static friction between the point of
+                    contact and surface</li>
+                <li>For rolling without slipping:</li>
+                <ul>
+                    <li><span>$v_{cm} = R \omega$</span></li>
+                    <li><span>$a_{cm} = R \alpha$</span></li>
+                    <li><span>$d_{cm} = R \theta$</span></li>
+                    <li>Since a rolling object has <b>both translational and rotational motion</b>, the total kinetic
+                        energy for an object rolling without slipping is:</li>
+                    <ul>
+                        <li><span>$$K = \frac{1}{2}mv^2 + \frac{1}{2}I_{cm} \omega^2 $$</span></li>
+                        <li>First term is translational kinetic energy of centre of mass, and second is rotational
+                            kinetic energy of the object</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Angular Momentum</li>
+            <ul>
+                <li><b>Angular momentum</b> is a vector the cross product of position vector and momentum vector</li>
+                <ul>
+                    <li><span>$$\vec{L} = \vec{r} \times \vec{P}$$</span></li>
+                </ul>
+                <li><b>Magnitude</b> of this vector is equivalent to <span>$|\vec{L}| = |\vec{r}||\vec{p}| \sin
+                        \theta$</span></li>
+                <li>For rigid bodies rotating around an axis with angular frequency <span>$\omega$</span>, the magnitude
+                    of angular momentum in analogy to linear momentum can be represented by</li>
+                <ul>
+                    <li><span>$$L = I \omega$$</span></li>
+                </ul>
+                <li>Angular Momentum and Torque</li>
+                <ul>
+                    <li><span>$$\vec{\tau} = \vec{r} \times \vec{F} = \vec{r} \times \frac{\vec{dP}}{dt} =
+                            \frac{\vec{dL}}{dt}$$</span></li>
+                    <li>If the <b>net externl torque</b> about an axis acting on a rotating body is <b>zero</b>, the
+                        <b>angular momentum about the same axis remains constant</b></li>
+                    <ul>
+                        <li><span>$$L_f = L_i$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <li>Periodic Motion</li>
+        <ul>
+            <li>Basic Concepts of Oscillation</li>
+            <ul>
+                <li><b>Simple Harmonic Motion</b> (SHM) is a type of periodic motion in which</li>
+                <ul>
+                    <li>The restoring force is <mark>proportional to the displacement from the equilibrium
+                            position</mark></li>
+                    <li>The force direction is <mark>opposite to that of displacement</mark></li>
+                    <ul>
+                        <li><span>$$F = - kx$$</span></li>
+                    </ul>
+                    <li>Any physical system with the above type of the force undergoes a Simple Harmonic Motion</li>
+                </ul>
+                <li>The <b>mathematical description</b> of SHM is a sinusoidal function of time:</li>
+                <ul>
+                    <li><span>$$x(t) = A \cos (\omega t + \varphi )$$</span></li>
+                </ul>
+                <li>These are the parameters we use to describe a simple harmonic motion</li>
+                <ul>
+                    <li><b>Amplitude (A)</b></li>
+                    <ul>
+                        <li>The maximum displacement of the object from the equilibrium</li>
+                    </ul>
+                    <li><b>Period(T)</b></li>
+                    <ul>
+                        <li>The time it takes for one complete oscillation (Period is measured in seconds)</li>
+                        <ul>
+                            <li><span>$$T = \frac{\text{Total time}}{\text{Number of cycles}}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Frequency (f)</b></li>
+                    <ul>
+                        <li>The number of oscillations per unit of time (Frequency is measured in Hertz
+                            (1<span>$\text{Hz}$</span> = <span>$\frac{1}{s}$</span>)</li>
+                        <ul>
+                            <li><span>$$f = \frac{1}{T}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Angular Frequency (</b><span>$\omega$</span><b>)</b></li>
+                    <ul>
+                        <li>The rate at which argument of sinusoidal function describing oscillation changes in time
+                            (Angular frequency is measured in <span>$\text{rad/s}$</span>)</li>
+                        <ul>
+                            <li><span>$$\omega = 2 \pi f = \frac{2 \pi}{T}$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Phase Constant (</b><span>$\varphi$</span><b>)</b></li>
+                    <ul>
+                        <li>A term which determines the initial condition of oscillation (phase constant is measured in
+                            <span>$\text{rad}$</span>)</li>
+                        <li>Phase constant causes a shift in the oscillating function which changes the starting point
+                            of oscillation:</li>
+                        <ul>
+                        </ul>
+                        <li>To calculate the <b>phase constant</b> <span>$\varphi$</span>, we need to solve this
+                            equation</li>
+                        <ul>
+                            <li><span>$$x(t=0) = A \cos (\varphi) \rightarrow \varphi = \cos^{-1} \Big(
+                                    \frac{x(0)}{A}\Big)$$</span></li>
+                            <li>Solving the equation for the phase constant will give two answers between
+                                <span>$0$</span> and <span>$2\pi$</span>:</li>
+                            <ul>
+                                <li><span>$\varphi = 0$</span> or <span>$2 \pi - \theta$</span>, <span>$0 \le \theta <
+                                            \pi$</span>
+                                </li>
+                            </ul>
+                        </ul>
+                        <li>Use the inormation at <b>time equal to zero</b> to find two possible soltuions for the phase
+                            constant by using the above equations</li>
+                        <li>Use the <b>slope of tangent line</b> to the curve at the same moment to pick the right angle
+                        </li>
+                        <ul>
+                            <li>Example:</li>
+                            <ul>
+                                <li>The velocity <span>$\text{cm/s}$</span> vs. time <span>$s$</span> of a mass-spring
+                                    on a SHM is shown in the graph</li>
+                                <ul>
+                                    <li>Find the equation representing position against time, and draw that graph</li>
+                                   
+                                </ul>
+                                <li>The displacement graph of a simple harmonic motion over time is shown below</li>
+                                <ul>
+                                    <li>Write the equation for displacement as a function of time</li>
+                                    <ul>
+                                        
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Velocity and Acceleration</li>
+            <ul>
+                <li>Displacement of an oscillator with respect to the equilibrium position is found by <span>$x(t) = A
+                        \cos (\omega t + \varphi )$</span></li>
+                <ul>
+                    
+                </ul>
+                <li><b>Velocity</b></li>
+                <ul>
+                    <li>The <b>velocity of an oscillator</b> can be found by taking the derivative of displacement with
+                        respect to time</li>
+                    <ul>
+                        <li><span>$$v(t) = \frac{dx}{dt} = -A \omega \sin (\omega t + \varphi)$$</span></li>
+                        <ul>
+                          
+                        </ul>
+                        <li>Velocity of an oscillator is an oscillating function with the <b>same period</b> as
+                            <span>$x(t)$</span></li>
+                        <li>Velocity is changing in <span>$-A \omega \le v(t) \le + A\omega$</span></li>
+                    </ul>
+                </ul>
+                <li><b>Acceleration</b></li>
+                <ul>
+                    <li>The <b>acceleration of an oscillator</b> can be found by taking the derivative of velocity with
+                        respect to time</li>
+                    <ul>
+                        <li><span>$$a(t) = \frac{dv}{dt} = - A \omega^2 \cos (\omega t + \varphi)$$</span></li>
+                     
+                    </ul>
+                    <li>Accleration of an oscillator is an oscillating function with <b>same period</b> as
+                        <span>$x(t)$</span> and <span>$v(t)$</span></li>
+                    <li>Acceleration is changing in <span>$-A \omega^2 \le a(t) \le +A \omega^2$</span>$</li>
+                </ul>
+                <li>Using <span>$a(t) = - \omega^2 x(t)$</span> one can find the relation between displacement and
+                    acceleration</li>
+                <li>Relation Between <span>$\omega$</span> and <span>$k$</span></li>
+                <ul>
+                    <li>A force in the form of <span>$F = - ksx$</span> undergoes simple harmonic motion, where
+                        <span>$k$</span> is a constant dependent on the physical properties of the system</li>
+                    <li>By looking at Newton's Second Law, one can find the relation between the constant
+                        <span>$k$</span> and angular frequency of oscillation <span>$\omega$</span></li>
+                    <ul>
+                        <li><span>$$\omega = \sqrt{\frac{k}{m}}$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>SHM as the Projection of Uniform Circular Motion</li>
+            <ul>
+                <li>The moition of an oscillator undergoing as simple harmonic motion could be mapped to a <b>uniform
+                        circular motion</b></li>
+                <ul>
+               
+                    <ul>
+                        <li>Angle <span>$\theta$</span> is to be equal to <span>$\omega t$</span> where
+                            <span>$\omega$</span> is the angular frequency of SHM</li>
+                        <li>When time passes, <span>$\omega t$</span> gets larger, so the point on the circle
+                            corresponds to the angle rotating in a counter-clockwise direction</li>
+                    </ul>
+                    <li>Trignometric realtions for the triangle at any moment can by shown by:</li>
+                    <ul>
+                        <li><span>$$x(t) = \cos \theta = \cos(\omega t)$$</span></li>
+                        <li><span>$$y(t) = \sin(\omega t)$$</span></li>
+                    </ul>
+                    <li>Since both SHM and uniform circular motion over the above circle are described by the same
+                        equation, we can describe SHM as a projection of circular motion over <span>$x$</span> or
+                        <span>$y$</span> axis</li>
+                </ul>
+            </ul>
+            <li>Energy of an Oscillator</li>
+            <ul>
+                <li>There are two different types of energies related to an oscillation:</li>
+                <ul>
+                    <li>The <b>kinetic energy</b> is the energy of a moving object</li>
+                    <ul>
+                        <li><span>$K = \frac{1}{2}mv^2$</span></li>
+                    </ul>
+                    <li>The <b>potential energy</b> is the energy stored in the oscillation</li>
+                    <ul>
+                        <li>For mass and spring oscillation, it is a potential energy stored inside of the spring due to
+                            stretch or compression in the length of the spring</li>
+                        <ul>
+                            <li><span>$$U = \frac{1}{2}kx^2$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>The <b>total energy</b> of the system at any time during SHM is the sum of kinetic energy and
+                    potential energy and is <mark>constant</mark> because of the <mark>conservation of energy</mark>
+                </li>
+                <ul>
+                    <li><span>$$E = K + U = \text{constant}$$</span></li>
+                </ul>
+                <li><b>How to Find Total Energy of an Oscillator</b></li>
+                <ul>
+                    <li>The total energy of the oscillator can be found using</li>
+                    <ul>
+                        <li>The definition, if the <b>position and velocity of the oscillator is known at any moment</b>
+                        </li>
+                        <ul>
+                            <li><span>$$E = \frac{1}{2}m(v(t))^2 + \frac{1}{2}k(x(t))^2$$</span></li>
+                        </ul>
+                        <li>Looking at <b>equilibrium point</b></li>
+                        <ul>
+                            <li>At equilibrium, <span>$x = 0, v = v_{max}$</span></li>
+                            <ul>
+                                <li><span>$$E = K + U = \frac{1}{2}mv_{max}^2+0$$</span></li>
+                                <li><span>$$E = \frac{1}{2}mA^2\omega^2$$</span></li>
+                            </ul>
+                        </ul>
+                        <li>Looking at <b>turning points</b></li>
+                        <ul>
+                            <li>At turning points, <span>$x = \pm A, v = 0$</span></li>
+                            <ul>
+                                <li><span>$$E = K + U = 0 + \frac{1}{2}kA^2$$</span></li>
+                                <li><span>$$E = \frac{1}{2}kA^2$$</span></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li><span>$$\frac{1}{2} kA^2 = \frac{1}{2}kx^2 + \frac{1}{2}mv^2$$</span></li>
+                </ul>
+            </ul>
+            <li>Vertical Springs</li>
+            <ul>
+                <li>The main difference between a horizontal spring and a <b>vertical spring</b> is that force of
+                    gravity is along the oscillation and can affect it</li>
+                <li>If a mass <span>$M$</span> is attached to a vertical spring and then slowly lowered to stop in a
+                    lower position, the string is stretched by</li>
+                <ul>
+                    <li><span>$$\Delta x = \frac{Mg}{k}$$</span></li>
+                    <li>Changing the mass attached to a vertical spring (adding or removing a mass) shifts the position
+                        of equilibrium</li>
+                    <li><b>Any oscillation (SHM) now would be around the new equilibrium position</b></li>
+                </ul>
+            </ul>
+            <li>Simple Pendulums</li>
+            <ul>
+                <li><b>Simple pendulums</b> are pendulums for which the mass attached to the string is considered a
+                    point</li>
+                <ul>
+                    <li>The motion of these pendulums could be described as simple harmonic moiton</li>
+                </ul>
+                <li>The driving force acting on the mass is <span>$mg \sin \theta$</span> and since it is
+                    <b>restoring</b> (always pushes the mass toward equilibrium which is the lowest point), we have</li>
+                <ul>
+                    <li><span>$$F_{\theta} = - mg \sin \theta$$</span></li>
+                    <ul>
+                        <li>For small <span>$\theta, F_{\theta} = - mg\theta$</span></li>
+                    </ul>
+                    <li>The distance travelled by the mass is the arc length corresponding to the angle
+                        <span>$\theta$</span>, and <span>$l$</span>, the length of the pendulum</li>
+                    <ul>
+                        <li><span>$$x = l \theta$$</span></li>
+                        <li><span>$$F_{\theta} = - \frac{mg}{l}x$$</span></li>
+                    </ul>
+                </ul>
+                <li>By comparing with the general form of SHM forces the <b>effective spring constant</b> for a simple
+                    pendulum is:</li>
+                <ul>
+                    <li><span>$$\omega = \sqrt{\frac{g}{l}}$$</span></li>
+                </ul>
+            </ul>
+            <li>Physical Pendulums</li>
+            <ul>
+                <li>If the mass is not concentrated at the lower part of the object, it can oscillate around its
+                    <b>pivot point</b></li>
+                <ul>
+                    <li>This oscillation for small angles can be described by simple harmonic motion, where for this
+                        oscillation:</li>
+                    <ul>
+                        <li><span>$$\theta (t) = \theta_{max} \cos (\omega t + \phi_0)$$</span></li>
+                        <li>where</li>
+                        <ul>
+                            <li><span>$$\omega = \sqrt{\frac{Mgl}{I}}$$</span></li>
+                            <li><span>$I$</span> is the moment of inertia around the pivot point, and <span>$l$</span>
+                                is the distance between pivot and centre of mass of object</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Underdamped Oscillations</li>
+            <ul>
+                <li><b>Damped Oscillation Theory</b></li>
+                <ul>
+                    <li>In real systems, there are always <b>resistive forces</b> that oppose oscillation</li>
+                    <ul>
+                        <li>These resistive forces cause the <mark>total energy of the system to decay</mark></li>
+                    </ul>
+                    <li>A type of these resistive forces is proportional to the speed of the oscillator and is shown by
+                    </li>
+                    <ul>
+                        <li><span>$$F_{resistive} = - bv$$</span></li>
+                        <li>Net force acting on the oscillator is equal to <span>$F = -kx - bv = ma$</span> the solution
+                            for dependent on the magnitude of the damping constant</li>
+                    </ul>
+                    <li>Only will observe oscillations <b>only</b> for relatively small damping constants</li>
+                    <ul>
+                        <li>This condition is known as <b>underdamped condition</b> and the oscillation in this case is
+                            known as <b>damped oscillation</b></li>
+                    </ul>
+                </ul>
+                <li><b>Energy in a Damped Oscillation</b></li>
+                <ul>
+                    <li>Energy is no longer conserved in a damped oscillation</li>
+                    <ul>
+                        <li>The <mark>total energy of the system</mark> could still be obtained by</li>
+                        <ul>
+                            <li><span>$$E(t) = \frac{1}{2}kA^2(t) = \frac{1}{2}kA^2_o e^{-\frac{bt}{m}}$$</span></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Critical Damping and Over-Damping Conditions</li>
+            <ul>
+                <li><b>Critically Damping Condition</b></li>
+                <ul>
+                    <li>In underdamped condtions, the oscillation decays faster at <span>$b$</span></li>
+                    <ul>
+                        <li>At a very special point <span>$\omega_o = \frac{b}{2m}$</span>, there would be no
+                            oscillation anymore</li>
+                        <li>This is called <b>critical damping condition</b></li>
+                        <ul>
+                            <li>In this condition, <span>$\omega' = 0$</span>, so <span>$x(t) = A^2_o e^{-\frac{bt}{m}}
+                                    \cos \varphi$</span></li>
+                            <li>There is no oscillation and the displacement decays to zero exponentially</li>
+                        
+                        </ul>
+                        <li>The system has critical damping condition if <span>$b = 2m\omega_o = 2 \sqrt{km}$</span>
+                        </li>
+                    </ul>
+                </ul>
+                <li><b>Overdamping Condition</b></li>
+                <ul>
+                    <li>The system would be in <b>overdamping condition</b> when</li>
+                    <ul>
+                        <li><span>$$\frac{b}{2m} > \omega_o$$</span></li>
+                    </ul>
+                    <li>There is again no oscillation in overdamped condition</li>
+                    <li><span>$x(t)$</span> decays to zero at a <b>slower rate</b> compared to a critically damped
+                        condition</li>
+                    <li>The bigger the value of the damping constant, the slower <span>$x(t)$</span> goes to zero</li>
+                </ul>
+            </ul>
+            <li>Forced Oscillation and Resonance</li>
+            <ul>
+                <li>The decaying energy of a damped oscillation could be restored by applying a <b>driving force</b>
+                </li>
+                <li>This type of oscillation is know as <mark>forced or driven osciilation</mark></li>
+                <li>Force is periodic in the form,</li>
+                <ul>
+                    <li><span>$$F_d = F_o \cos(\omega_d t)$$</span></li>
+                    <ul>
+                        <li>where <span>$\omega_d$</span> is the <b>driven angular frequency</b>, at which the force is
+                            exterted</li>
+                    </ul>
+                    <li><mark><b>Note:</b></mark> In driven or forced oscillation, the system oscillates with the driven
+                        angular frequency</li>
+                </ul>
+                <li>The amplitude of a driven oscillation is found to be proportional to:</li>
+                <ul>
+                    <li><span>$$A \propto \frac{1}{\sqrt{(\omega_o^2 - \omega_d^2)^2 + (\frac{b\omega_d}{m})^2}}</span>
+                    </li>
+                    <li>If <span>$\omega_d$</span> is close to <span>$\omega_o = \sqrt{\frac{k}{m}}$</span> the
+                        amplitude becomes very large</li>
+                </ul>
+                <li>The condition in which <span>$\omega_O = \omega_d$</span> is called <b>resonance</b> and it is where
+                    the amplitude gets its maximum value</li>
+            </ul>
+        </ul>
+    </ul>
+-->
+    <h1>Electrostatics</h1>
+    <ul>
+        <h2>Electric Fields</h2>
+        <ul>
+            <h3>Charge, Conductors, Insulators</h3>
+            <ul>
+                <li><b>Properties of Charge</b></li>
+                <ul>
+                    <li>There are two types of charges, <mark>positive (+)</mark> and <mark>negative (-)</mark></li>
+                    <li>Charges with the <b>same sign repel</b> each other, while <b>opposite charges attract</b></li>
+                    <li>Charges is measured in units of <b>Coulombs</b></li>
+                    <ul>
+                        <li>Often found in <span>$\mu C = 1 \times 10^{-6} C$</span> or <span>$n C = 1 \times 10^{-9}
+                                C$</span></li>
+                    </ul>
+                    <li>The total amount of charge in the Universe is constant; charge cannot be created or destroyed
+                    </li>
+                    <ul>
+                        <li>This is the fundamental law of nature called the <b>conservation of charge</b></li>
+                    </ul>
+                    <li>Charge is provided by <b>protons</b> and <b>electrons</b></li>
+                    <ul>
+                        <li>Protons and electrons possess the smallest amount of charge possible, called the
+                            <mark>fundamental charge</mark></li>
+                        <ul>
+                            <li><span>$$e = 1.6021892 x 10^{-19}$$</span></li>
+                        </ul>
+                        <li>Charge cannot be broken down any further than the amount of charge on a proton or an
+                            electron</li>
+                        <ul>
+                            <li>Because of this, charge is defined as <b>quantized</b></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <li><b>Condutors</b></li>
+                <ul>
+                    <li><b>Conductors</b> are materials where electrons are not bound to any particular atomic nucleus
+                    </li>
+                    <ul>
+                        <li>They are free to move around</li>
+                    </ul>
+                    <li>If a positively charged body is brought close to a condurctor, electrons will flow
+                        <mark>towards</mark> the positive charge, and a negatively charged body will flow <mark>away
+                            from</mark> external negative charge</li>
+                    <li>If the charge inside a conductor moves around because of an external charge, there will be a
+                        change seperation in the conductor even if the conductor itself is neutral</li>
+                    <ul>
+                        <li>This is <b>induced charge</b></li>
+                  
+                    </ul>
+                </ul>
+                <li><b>Insulators</b></li>
+                <ul>
+                    <li><b>Insulators</b> are materials where electrons are bound to a specific atomic nucleus</li>
+                    <ul>
+                        <li>The electrons are only able to move small distances or not at all</li>
+                    </ul>
+                    <li>Net charge can be added to insulators by <mark>contact(friction)</mark></li>
+                    <ul>
+                        <li>When charging by contact, electrons are transferred frm one insulator to the other, leaving
+                            one object with a net positive charge and the other with a net negative charge</li>
+                    </ul>
+                </ul>
+                <li><b>Semiconductors</b></li>
+                <ul>
+                    <li><b>Semiconductors</b> can be either insulators or conductors, depending on the conditions of the
+                        material (heat, or if light is shining)</li>
+                </ul>
+            </ul>
+            <h3>Electric Force and Coulombs Law</h3>
+            <ul>
+                <li>Electric charges interact iwth each other by attraction and repulsion</li>
+                <ul>
+                    <li>These interactions are caused by <b>electric force</b></li>
+                </ul>
+                <li>The <mark>magnitude</mark> of force between two <mark>point charges</mark> is given by <b>Coulomb's
+                        Law</b>:</li>
+                <ul>
+                    <li><span>$$F = k \frac{q_1q_2}{r^2_{12}}$$</span></li>
+                    <ul>
+                        <li><span>$k$</span> is the <b>Coulomb/Electrostatic constant</b>, <span>$k = 8.99 \times 10^9
+                                \frac{\text{Nm}^2}{C^2}$</span></li>
+                    </ul>
+                </ul>
+                <li>The coulomb constant can also be defined in term of <b>vacuum permittivity</b>,
+                    <span>$\epsilon_0$</span></li>
+                <ul>
+                    <li><span>$$k = \frac{1}{4 \pi \epsilon_0}$$</span></li>
+                    <li><span>$\epsilon_0= 8.85 \times 10^{-12} \frac{C^2}{\text{Nm}^2}$</span></li>
+                </ul>
+                <li>Electrostatic forces between two point charges are <b>always</b> equal and opposite, even if the
+                    charges have different magnitude</li>
+            </ul>
+            <h3>Principle of Superposition</h3>
+            <ul>
+                <li><b>Electric Field Due to Point Charge</b></li>
+                <ul>
+                    <li>At a distance <span>$r$</span> from a point charge of <span>$Q$</span>, the <b>magnitude</b> of
+                        the electric field is:</li>
+                    <ul>
+                        <li><span>$|\vec{E}| = k \frac{Q}{r^2}$</span></li>
+                        <li>The <b>direction</b> of the electic friled is along the line connecting the source charge
+                            (<span>$Q$</span>) to the point of intereset</li>
+                        <li>Electric fields always point <mark>away from positive charges</mark> and <mark>towards
+                                negative charges</mark></li>
+                        <li><span>$F_E = q \vec{E}$</span></li>
+                    </ul>
+                </ul>
+                <li><b>Principle of Superposition</b></li>
+                <ul>
+                    <li>When there is more than a single point charge present, the net electric field at any point in
+                        space is the vector sum of each individual electric field present at that point</li>
+                    <ul>
+                      
+                    </ul>
+                    <li><span>$$\vec{E}_{tot} = \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + ... = \sum_i \vec{E}_i$$</span></li>
+                </ul>
+            </ul>
+            <h3>Motion of a Charged Particle in an Electric Field</h3>
+            <ul>
+                <li>If a charged particle enters a region of space with an electric field, it will experience an
+                    electric force</li>
+                <ul>
+                    <li>This force will be in the <mark>same direction</mark> as the electric field if the charge is
+                        <mark>positive</mark>, or in the <mark>opposite direction</mark> if charge is negative</li>
+                </ul>
+                <li>We can connect the electric foce to the magnitude of <mark>acceleration</mark> of the charged
+                    particle with Newton's Second Law</li>
+                <ul>
+                    <li><span>$$a = {qE}{m}$$</span></li>
+                </ul>
+                <li>By connecting the electric foield to the acceleration of a charged particle, we are able to use
+                    kinematic equations to describe th trajectory of a charged particle in a electric field</li>
+            </ul>
+            <h3>Electric Dipoles</h3>
+            <ul>
+                <li>An <b>electric dipole</b> is made of a positive charge, and a negative charge of equal magnitude,
+                    seperated by some distance</li>
+                <ul>
+                 
+                </ul>
+                <li>The <b>electric dipole moment</b> <span>$\vec{p}$</span>, where <span>$q$</span> is the magnitude of
+                    charge on one of the charges</li>
+                <ul>
+                    <li><span>$$\vec{p} = |\vec{q}| \vec{r}$$</span></li>
+                </ul>
+                <li><b>Electric Field Due to Dipole</b></li>
+                <ul>
+                    <li>To find the electric field created by an electric dipole, one uses the principle of
+                        superposition and adds the two electric fields produced by the positive and negative charge</li>
+                    <li>If looking at a point <mark>far away</mark> from the dipole that is <mark>along the axis</mark>
+                        of the electric dipole, the electric field in in the <mark>same direction</mark> as the electric
+                        dipole moment and has the magnitude:</li>
+                    <ul>
+                        <li><span>$$\vec{E}_{dipole} = k \frac{2\vec{p}}{y^3}</span>
+                            <p> where <span>$y$</span> is the distance from the centre of the dipole<br /></p>
+                        </li>
+                    </ul>
+                    <li>When looking at a point <mark>along the perpendicular bisector</mark> of the electric dipole,
+                        the field is in the <mark>opposite direction</mark> as the electric dipole moment, and has the
+                        magnitude:</li>
+                    <ul>
+                        <li><span>$$\vec{E}_{dipole} = - k \frac{\vec{p}}{y^3} $$</span></li>
+                
+                    </ul>
+                    <li>The electric field strength of a dipole decreases with <span>$y^3$</span> from the dipole</li>
+                    <li><b>Torque and Potential Energy</b></li>
+                    <ul>
+                        <li>If an electric dipole is placed in a <mark>uniform</mark> electric field, the net force on
+                            the dipole is <mark>zero</mark></li>
+                        <ul>
+                            <li>Since the two charges have equal and opposite charges they would experience equal and
+                                opposite electric forces</li>
+                        </ul>
+                        <li>However, the dipole may experience torque: <span>$\vec{\tau} = \vec{p} \times
+                                \vec{E}$</span></li>
+                        <li>To find the <b>magnitude</b>, <span>$|\vec{\tau}| = |\vec{p}||\vec{E}| \sin \theta$</span>
+                        </li>
+                        <li>When a dipole rotates, it is doing <b>work</b> against the external electric field</li>
+                        <ul>
+                            <li>Because the electric field is conservative, electric dipoles in an external electric
+                                field are said to have <mark>potential energy</mark></li>
+                            <ul>
+                                <li><span>$$U = -\vec{p} \cdot \vec{E} = - pE \cos \theta$$</span></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <h3>Electric Field of Continuous Charge Distributions</h3>
+            <ul>
+                <li>When presented with a <b>continuous</b> charge distribution, rather than a set of point charges, one
+                    needs to use <b>integrals</b> to find the electric field</li>
+            </ul>
+            <h3>Electric Fields</h3>
+            <ul>
+                <li>Every charge creates an <b>electric field</b></li>
+                <li>The electric field is how charges will behave with each other at any point in sapce</li>
+                <li>The electric force that a charged particle will experience in an electric field is:</li>
+                <ul>
+                    <li><span>$\vec{F} = q\vec{E}$</span></li>
+                </ul>
+                <li><b>Electric Field Due to One Particle</b></li>
+                <ul>
+                    <li>Unlike the electric force which only exists if there are two or more charges, the electric field
+                        can be produced by a single point charge</li>
+                    <li>The <b>magnitude</b> of the electric field is: <span>$|\vec{E}| = k \frac{Q}{r^2}$</span></li>
+                    <li>The <b>direction</b> of the electric field is along the line connecting the source charge to the
+                        point of interest</li>
+                    <ul>
+                        <li>Electric fields always points <mark>away from positive</mark> and <mark>towards
+                                negative</mark> charges</li>
+                    </ul>
+                </ul>
+            </ul>
+            <h3>Properties of Conductors</h3>
+            <ul>
+                <li>The <mark>electric field</mark> inside a conductor is <mark>zero</mark></li>
+                <li><mark>Electric field lines</mark> are always <mark>perpendicular</mark> to the surface of the
+                    conductor</li>
+                <li>If a conductor has a total positive or negative charge, the <mark>excess charge must sit on the
+                        surfaces</mark> of a conducting material</li>
+                <ul>
+                    <li>Excess charge cannot exist inside the volume of conductor</li>
+                </ul>
+            </ul>
+            <h3>Electric Fields of Special Charge Distributions</h3>
+            <ul>
+                <li><b>Conducting charged sphere</b></li>
+                <ul>
+                    <li><span>$$|\vec{E}(r)| = \begin{Bmatrix} 0 \quad r < R \\ \frac{Q}{4\pi r^2 \epsilon_0} \quad r> R
+                                \end{Bmatrix}$$</span></li>
+                </ul>
+                <li><b>Conducting charged spherical shell</b></li>
+                <ul>
+                    <li>For the space between the shells, the electric field depends only on the <b>interior</b> charge
+                        and uses the same formula as above</li>
+                    <ul>
+                        <li>For the space outside the shells, the electric field depends on the <b>total</b>** **charge
+                            on all of the shells</li>
+                    </ul>
+                    <li>Inside the conductors, the field is zero</li>
+                </ul>
+                <li><b>Infinte Line of Charge</b> or <b>Infinitely conducting charged cylinder</b></li>
+                <ul>
+                    <li>The field is zero inside the conductor and the equation is:</li>
+                    <ul>
+                        <li><span>$$|\vec{E}(r)| = \frac{\lambda}{2\pi r \epsilon_0}$$</span></li>
+                    </ul>
+                    <li>The <b>linear charge density</b> <span>$\lambda$</span> is the <span>$Q/L$</span></li>
+                </ul>
+                <li><b>Infinite conducting cylindrical shell</b></li>
+                <ul>
+                    <li>For the space between the shells, the formula used is the same as above, but only relies on the
+                        linear charge density of the <b>interior</b> line of charge (or cylinder)</li>
+                    <li>For the space outside the shells, the formula depends on the <b>total</b>** <b>linear</b>
+                        **charge density on all of the shells</li>
+                    <li>Inside the conductors, the field is zero</li>
+                </ul>
+                <li><b>Infinite Thin Plate</b></li>
+                <ul>
+                    <li>The electric field is constant for this geometry and depends only on the charge density of the
+                        plate</li>
+                    <ul>
+                        <li><span>$$|\vec{E}| = \frac{\sigma}{2\epsilon_0}$$</span></li>
+                        <li><b>Surface charge density</b> <span>$\sigma$</span> is the <span>$Q/A$</span></li>
+                    </ul>
+                </ul>
+                <li><b>Infinite Thick Insulating Plate</b></li>
+                <ul>
+                    <li>The electric field is constant outside of the plate, but it varies linearly inside the plate
+                    </li>
+                    <ul>
+                        <li><span>$$|\vec{E}(r)| = \begin{Bmatrix} \frac{\rho d}{2 \epsilon_0} \quad |z| < d/2 \\
+                                    \frac{\rho z}{\epsilon_0} \quad |z|> d/2 \end{Bmatrix}$$</span></li>
+                        <li><b>Volume charge density</b> <span>$\rho$</span> is <span>$Q/V$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <h2>Gauss' Law</h2>
+        <ul>
+            <h3>Electric Flux</h3>
+            <ul>
+                <li><b>Electric flux</b> is a measure of the number of electric field lines that are passing through a
+                    given area</li>
+                <ul>
+                    <li>Flux is a more quantitive way of thinking about electric field lines</li>
+                </ul>
+                <li>For a <b>flat</b> surface and a <b>uniform</b> electric field, the electric flux
+                    <span>$\Phi_E$</span> is given by</li>
+                <ul>
+                    <li><span>$$\Phi_E = \vec{E} \cdot \vec{A} = |\vec{E}||\vec{A}| \cos \theta$$</span></li>
+                    <li><span>$\vec{A}$</span> is the vector with magnitude equal to area of the surface, perpendicular
+                        to it</li>
+                    <li><span>$\theta$</span> is the angle between the angle vector and electric field</li>
+                    <li>Only applies for uniform electric fields through flat surfaces</li>
+                </ul>
+                <li>For a <b>closed surface</b> with no internal charges, the <mark>net flux</mark> through the surface
+                    mustbe zero</li>
+            </ul>
+            <h3>Gauss' Law</h3>
+            <ul>
+                <li>The <b>total electric flux</b> through any <mark>closed</mark> is directly proportional to the
+                    <b>net charge enclosed by the surface</b></li>
+                <ul>
+                    <li><span>$$\Phi_E = \frac{Q_{enc}}{\epsilon_0}$$</span></li>
+                </ul>
+                <li>Known as <b>Gauss's Law</b>:</li>
+                <ul>
+                    <li><span>$$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enc}}{\epsilon_0}$$</span></li>
+                </ul>
+                <li>Steps for solving a Gauss' Law Problem</li>
+                <ul>
+                    <li><b>Pick a Gaussian surface</b> such that integral is constant</li>
+                    <ul>
+                        <li>The value <span>$\vec{E} \cdot d\vec{A}$</span> should be equal to all points on the surface
+                        </li>
+                    </ul>
+                    <li><b>Determine the charge enclosed</b> by your Gaussian surface</li>
+                    <li>Carry out integral and solve for <span>$\vec{E}$</span>, the electric field</li>
+                </ul>
+                <li>Spherical Symmetries</li>
+                <ul>
+                    <li>Gauss's law problesm are spherically symmetric if the charge distribution depends only on the
+                        <mark>distance from the origin</mark></li>
+                    <ul>
+                        <li>Ex. point charge, spheres, spherical shells</li>
+                    </ul>
+                    <li>The Gaussian surface to use is a <b>sphere</b></li>
+                    <li>In the Gauss's Law integral, the electric field and area vectors are always parallel, so the
+                        integral reduces to:</li>
+                    <ul>
+                        <li><span>$$\oint \vec{E} \cdot d\vec{A} = |\vec{E}| \oint dA = |\vec{E}| 4 \pi R^2$$</span></li>
+                    </ul>
+                </ul>
+                <li>Cylindrical Symmetries</li>
+                <ul>
+                    <li>Gauss's Law problems have cylindrical symmetry if the charge distribution depensd only on the
+                        <mark>distance from the axis</mark></li>
+                    <ul>
+                        <li>Ex. Line of charge, cylindrical cavities</li>
+                    </ul>
+                    <li>The Guassian surface to use is a <b>cylinder</b></li>
+                    <li>In the Gauss's Law integral, the electric field and area vectors are always parallel for the
+                        curved face, and are perpendicular to the flat face (giving zero flux contribution)</li>
+                    <ul>
+                        <li><span>$$\oint \vec{E} \cdot d \vec{A} = |\vec{E}| 2 \pi RL$$</span></li>
+                    </ul>
+                </ul>
+                <li>Planar Symmetries</li>
+                <ul>
+                    <li>Gauss's Law problems for infinite sheets or slabs have planar symmetry</li>
+                    <li>The Gaussian surface to use is called a <b>Gaussian pillbox</b></li>
+                    <li>In the Gauss's Law integral, the electric field and area vectors are always parallel for the two
+                        flat pillbox faces, and are perpendicular for the curved face (giving zero flux contribution)
+                    </li>
+                    <ul>
+                        <li><span>$$\oint \vec{E} \cdot d\vec{A} = 2 |\vec{E}|A$$</span></li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <h2>Electromagnetism</h1>
+    <ul>
+        <h2>Magnetic Fields</h2>
+        <ul>
+            <h3>Magnetism and Magnetic Fields</h3>
+            <ul>
+                <li><b>Magnetism</b></li>
+                <ul>
+                    <li>There are two types of magnetism:</li>
+                    <ul>
+                        <li><b>Permanent magnetism</b> refers to magnetic fields produced by the inherent properties of
+                            certain materials</li>
+                        <li><b>Electromagnetism</b> refers to magnetic fieldes that are created by charges in motion
+                        </li>
+                        <ul>
+                            <li>If the charges stop moving, the magnetic field disappears</li>
+                        </ul>
+                    </ul>
+                    <li><b>Magnetic Field</b></li>
+                    <ul>
+                        <li><b>Magnetic field</b> is related to the magnetic force that a moving electric charge
+                            <b>would</b> experience at some location</li>
+                        <li>Magnetic field is a <b>vector</b></li>
+                        <ul>
+                            <li>It usually takes the variable <span>$B$</span> and is measured in units of <b>Tesla
+                                    (T)</b></li>
+                        </ul>
+                        <li>Earth has a very weak magnetic field of <span>$5.0 \times 10^{-5}T$</span></li>
+                        <ul>
+                            <li>The other unit of magnetic field is <b>Gauss</b> (<span>$1 T = 10^4 G$</span>)</li>
+                            <ul>
+                                <li>Earth's magnetic field is <span>$0.5G$</span></li>
+                            </ul>
+                        </ul>
+                        <li>The <b>total magnetic field</b> due to multiple magnetic fields in the same location is the
+                            <b>vector sum</b> of the individual fields</li>
+                        <ul>
+                            <li><span>$$\vec{B}_{total} = \sum_i \vec{B}_i$$</span></li>
+                        </ul>
+                    </ul>
+                    <li><b>Magnetic Field Lines</b></li>
+                    <ul>
+                        <li>The strength and direction of magnetic field can be visualized with <b>magnetic field
+                                lines</b></li>
+                        <li>The <b>density</b> of magnetic field lines is an indication of magnetic field strength</li>
+                        <li>The <b>tangent</b> to a magnetic field line gives the direction of the magnetic field</li>
+                        
+                        <li>Unlike electric fields, magnetic fields cannot have starting or ending points</li>
+                        <ul>
+                            <li>They must form <b>closed loops</b></li>
+                            <li>Magnetic monopoles do not exist</li>
+                        </ul>
+                    </ul>
+                    <li><b>Magnetic Materials</b></li>
+                    <ul>
+                        <li>When <b>ferromagnetic</b> materials are placed in a magnetic field, a magnetic field is
+                            created inside the material that is in the <mark>same direction</mark> as the external field
+                        </li>
+                        <ul>
+                            <li>When ferromagnetic materials are removed from the external field, they retain
+                                <b>magnetization</b></li>
+                        </ul>
+                        <li><b>Paramagnetic</b> materials behave like ferromagnetic materials</li>
+                        <ul>
+                            <li>They <mark>do not retain magnetization</mark> from the field</li>
+                        </ul>
+                        <li>When <b>diamagnetic</b> materials are placed in a magnetic field, the internal field
+                            produced is in the <mark>opposite direction</mark> of the external field</li>
+                    </ul>
+                </ul>
+            </ul>
+            <li>Magnetic Force on a Moving Charge</li>
+            <ul>
+                <li>An electric charge moving in a magnetic field experiences a force proportional to the
+                    <b>magnitude</b> and <b>velocity</b> of the charge, as well as the <b>magnetic field strength</b>
+                </li>
+                <ul>
+                    <li><span>$$\vec{F} = q\vec{v} \times \vec{B} \quad |\vec{F}| = qvB \sin \theta$$</span></li>
+                </ul>
+                <li>If the velocity of the particle is <mark>parallel or anti-parallel</mark> to the magnetic field,
+                    then the magnetic force is <mark>zero</mark></li>
+                <li><mark>Uncharged</mark> particles do not feel a force produced by the magnetic field</li>
+                <li>If a charged particle is experiencing both an electric field and a magnetic field, the total force
+                    is the <b>Lorentz Force</b></li>
+                <ul>
+                    <li><span>$$\vec{F} = \vec{F}_{elec} + \vec{F}_{mag} = q(\vec{E} + v \times \vec{B})$$</span></li>
+                </ul>
+            </ul>
+            <li>Circular Motion in a Magnetic Field</li>
+            <ul>
+                <li>If the magnetic force is the only force acting on a charge, then the <b>acceleration</b> must be
+                    <b>perpendicular</b> to the field and the velocity</li>
+                <li>Because the acceleration and velocity are perpendicular, the direction of motion is constantly
+                    changing</li>
+                <ul>
+                    <li>The result is <b>uniform circular motion</b> with respect to the magnetic field</li>
+                    <ul>
+                        <li>This is sometimes called <mark>cyclotron motion</mark></li>
+                    </ul>
+                </ul>
+
+                <li>We can use <b>Newton's Second Law</b> and formula for <b>centripetal acceleration</b> to find the
+                    radius of the motion</li>
+                <ul>
+                    <li><span>$$r = \frac{mv_\perp}{qB}$$</span></li>
+                </ul>
+                <li>The component of the velocity <b>perpendicular to the magnetic field</b> is used. It is possible for
+                    a charged particle to also have a parallel component, which results in <b>helical motion</b></li>
+                <li>We can take this analysis a step further to find the <b>period (T)</b> of the circular motion, which
+                    is <mark>time required for one full circle</mark></li>
+                <ul>
+                    <li><span>$$T =\frac{\text{distance}}{\text{speed}} = \frac{2\pi m}{qB}$$</span></li>
+                </ul>
+                <li>The <b>frequency (f)</b> of the circular motion is the inverse of the period, and represents
+                    <mark>how many full circles are completed per second</mark></li>
+                <ul>
+                    <li><span>$$f = \frac{1}{T} = \frac{qB}{2\pi m}$$</span></li>
+                </ul>
+                <li>The <b>angular frequency</b> can also be defined</li>
+                <ul>
+                    <li><span>$$\omega = 2 \pi f = \frac{qB}{m}$$</span></li>
+                </ul>
+            </ul>
+            <li>Velocity Selectors</li>
+            <ul>
+                <li>A charged particle moving through a magnetic field and electric field will experience <b>two
+                        forces</b></li>
+                <ul>
+                    <li>The <mark>electric force:</mark><span>$|F_{elec}| = qE$</span></li>
+                    <li>The <mark>magnetic force:</mark><span>$|F_{mag}| = qvB\sin \theta$</span></li>
+                </ul>
+                <li>By Newton's Second Law, if the net force is zero, then there is zero acceleration, and there cannot
+                    be circular motion</li>
+                <li>The two forces must be <b>equal and opposite</b></li>
+                <ul>
+                    <li><span>$$\sum \vec{F} = m\vec{a} \\ |F_{elec}| = |\vec{F}_{mag}|$$</span></li>
+                </ul>
+                <li>Magnitude can be found <span>$v = \frac{E}{B}$</span></li>
+                <li>These setups are sometimes called <b>velocity selectors</b> because any particles not moving at this
+                    exact speed will not travel in a straight line</li>
+                <ul>
+                    <li>This effectively <b>filters</b> particles travelling with a certain speed</li>
+                </ul>
+            </ul>
+            <li>Torque on a Current Carrying Wire</li>
+            <ul>
+                <li>A curved that is place in a magnetic field will epxeriecne a different force at each point along its
+                    lenth</li>
+                <ul>
+                    <li>This can result in the wire experience a <b>torque</b> even if the net force is zero</li>
+                </ul>
+                <li>The torque on a loop of current is found with the following equation</li>
+                <ul>
+                    <li><span>$$\tau = \vec{\mu} \times \vec{B}$$</span></li>
+                </ul>
+                <li>We have introduced the <b>magnetic dipole moment</b> <span>$\vec{\mu}$</span></li>
+                <ul>
+                    <li><span>$$|\vec{\mu}| = IA$$</span></li>
+                </ul>
+                </li>
+                <li>The magnitude of the torque on a current loop can be written as follows</li>
+                <ul>
+                    <li><span>$$|\tau| = NIAB \sin \theta$$</span></li>
+                    <li>The variable <span>$N$</span> represent the <b>number of loops of current</b></li>
+                </ul>
+            </ul>
+            <li>Hall Effect</li>
+            <ul>
+                <li>The motion of electrons inside conductors is affected by external magentic fields</li>
+                <li>This effect is called the <b>Hall effect</b> and can be used to develop sensors that measure the
+                    strength of magnetic fields</li>
+                <li><b>Experimental Setup:</b></li>
+                <ul>
+                    <li>Consider an experiment with the following properties</li>
+                    <ul>
+                        <li>Rectangular slab of <b>conducting material</b></li>
+                        <li><b>External magnetic field</b> points out of the page</li>
+                        <li><b>Current</b> pointing to the right, that is positive charges are moving to the right with
+                            speed <span>$v$</span> and charge <span>$q$</span></li>
+                        <li>The charge <b>accumulates on one edge</b> of the conductor and <b>charge seperation</b> is
+                            achieved</li>
+                    </ul>
+                </ul>
+                <li><b>Results:</b></li>
+                <ul>
+                    <li>Because the charges are seperated, there is an <b>electric field</b> across the conductor,
+                        <span>$E_H$</span></li>
+                    <li>This electric field builds up until the electric force <b>cancels out</b> the magnetic force
+                    </li>
+                    <ul>
+                        <li><span>$$v = \frac{E_H}{B}$$</span></li>
+                    </ul>
+                    <li>This is the <b>speed of electrons</b> moving in the material</li>
+                    <li>There is also a <b>potential difference</b> across the conductor</li>
+                    <ul>
+                        <li><span>$$\Delta V_H = E_H d$$</span></li>
+                        <li><span>$$\Delta V_H = vBd$$</span></li>
+                        <li></li>
+                    </ul>
+                </ul>
+                <li><mark><b>Note:</b></mark></li>
+                <ul>
+                    <li>In conductors, it's actually electrons that are moving, but positive current is used as a
+                        convention. This does not change the direction of our magnetic force - if both the charge and
+                        the velocity direction were swapped, the force still points down the page</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Sources of Magnetic Fields</li>
+        <ul>
+            <li>Biot-Savart Law</li>
+            <ul>
+                <li>A moving charge generates a magnetic field</li>
+                <ul>
+                    <li>The purpose of <b>Biot-Savart Law</b> is to determine the exact magnetic field that is generated
+                        by moving charges</li>
+                </ul>
+                <li>Consider a point charge <span>$q$</span> moving with velocity <span>$\vec{v}$</span></li>
+                <li>If that point in space is seperated from the point charge by <span>$\vec{r}$</span>, the magnetic
+                    field produced at that point is:</li>
+                <ul>
+                    <li><span>$$\vec{B} = \frac{\mu_0}{4\pi} \frac{q \vec{v} \times \vec{r}}{|\vec{r}|^2} \quad |\vec{B}|
+                            = \frac{\mu_0}{4\pi} \frac{q |\vec{v}| \sin \theta}{|\vec{r}|^2}$$</span></li>
+                    <li>The <b>permeability of free space:</b> <span>$\mu_0 = 4\pi \times 10^{-7} \frac{\text{m kg}}{s^2
+                            A^2}$</span></li>
+                    <li>The angle <span>$\theta$</span> is the angle between the position vector and the velocity vector
+                    </li>
+                </ul>
+                <li>The magnetic field lines around a moving charged particle form <b>closed circles</b></li>
+            </ul>
+        </ul>
+        <li>Magnetic Force on Parallel Wires</li>
+        <ul>
+            <li>When two current-carrying wires are close to each other, the magnetic field generated by one wire will
+                exert a force on the charges in the other wire</li>
+            <ul>
+                <li>Consider a wire with current pointing <b>up</b> the page</li>
+                <ul>
+                    <li>At any point to the right of this wire, the magentic field points <mark>into the page</mark>
+                    </li>
+                </ul>
+                <li>Consider a second wire placed to the right of the first wire, also with current pointing <b>up</b>
+                    the page</li>
+                <ul>
+                    <li>We can now use <span>$\vec{F} = I \vec{l} \times \vec{B}$</span> to find the direction of force
+                    </li>
+                    <li>The right hand rule gives force pointing to the <b>right</b></li>
+                </ul>
+                <li>Shows that <mark>parallel currents attract</mark></li>
+                <ul>
+                </ul>
+                <li>By repeating the analysis with two current in opposite directions, one can observe <mark>opposite
+                        currents repel</mark></li>
+                <ul>
+                </ul>
+                <li>The <b>magnitude</b> of the force (per unit length of wire) is given as follows where
+                    <span>$r$</span> is the distance between the wires</li>
+                <ul>
+                    <li><span>$$\frac{F}{l} = \mu_0 \frac{I_1 I_2}{2 \pi r}$$</span></li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Magnetic Force on a Wire</li>
+        <ul>
+            <li>For an individual charge, the formal for magnetic force was <span>$\vec{F} = q \vec{v} \times
+                    \vec{B}$</span></li>
+            <ul>
+                <li>To find the magnitude, we can use <span>$|\vec{F}| = qvB \sin \theta$</span></li>
+            </ul>
+            <li>For current of charge:</li>
+            <ul>
+                <li><span>$$\vec{F} = I \vec{l} \times \vec{B} \quad |\vec{F}| = IlB \sin \theta$$</span></li>
+                <li>The vector <span>$\vec{l}$</span> has magnitude equal to the length of the wire segment, and the
+                    direction is equal to direction of positive current direction</li>
+            </ul>
+            <li>If there is a <b>closed loop</b> of current in a <b>uniform</b> magnetic field, the toal magnetic force
+                on the wire will be <mark>zero</mark></li>
+            <li>For a wire of arbitrary shape, the force on an infinitesimal piece of wire, <span>$d\vec{l}$</span> is
+            </li>
+            <ul>
+                <li><span>$$d\vec{F} = I d \vec{l}$$</span></li>
+            </ul>
+            <li>The total force is then bound by integrating over the entire wire:</li>
+            <ul>
+                <li><span>$$\vec{F} = \int d \vec{F} = \int I d\vec{l} \times \vec{B}$$</span></li>
+                <li>This can be used for curved wires, or cases where the magnetic field or current is no constant for
+                    all points on the wire</li>
+            </ul>
+        </ul>
+        <li>Magnetic Field of Current-Carrying Wire</li>
+        <ul>
+            <li>For a <b>long, straight wire</b>, the magnetic field experience at a perpendicular distance
+                <span>$r$</span> from the wire is as follows:</li>
+            <ul>
+                <li><span>$$B = \frac{\mu_0 I}{2 \pi r}$$</span></li>
+            </ul>
+            <li><b>Solenoids:</b></li>
+            <ul>
+                <li>A <b>solenoid</b> is a tightly wound coil of current</li>
+                <li>The magnetic field <mark>outside</mark> a solenoid is <mark>zero</mark></li>
+                <li>The magnetic field <mark>inside</mark> a solenoid is given as follows:</li>
+                <ul>
+                    <li><span>$$B = \frac{\mu_0 NI}{L}$$</span></li>
+                    <li><span>$L$</span> is the length of the solenoid, and <span>$N$</span> is the number of twists in
+                        the coil</li>
+                </ul>
+                <li>The formula can also be written in terms of <b>current loops per unit length</b>, <span>$n=
+                        \frac{N}{L}$</span></li>
+            </ul>
+            <li><b>Current Loop:</b></li>
+            <ul>
+                <li>At the <b>centre of a loop of current</b>, the magnetic field is given by</li>
+                <ul>
+                    <li><span>$$B = \frac{\mu_0 I}{2R}</span>
+                        <p> where <span>$R$</span> is the radius of the current loop<br /></p>
+                    </li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Ampere's Law</li>
+        <ul>
+            <li>Finding the magnetic field due to a current distribution can be made easier using <b>Ampere's Law</b>
+            </li>
+            <ul>
+                <li>Gives a easier way to find magnetic fields if the current distribution has a high degree of symmetry
+                </li>
+            </ul>
+            <li>To use Ampere's Law, one needs to draw an <b>Amperian Loop</b></li>
+            <ul>
+                <li>The magnetic field at all points the loop must be <b>equal</b></li>
+                <li>Once a loop is defined, Ampere's Law is</li>
+                <ul>
+                    <li><span>$$\int \vec{B} \cdot d\vec{l} = \mu_0 I_{enclosed}$$</span></li>
+                    
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <li>Special Theory of Relativity</li>
+    <ul>
+        <li>Basics of Special Relativity</li>
+        <ul>
+            <li><b>Lorentz Transformation</b></li>
+            <ul>
+                <li>Basis of Special Relativity:</li>
+                <ul>
+                    <li>The <b>laws of physics are the same</b> in all inertia reference frames</li>
+                    <li>The <b>speed of light is constant</b> (in vacuum) in all inertail reference frames is
+                        approximately equal to <span>$c = 3 \times 10^8 \text{m/s}$</span></li>
+                </ul>
+                <li><b>Inertial reference frames</b> are systems of coordinates that move with a constant speed relative
+                    to each toher, but do not accelerate with respect to each other</li>
+                <li>In special relativity, every event is represented in <span>$4$</span>-dimensional <b>spacetime</b>
+                    as <span>$(x,y,z,t)$</span>, where <span>$x,y$</span> and <span>$z$</span> are the spatial
+                    coordinates and show the point at which this event happens, and <span>$t$</span> is time at which it
+                    happens</li>
+                <li>All 4 coordinates are measured from an arbitrary "origin" at which they're all zero</li>
+                <li>Consider an shown by <span>$(x,y,z,t)$</span> in frame <span>$K$</span></li>
+                <li>The coordinates <span>$(x',y'z',t')$</span> describes the same event in another frame
+                    <span>$K'$</span> which is moving along the <span>$x$</span>-axis with a constant speed
+                    <span>$v$</span> relative to <span>$K$</span></li>
+                <li>The <b>Lorentz Transformation</b>:</li>
+                <ul>
+                    <li><span>$$t' = \gamma \Big( t - \frac{vx}{c^2}\Big)$$</span></li>
+                    <li><span>$$x' = \gamma(x-vt)$$</span></li>
+                    <li><span>$$y' = y \quad z'=z$$</span></li>
+                </ul>
+                <li>Where <span>$\gamma$</span> is defined as:</li>
+                <ul>
+                    <li><span>$$\gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$$</span></li>
+                </ul>
+                <li>Gamma is also called the <b>dilation factor</b>, and since <span>$v < c$</span> always we have
+                            <span>$\gamma > 1$</span></li>
+                <ul>
+                    <li>When the speed <span>$v$</span> is very small, <span>$\gamma$</span> is close to 1</li>
+                    <li>As speed <span>$v$</span> approaches the speed of light, <span>$\gamma$</span> approaches
+                        infinity</li>
+                </ul>
+            </ul>
+            <li><b>Time Dilation and Length Contraction</b></li>
+            <ul>
+                <li>The time between two events in not the same in inertial reference frames are moving with respect to
+                    each other</li>
+                <li>Clocks run slower in a moving frame compared to a stationary frame, the way to measure the two
+                    events:</li>
+                <ul>
+                    <li><span>$$\Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma \Delta t_0$$</span></li>
+                    <ul>
+                        <li>where <span>$\Delta t_0$</span> is the time interval between the two events in the rest
+                            frame, callled <b>proper time</b></li>
+                        <li>Since <span>$\gamma > 1$</span>, the time interval in the moving frame is greater than
+                            proper time (time dilation)</li>
+                    </ul>
+                </ul>
+                <li>Length is also relative, and the length of a moving object seen from an inertial reference frame at
+                    rest is:</li>
+                <ul>
+                    <li><span>$$l = l_0 \sqrt{1 - \frac{v^2}{c^2}} = \frac{l_0}{\gamma}$$</span></li>
+                    <li>where <span>$l_0$</span> is the length of the object at rest, is called the <b>proper length</b>
+                    </li>
+                    <li>Since <span>$\gamma > 1$</span>, the length in the moving frame is smaller than proper length
+                        (length contradiction)</li>
+                </ul>
+            </ul>
+            <li><b>Relativistic Velocity Transformation</b></li>
+            <ul>
+                <li>Imagine an inertial reference frame <span>$K'$</span> that is moving with a constant speed
+                    <span>$v$</span> relative to another inertial reference frame <span>$K$</span></li>
+                <li>Moving object with respect to <span>$K'$</span> with velocity of <span>$u'$</span></li>
+                <li>The <b>velocity</b> of the object with respect to <span>$K$</span> reference frame is called
+                    <span>$u$</span>:</li>
+                <ul>
+                    <li><span>$$u = \frac{u'+ v}{1 + \frac{u'v}{c^2}}$$</span></li>
+                </ul>
+                <li>The <b>reverse</b> of this transformation can be found <span>$u \leftrightarrow u'$</span> and
+                    <span>$v \leftrightarrow -v$</span>, given by</li>
+                <ul>
+                    <li><span>$$u' = \frac{u - v}{1 - \frac{uv}{c^2}}$$</span></li>
+                </ul>
+            </ul>
+            <li><b>Relavistic Momentum and Energy</b></li>
+            <ul>
+                <li><b>Relativistic Momentum</b> is given by:</li>
+                <ul>
+                    <li><span>$$p = \gamma mv$$</span></li>
+                </ul>
+                <li><b>Relativistic Energy</b> is:</li>
+                <ul>
+                    <li><span>$$E^2 = p^2c^2 + m^2c^4$$</span></li>
+                </ul>
+                <li>If the object is at rest, then <span>$p =0$</span> and we have <b>rest mass energy</b>, <span>$E_0 =
+                        mc^2$</span></li>
+                <li>The <b>relativistic kinetic energy</b> could be found using <span>$KE = mc^2 (\gamma -1)$</span>
+                </li>
+            </ul>
+        </ul>
+        <li>Nuclear Forces and Binding Energy</li>
+        <ul>
+            <li>The <b>strong nuclear force</b> is responsible for holding the nucleus together</li>
+            <ul>
+                <li>This force is much stronger than the repulsion between protons</li>
+            </ul>
+            <li>The <b>binding energy</b> is the energy needed to break a nucleusinto its constituents protons and
+                neutrons</li>
+            <li>The binding energy is given by <b>mass defect</b>, <span>$\Delta m$</span> which is the difference
+                between the mass of the seperated nucleons and mass of the whole nucleus</li>
+            <ul>
+                <li>The mass defect is always <b>positive</b>: a system of seperated nucleans always has a greater mass
+                    than a system of bound nucleons</li>
+                <li>When a nucleus <b>forms</b>, the <b>mass defect is transformed into binding energy</b></li>
+                <li>When a nucleus <b>breaks apart</b>, <b>binding energy is transformed into mass</b>.</li>
+            </ul>
+            <li>Einstein's equation tells us how <b>mass and energy</b> can be converted into each</li>
+            <ul>
+                <li><span>$$E = \Delta mc^2$$</span></li>
+            </ul>
+        </ul>
+        <li>Photoelectric Effect</li>
+        <ul>
+            <li>When light is incident on some metals, electrons can be ejected from the metal surface</li>
+            <li>The <b>Photoelectric effect</b></li>
+            <ul>
+                <li>The incoming photon energy is used by the electron to break free from the metal</li>
+                <ul>
+                    <li>Energy is called the <b>work function</b>, and is specific to each metal</li>
+                </ul>
+                <li>If there's any energy left afterwards, it will become the <b>electron's kinetic energy</b></li>
+            </ul>
+            <li>Using <b>conservation of energy</b> we get:</li>
+            <ul>
+                <li><span>$$hf = W + \frac{1}{2}mv^2$$</span></li>
+                <ul>
+                    <li><span>$h$</span> is Planck's constant</li>
+                    <li><span>$f$</span> is frequency of the incoming photon</li>
+                    <li><span>$W$</span> is the work function of the metal</li>
+                    <li><span>$m$</span> is the mass of the electron</li>
+                    <li><span>$V$</span> is the speed of the electron</li>
+                </ul>
+                <li>The work function is the amount of energy that holds an electron to the</li>
+            </ul>
+        </ul>
+        <li>The Compton Effect</li>
+        <li>Wave-Particle Duality</li>
+        <li>Radioactivity</li>
+        <li></li>
+    </ul>
+</ul>
+</html>

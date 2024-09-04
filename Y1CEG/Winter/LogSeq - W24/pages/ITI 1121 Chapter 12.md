@@ -1,0 +1,20 @@
+## [[Binary Search Trees]]
+	- ### Binary Tree
+		- A **binary tree** is a hiearchical data structure such that each **node** stores a **value** and has at msost two children, **left** and **right**
+		- All nodes except one have exactly one parent
+			- **Root** is node with no parent
+			- EAch hode has 0,1, or 2 children
+			- Nodes that have no children are called **leaves** or external nodes
+			- Links between nodes are called **branches**
+		- A node its **descendents** are a **subtree**
+		- The **size** of  a tree is number of nodes in a tree
+		- The **depth of a node** is the number of links starting from the rooth that must be followed to reach that node
+			- The root is the most accessible node
+		- The **depth of a tree** is the depth of the deepest node
+		- A **binary search tree** is a binary tree such that
+			- The nodes of a left sub-tree contain elements that are less than the elements stored at the local root
+			- The nodes of a right sub-tree contain elements that are greater than the element stored at the local root
+			-
+	- ### **Applications**
+		- Representing hiearchical information
+		- Efficient data structure to implement abstract data types such as heaps, priority queues and sets
