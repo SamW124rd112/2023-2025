@@ -372,7 +372,6 @@
 					- ![Screenshot from 2024-04-03 14-34-43.png](../assets/Screenshot_from_2024-04-03_14-34-43_1712169316834_0.png)
 	- ### Directional Derivatives & Gradient Vectors
 	  background-color:: green
-	  collapsed:: true
 		- The **directional derivative** of $f$ at $(x_0, y_0)$ in the direction of the unit vector $\vec{u} = \langle a,b \rangle = a \hat{i} + b\hat{j}$
 			- $$D_{\hat{u}} f(x_0, y_0) = \lim_{h \rightarrow 0} \frac{f(x_0 + ah, y_0 + bj) - f(x_0, y_0)}{h}$$
 		- It can also be written as:
