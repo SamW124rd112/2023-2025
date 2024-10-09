@@ -1,0 +1,50 @@
+### **Linearization**
+	- $$L(x) = f(a) + f'(a)(x-a)$$
+- ### **Integration by Parts**
+	- $$\int u \ dv = uv - \int v \ du$$
+- ### **Trig Substitution**
+	- $$a^2 - x^2 \implies x = a \sin \theta \ \ dx = a\cos \theta \ d\theta $$
+	- $$a^2 + x^2 \implies x = a \tan \theta \ \ dx = a\sec^2 \theta \ d\theta $$
+	- $$x^2 - a^2 \implies x = a \sec \theta \ \ dx = a\sec \theta \tan \theta \ d\theta $$
+	-
+- ### **Trig Derivatives**
+	- $$ (\sin x )'= \cos x$$
+	- $$(\cos x)' = -\sin x$$
+	- $$(\tan x)' = \sec^2 x$$
+	- $$(\sec x)' = \sec x \tan x$$
+	- $$(\csc x)' = -\csc x \cot x$$
+	- $$(\cot x)' = - \csc^2 x$$
+	- $$(\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}$$
+	- $$(\arccos x)' = -\frac{1}{\sqrt{1-x^2}}$$
+	- $$(\arctan x)' =  \frac{1}{1+x^2}$$
+	- $$( \text{arcsec} \ x)' = \frac{1}{|x|\sqrt{x^2-1}}$$
+	- $$( \text{arccsc} \ x)' = - \frac{1}{|x|\sqrt{x^2-1}}$$
+	- $$(\text{arccot} \ x)' =  -\frac{1}{1+x^2}$$
+- ### Trig Integrals
+	- $$\int \cos(x) \ dx = \sin(x) +C$$
+	- $$\int \sin(x) \ dx = - \cos(x) +C$$
+	- $$\int \sec^2(x) \ dx = \tan(x) +C$$
+	- $$\int \csc^2(x) \ dx = - \cot(x) +C$$
+	- $$\int \sec(x) \tan(x) \ dx = \sec(x) +C$$
+	- $$\int \csc(x) \cot(x)  \ dx = - \csc(x) +C$$
+	- $$\int \tan(x) \ dx = \ln(|\sec(x)|)  +C$$
+	- $$\int \cot(x) \ dx = \ln(|\csc(x)|)  +C$$
+- ### Trig Power Reducing Formulas
+	- $$\sin^2 x = \frac{1}{2} [ 1- \cos (2x)]$$
+	- $$\cos^2 x = \frac{1}{2} [ 1+ \cos (2x)]$$
+- ### **Trig Identities**
+	- **Reciprocal Identities**
+		- $$\csc(\theta) = \frac{1}{\sin(\theta)}$$
+		- $$\sec(\theta) = \frac{1}{\cos(\theta)}$$
+		- $$\cot(\theta) = \frac{1}{\tan(\theta)}$$
+	- **Pythagorean Identities**
+		- $$\sin^2(\theta) + \cos^2(\theta) = 1$$
+		- $$\tan^2(\theta) + 1 =  \sec^2(\theta)$$
+		- $$\cot^2(\theta) + 1 =  \csc^2(\theta)$$
+	- **Double Angle Identities**
+		- $$\sin(2\theta) = 2\sin(\theta)\cos(\theta)$$
+		- $$\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta) \\ = 2\cos^2(\theta) - 1 \\ = 1 - 2\sin^2(\theta) $$
+		- $$\tan(2\theta) = \frac{2\tan(\theta)}{1- \tan^2(\theta}$$
+		-
+		-
+		-
