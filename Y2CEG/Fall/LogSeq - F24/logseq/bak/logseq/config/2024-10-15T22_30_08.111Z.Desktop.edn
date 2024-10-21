@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["CEG 2136" "csi 2110" "mat 2322" "elg 2138" "seg 2105"]
+ :favorites ["MAT 2322" "ELG 2138" "CSI 2110" "SEG 2105"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -419,6 +419,4 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :graph/forcesettings {:link-dist 70}
- :graph/settings {:excluded-pages? false
- :orphan-pages? false}}
+ :graph/forcesettings {:link-dist 70}}
